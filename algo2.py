@@ -273,14 +273,33 @@ class custom_algo:
 #---------------------------------------------Narrow path detector ends here---------------------------------------
 #---------------------------------------------Narrow path APF stars here-------------------------------------------
 
-    
+    def get_neighbors_for_narrow_path_APF(self, pos, obstacles, grid_size):
+        x, y = pos
+        neighbors = []
 
-    def narrow_path_apf_choose_next(self, pos, prev_pos , goal, obstacles, list_of_robots_in_avoidance_range : dict = {}, priority_dict : dict = {} ):
+        for dx in range(-1,2):
+            for dy in range(-1,2):
+                if dx == 0 and dy == 0:
+                    continue
+
+                new_x, new_y = x + dx, y + dy
+
+                if not self.is_valid_position_for_obstacle(new_x, new_y, obstacles, grid_size):
+                    continue 
+
+                
+        
+                else:
+                    neighbors.append((new_x, new_y))
+
+        return neighbors
+
+    def narrow_path_apf_choose_next(self, pos , goal, obstacles, list_of_robots_in_avoidance_range : dict = {}, priority_dict : dict = {} ):
         
         neighbours = self.get_neighbors_for_narrow_path_APF(pos, obstacles, grid_size=55)
 
         if neighbours == []:
-            return pos
+            return pos          #holds for no position
 
         pos = np.array(pos, dtype=float)
 
@@ -333,6 +352,7 @@ class custom_algo:
 
         return final_pos
 
+#---------------------------------------------Narrow path APF ends here-------------------------------------------
 #--------------------------------------------Extra functions start here--------------------------------------------
 
     def priority_resolution(self, name, p1 , other_name, p2):

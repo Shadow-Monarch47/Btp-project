@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib.patches import Rectangle
 from helping_functions import *
-from algo1 import custom_algo
+from algo2 import custom_algo
 from obstacle_creator import ObstacleMapManager
 
 #----------------------------------------------- Base Variables
@@ -96,7 +96,7 @@ trail_x = {}
 trail_y = {}
 
 for rid, details in Robot_details.items():
-    x0, y0 = details["Robot_path"][0]
+    x0, y0 = details["Global_path"][0]
 
     rect = Rectangle((x0, y0), 1, 1, color=robots[rid].color, alpha = 0.5)
     ax.add_patch(rect)
@@ -160,15 +160,17 @@ def update(frame):
         B = Robot_details[name]["Was_blocked"]
         C = Robot_details[name]["Narrow_Path_Status"]
         
-        if not A and not B and not C:                                      
+        if not A and not B and not C:        
+            Robot_details[name]["Was_blocked"] = False                              
             planned_path = Robot_details[name]["Global_path"]
             next_index = Robot_details[name]["Global_path_frame_counter"] + 1
             
             if next_index < len(planned_path):
                 next_pos = planned_path[next_index]
-                #print(f"  {name}: ELIF branch - following A*, appending {next_pos}")
+                print(f" {name}: Branch - 1 : no robots to avoid, not blocked, not in narrow path - following global path, appending {next_pos}")
                 actual_paths[name].append(next_pos)
                 Robot_details[name]["Actual_path_frame_counter"] += 1
+                Robot_details[name]["Global_path_frame_counter"] += 1
                 return next_pos
             else:
                 #print(f"  {name}: ELIF branch - end of path, staying at {pos}")
@@ -178,14 +180,16 @@ def update(frame):
         
 
         if not A and not B and C:
+            Robot_details[name]["Was_blocked"] = False
             planned_path = Robot_details[name]["Global_path"]
             next_index = Robot_details[name]["Global_path_frame_counter"] + 1
             
             if next_index < len(planned_path):
                 next_pos = planned_path[next_index]
-                #print(f"  {name}: ELIF branch - following A*, appending {next_pos}")
+                print(f"  {name}: Branch 2 : no robots to avoid, not blocked, in narrow path - following global path, appending {next_pos}")
                 actual_paths[name].append(next_pos)
                 Robot_details[name]["Actual_path_frame_counter"] += 1
+                Robot_details[name]["Global_path_frame_counter"] += 1
                 return next_pos
             else:
                 #print(f"  {name}: ELIF branch - end of path, staying at {pos}")
@@ -195,15 +199,18 @@ def update(frame):
 
             
         if not A and B and not C:
+            Robot_details[name]["Was_blocked"] = False
             Robot_details[name]["Global_path"] = robots[name].a_star(pos, goal, obstacles)
             planned_path = Robot_details[name]["Global_path"]
-            Robot_details[name]["Global_path_frame_counter"] = 1
+            Robot_details[name]["Global_path_frame_counter"] = 0
+            next_index = Robot_details[name]["Global_path_frame_counter"] + 1
 
             if next_index < len(planned_path):
                 next_pos = planned_path[1]
-                #print(f"  {name}: IF branch - re-planning with A*, appending {next_pos}")
+                print(f"  {name}: Branch 3 : no robots to avoid, was blocked, not in narrow path - re-planning with A*, appending {next_pos}")
                 actual_paths[name].append(next_pos)
                 Robot_details[name]["Actual_path_frame_counter"] += 1
+                Robot_details[name]["Global_path_frame_counter"] += 1
                 return next_pos
             else:
                 #print(f"  {name}: ELIF branch - end of path, staying at {pos}")
@@ -213,15 +220,18 @@ def update(frame):
 
             
         if not A and B and C:
+            Robot_details[name]["Was_blocked"] = False
             Robot_details[name]["Global_path"] = robots[name].a_star(pos, goal, obstacles)
             planned_path = Robot_details[name]["Global_path"]
-            Robot_details[name]["Global_path_frame_counter"] = 1
+            Robot_details[name]["Global_path_frame_counter"] = 0
+            next_index = Robot_details[name]["Global_path_frame_counter"] + 1
 
             if next_index < len(planned_path):
                 next_pos = planned_path[1]
-                #print(f"  {name}: IF branch - re-planning with A*, appending {next_pos}")
+                print(f"  {name}: Branch 4 : no robots to avoid, was blocked, in narrow path - re-planning with A*, appending {next_pos}")
                 actual_paths[name].append(next_pos)
                 Robot_details[name]["Actual_path_frame_counter"] += 1
+                Robot_details[name]["Global_path_frame_counter"] += 1
                 return next_pos
             else:
                 #print(f"  {name}: ELIF branch - end of path, staying at {pos}")
@@ -233,8 +243,19 @@ def update(frame):
         if A and not B and not C:
             Robot_details[name]["Was_blocked"] = True
             next_pos = robots[name].simple_apf_choose_next(pos,goal,obstacles,A,priority_dict)
+            print(f"  {name}: Branch 5 : robots to avoid, not blocked, not in narrow path - using simple APF, appending {next_pos}")
             actual_paths[name].append(next_pos)
             Robot_details[name]["Actual_path_frame_counter"] += 1
+            return next_pos
+        
+
+        if A and not B and C:
+            Robot_details[name]["Was_blocked"] = True
+            next_pos = robots[name].narrow_path_apf_choose_next(pos,goal,obstacles,A,priority_dict)
+            print(f"  {name}: Branch 6 : robots to avoid, not blocked, in narrow path - using narrow path APF, appending {next_pos}")
+            actual_paths[name].append(next_pos)
+            Robot_details[name]["Actual_path_frame_counter"] += 1
+            return next_pos
 
 #----------------------------------------------- Robots moved to the latest positions
 
@@ -300,7 +321,7 @@ def update(frame):
 
     for rid, rob in robots.items():
         if len(actual_paths[rid]) >= 2:
-            rob.in_narrow_path = rob.narrow_path_detector(
+            Robot_details[rid]["In_narrow_path"] = rob.narrow_path_detector(
                 actual_paths[rid][-2],
                 actual_paths[rid][-1]
             )
