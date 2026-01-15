@@ -155,59 +155,60 @@ class custom_algo:
 
     def simple_apf_choose_next(self, pos, goal, obstacles, list_of_robots_in_avoidance_range : dict = {}, priority_dict : dict = {}):
         """
-        Simple APF that applies attraction toward goal and repulsion from nearby robots.
-        Rounds to nearest available 45° neighbor direction.
+    Simple APF that applies attraction toward goal and repulsion from nearby robots.
+    Rounds to nearest available 45° neighbor direction.
         """
         pos = np.array(pos, dtype=float)
         goal = np.array(goal, dtype=float)
-        
-        # Get valid neighbors
+    
+    # Get valid neighbors
         neighbours = self.get_neighbors_for_APF(pos, obstacles, grid_size=55,
-                                            list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range)
-        
-        
-        
+                                        list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range,
+                                        priority_dict=priority_dict)
+    
         if not neighbours:
-            return tuple(pos.astype(int)) # No valid moves, Hold position
-        
-        # Attractive force toward goal
+            return (int(pos[0]), int(pos[1]))  # FIXED: explicit tuple
+    
+    # Attractive force toward goal
         F_att = (goal - pos)
-        
-        # Repulsive force from nearby robots
+    
+    # Repulsive force from nearby robots
         F_rep = np.zeros(2, dtype=float)
         rep_radius = 4.0
         k_rep = 50.0
 
         higher_robots = {rname: rpos for rname, rpos in list_of_robots_in_avoidance_range.items() 
-                        if priority_dict.get(rname, 0) > self.priority}
-        
+                    if priority_dict.get(rname, 0) > self.priority}
+    
         for robot_name, (rx, ry) in higher_robots.items():
             rob = np.array([rx, ry], dtype=float)
             dvec = pos - rob
             dist = np.linalg.norm(dvec)
-            
+        
             if dist >= 1e-6 and dist <= rep_radius:
                 F_rep += k_rep * (1.0 / (dist**2)) * (dvec / dist)
-        
-        # Total force
+    
+    # Total force
         F = F_att + F_rep
         angle = math.degrees(math.atan2(F[1], F[0]))
-        
-        # Find nearest 45° direction
+    
+    # Find nearest 45° direction
         best_idx = min(range(8), key=lambda i: abs(angle - DIR_ANGLES[i]))
         chosen_dir = DIRS[best_idx]
-        
+    
         dx, dy = chosen_dir
         final_pos = (int(pos[0] + dx), int(pos[1] + dy))
-        
-        # If chosen direction not available, pick nearest available neighbor
+    
+    # If chosen direction not available, pick nearest available neighbor
         if final_pos not in neighbours:
             def angle_to(npos):
                 vec = np.array(npos) - pos
                 return math.degrees(math.atan2(vec[1], vec[0]))
             final_pos = min(neighbours, key=lambda n: abs(angle - angle_to(n)))
-        
+    
+    # FIXED: Always return regular Python tuple
         return (int(final_pos[0]), int(final_pos[1]))
+
     
 #---------------------------------------------APF ends here-------------------------------------------------------------------------------------
 #---------------------------------------------Narrow path detector starts here------------------------------------------------------------------
@@ -253,7 +254,7 @@ class custom_algo:
             above = (next_x, next_y + 1)
             below = (next_x, next_y - 1)
             
-            if is_blocked(above[0], above[1]) and is_blocked(below[0], below[1]):
+            if is_blocked(above[0], above[1]) or is_blocked(below[0], below[1]):
                 return True
         
         # ========================================
@@ -264,7 +265,7 @@ class custom_algo:
             left = (next_x - 1, next_y)
             right = (next_x + 1, next_y)
             
-            if is_blocked(left[0], left[1]) and is_blocked(right[0], right[1]):
+            if is_blocked(left[0], left[1]) or is_blocked(right[0], right[1]):
                 return True
         
         # No narrow path detected
@@ -294,63 +295,64 @@ class custom_algo:
 
         return neighbors
 
-    def narrow_path_apf_choose_next(self, pos , goal, obstacles, list_of_robots_in_avoidance_range : dict = {}, priority_dict : dict = {} ):
-        
+    def narrow_path_apf_choose_next(self, pos, goal, obstacles, list_of_robots_in_avoidance_range : dict = {}, priority_dict : dict = {}):
+    
         neighbours = self.get_neighbors_for_narrow_path_APF(pos, obstacles, grid_size=55)
 
-        if neighbours == []:
-            return pos          #holds for no position
+        if not neighbours:
+        # FIXED: Convert pos to regular tuple
+            if isinstance(pos, (list, np.ndarray)):
+                return (int(pos[0]), int(pos[1]))
+            return pos
 
         pos = np.array(pos, dtype=float)
+        goal = np.array(goal, dtype=float)  # FIXED: Ensure goal is numpy array
 
         F_att = (goal - pos)
 
-        # Repulsive force
+    # Repulsive force
         F_rep = np.zeros(2, dtype=float)
         rep_radius = 4.0
         k_rep = 5.0
 
-        
         robots_to_avoid = {rname: rpos for rname, rpos in list_of_robots_in_avoidance_range.items() 
-                        if priority_dict.get(rname, 0) > self.priority}
-            
-            # Find robot with highest priority from robots_to_avoid
+                    if priority_dict.get(rname, 0) > self.priority}
+        
+    # Find robot with highest priority from robots_to_avoid
         highest_priority_robot = max(robots_to_avoid.items(), 
-                                    key=lambda item: priority_dict.get(item[0], 0))[0] if robots_to_avoid else None
-            
-            
+                                key=lambda item: priority_dict.get(item[0], 0))[0] if robots_to_avoid else None
+        
         for robot_name, (rx, ry) in robots_to_avoid.items():
             if robot_name == highest_priority_robot:
                 rob = np.array([rx, ry], dtype=float)
                 dvec = pos - rob
                 dist = np.linalg.norm(dvec)
                 if dist >= 1e-6 and dist <= rep_radius:
-                     F_rep += k_rep * (1.0 / (dist**2)) * (dvec / dist)
+                    F_rep += k_rep * (1.0 / (dist**2)) * (dvec / dist)
 
-
-        # If no repulsion force (no higher priority robots), stay put
+    # If no repulsion force (no higher priority robots), stay put
         if np.linalg.norm(F_rep) < 1e-6:
-            return tuple(pos.astype(int))
+            return (int(pos[0]), int(pos[1]))  # FIXED: explicit tuple
 
-        # Total force (pure repulsion for backtracking)
+    # Total force (pure repulsion for backtracking)
         F = F_rep + F_att
 
-        # Angle of resultant force
+    # Angle of resultant force
         angle = math.degrees(math.atan2(F[1], F[0]))
 
-        # Find nearest 45° direction
+    # Find nearest 45° direction
         best_idx = min(range(8), key=lambda i: abs(angle - DIR_ANGLES[i]))
         chosen_dir = DIRS[best_idx]
 
-        # Convert selected direction to actual neighbor
+    # Convert selected direction to actual neighbor
         dx, dy = chosen_dir
         final_pos = (int(pos[0] + dx), int(pos[1] + dy))
 
-        # If that neighbor is not available, fallback to nearest available one
+    # If that neighbor is not available, fallback to current position
         if final_pos not in neighbours:
-            return pos
+            return (int(pos[0]), int(pos[1]))  # FIXED: explicit tuple
 
-        return final_pos
+        return (int(final_pos[0]), int(final_pos[1])) 
 
 #---------------------------------------------Narrow path APF ends here-------------------------------------------
 #--------------------------------------------Extra functions start here--------------------------------------------
