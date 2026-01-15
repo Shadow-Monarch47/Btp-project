@@ -274,7 +274,7 @@ class custom_algo:
 #---------------------------------------------Narrow path detector ends here---------------------------------------
 #---------------------------------------------Narrow path APF stars here-------------------------------------------
 
-    def get_neighbors_for_narrow_path_APF(self, pos, obstacles, grid_size):
+    def get_neighbors_for_narrow_path_APF(self, pos, obstacles, grid_size, list_of_robots_in_avoidance_range, priority_dict):
         x, y = pos
         neighbors = []
 
@@ -288,7 +288,8 @@ class custom_algo:
                 if not self.is_valid_position_for_obstacle(new_x, new_y, obstacles, grid_size):
                     continue 
 
-                
+                elif not self.is_valid_position_for_robots_priority(new_x, new_y, grid_size, list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range, priority_dict=priority_dict): #
+                    continue 
         
                 else:
                     neighbors.append((new_x, new_y))
@@ -296,8 +297,8 @@ class custom_algo:
         return neighbors
 
     def narrow_path_apf_choose_next(self, pos, goal, obstacles, list_of_robots_in_avoidance_range : dict = {}, priority_dict : dict = {}):
-    
-        neighbours = self.get_neighbors_for_narrow_path_APF(pos, obstacles, grid_size=55)
+        grid_size = 55
+        neighbours = self.get_neighbors_for_narrow_path_APF(pos, obstacles, grid_size,list_of_robots_in_avoidance_range, priority_dict)
 
         if not neighbours:
         # FIXED: Convert pos to regular tuple

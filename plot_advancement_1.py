@@ -11,7 +11,7 @@ from obstacle_creator import ObstacleMapManager
 GRID = 55
 interval_ms = 500 
 max_limit_frames = 1000
-initial , final = 10,44
+initial , final = 17,37
 frame_counter = 0
 last_processed_frame = -1
 
