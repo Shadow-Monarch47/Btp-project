@@ -20,6 +20,7 @@ DIR_ANGLES = [0, 45, 90, 135, 180, -135, -90, -45]
 
 class custom_algo:
     def __init__(self, robot_id , start , goal, color, obstacles: set):
+        self.obstacles = obstacles
 
         # variables linked to dictionary
 
@@ -37,7 +38,7 @@ class custom_algo:
         
         self.robot_id = robot_id
         self.color = color
-        self.obstacles = obstacles
+        
         self.backtrack_point = None
         self.backtrack_path = []
         

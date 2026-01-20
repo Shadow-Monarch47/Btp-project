@@ -369,20 +369,11 @@ def update(frame):
     for rid, rob in robots.items():
         
         if len(actual_paths[rid]) >= 2:
-            Robot_details[rid]["Narrow_path_status"] , Robot_details[rid]["Narrow_path_end"] = rob.narrow_path_detector(
+            Robot_details[rid]["Narrow_path_status"]  = rob.narrow_path_detector(
                 actual_paths[rid][-2],
                 actual_paths[rid][-1]
             )
-        if Robot_details[rid]["Narrow_path_status"]:
-            if Robot_details[rid]["Narrow_origin_marker"]:
-                Robot_details[rid]["Narrow_origin_marker"] = False
-                Robot_details[rid]["Narrow_path_start"] = Robot_details[rid]["Current_position"]
-        else:
-            Robot_details[rid]["Narrow_origin_marker"] = True
-
-        print(Robot_details[rid]["Narrow_path_status"])
-        print(Robot_details[rid]["Narrow_path_start"])
-        print(Robot_details[rid]["Narrow_path_end"])
+        
 
         
 
