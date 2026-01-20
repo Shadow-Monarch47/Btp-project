@@ -20,21 +20,28 @@ DIR_ANGLES = [0, 45, 90, 135, 180, -135, -90, -45]
 
 class custom_algo:
     def __init__(self, robot_id , start , goal, color, obstacles: set):
+
+        # variables linked to dictionary
+
+        self.start = start
+        self.goal = goal
+        self.global_path = self.a_star(start, goal, self.obstacles)
+        self.priority = 0
+        self.was_blocked = False
+        self.narrow_path_status = False
+        self.narrow_entry = None
+        self.narrow_exit = None
+        self.reached_goal = False
+
+        # independent variables
+        
         self.robot_id = robot_id
         self.color = color
         self.obstacles = obstacles
-        self.global_path = self.a_star(start, goal, self.obstacles)
-        self.start = start
-        self.goal = goal
-        self.was_blocked = False
-        self.reached_goal = False
-        self.in_narrow_path = False
-        self.narrow_path_length = None
-        self.priority = 0
         self.backtrack_point = None
         self.backtrack_path = []
+        
         self.set_priority(robot_id)
-
     
 
 #---------------------------------------------A-star starts here-----------------------------------------------------------
@@ -270,6 +277,8 @@ class custom_algo:
         
         # No narrow path detected
         return False
+
+
     
 #---------------------------------------------Narrow path detector ends here---------------------------------------
 #---------------------------------------------Narrow path APF stars here-------------------------------------------
@@ -293,7 +302,6 @@ class custom_algo:
         
                 else:
                     neighbors.append((new_x, new_y))
-
         return neighbors
 
     def narrow_path_apf_choose_next(self, pos, goal, obstacles, list_of_robots_in_avoidance_range : dict = {}, priority_dict : dict = {}):
@@ -331,9 +339,8 @@ class custom_algo:
                 if dist >= 1e-6 and dist <= rep_radius:
                     F_rep += k_rep * (1.0 / (dist**2)) * (dvec / dist)
 
-    # If no repulsion force (no higher priority robots), stay put
-        if np.linalg.norm(F_rep) < 1e-6:
-            return (int(pos[0]), int(pos[1]))  # FIXED: explicit tuple
+        
+
 
     # Total force (pure repulsion for backtracking)
         F = F_rep + F_att
@@ -349,9 +356,15 @@ class custom_algo:
         dx, dy = chosen_dir
         final_pos = (int(pos[0] + dx), int(pos[1] + dy))
 
-    # If that neighbor is not available, fallback to current position
+    # If that neighbor is not available, select the next nearest neighbor
+
         if final_pos not in neighbours:
-            return (int(pos[0]), int(pos[1]))  # FIXED: explicit tuple
+            def angle_to(npos):
+                vec = np.array(npos) - pos
+                return math.degrees(math.atan2(vec[1], vec[0]))
+            final_pos = min(neighbours, key=lambda n: abs(angle - angle_to(n)))
+
+        
 
         return (int(final_pos[0]), int(final_pos[1])) 
 

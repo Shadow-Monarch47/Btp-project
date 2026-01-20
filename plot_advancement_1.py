@@ -6,6 +6,22 @@ from helping_functions import *
 from algo2 import custom_algo
 from obstacle_creator import ObstacleMapManager
 
+#-----------------------------------------------Logger File code
+
+import sys
+from terminal_logger import TerminalLogger
+
+LOG_FILE = "run_log.txt"
+
+# 🔴 CLEAR previous run log
+open(LOG_FILE, "w").close()
+
+# 🔵 Redirect stdout/stderr
+sys.stdout = TerminalLogger(LOG_FILE)
+sys.stderr = sys.stdout
+
+
+
 #----------------------------------------------- Base Variables
 
 GRID = 55
@@ -26,15 +42,15 @@ robot_configs = [
 
 robot_configs = [
     {"robot_id": "R_1", "start": (initial, initial), "goal": (initial, final), "color": "red"},
-    {"robot_id": "R_2", "start": (initial, final), "goal": (final, initial), "color": "green"},
-    {"robot_id": "R_3", "start": (final, final), "goal": (initial, initial), "color": "blue"},                 
-    {"robot_id": "R_4", "start": (final, initial), "goal": (final, final), "color": "purple"},
+    # {"robot_id": "R_2", "start": (initial, final), "goal": (final, initial), "color": "green"},
+    # {"robot_id": "R_3", "start": (final, final), "goal": (initial, initial), "color": "blue"},                 
+    # {"robot_id": "R_4", "start": (final, initial), "goal": (final, final), "color": "purple"},
 ]
 
 # ---------------------------------------------- OBSTACLE setup
 obstacle_manager = ObstacleMapManager(
             grid_size=55,
-            save_file="narrow_path.json"
+            save_file="yielding_robot_obstacle_maps.json"
         )
 
 obstacles = set(obstacle_manager.get_obstacles())
@@ -63,12 +79,14 @@ def generate_robots(robot_configs):
             "Robot_priority": rob.priority,
             "Was_blocked": False,
             "Narrow_path_status": False,
+            "Narrow_origin_marker": True, #
             "Narrow_path_start" : None,
+            "Narrow_path_end" : None,
             "BackTrack_status": False,
             "Reached_goal": False,
-            "A_star_calculated_for_narrow_path": False,
-            "Global_path_frame_counter": False,
-            "Actual_path_frame_counter": 0
+            "A_star_calculated_for_narrow_path": False, #
+            "Global_path_frame_counter": False, #
+            "Actual_path_frame_counter": 0 #
         }
 
         priority_dict[rid] = rob.priority
@@ -154,6 +172,8 @@ def update(frame):
     print(f"Frame: {frame}")
     print("*"*25)
 
+    ax.set_title(f"Frame : {frame}",{'fontsize':25,'fontweight':10})
+
     if frame <= last_processed_frame:
         return (list(robot_rectangles.values()) + list(robot_labels.values()) + list(robot_trails.values()))
     last_processed_frame = frame
@@ -163,6 +183,7 @@ def update(frame):
     def algo_switch(name, pos, robots_to_avoid : dict, priority_dict : dict):
 
         goal = Robot_details[name]["Goal"]
+        narrow_end = Robot_details[name]["Narrow_path_end"]
         A = robots_to_avoid
         B = Robot_details[name]["Was_blocked"]
         C = Robot_details[name]["Narrow_path_status"]
@@ -174,7 +195,7 @@ def update(frame):
             
             if next_index < len(planned_path):
                 next_pos = planned_path[next_index]
-                print(f" {name}: Branch - 1 : no robots to avoid, not blocked, not in narrow path - following global path, appending {next_pos}")
+                print(f" {name}: Branch 1 ")
                 actual_paths[name].append(next_pos)
                 Robot_details[name]["Actual_path_frame_counter"] += 1
                 Robot_details[name]["Global_path_frame_counter"] += 1
@@ -187,13 +208,13 @@ def update(frame):
         
 
         if not A and not B and C:
-            #Robot_details[name]["Was_blocked"] = False
+            Robot_details[name]["Was_blocked"] = False
             planned_path = Robot_details[name]["Global_path"]
             next_index = Robot_details[name]["Global_path_frame_counter"] + 1
             
             if next_index < len(planned_path):
                 next_pos = planned_path[next_index]
-                print(f"  {name}: Branch 2 : no robots to avoid, not blocked, in narrow path - following global path, appending {next_pos}")
+                print(f"  {name}: Branch 2 ")
                 actual_paths[name].append(next_pos)
                 Robot_details[name]["Actual_path_frame_counter"] += 1
                 Robot_details[name]["Global_path_frame_counter"] += 1
@@ -214,7 +235,7 @@ def update(frame):
 
             if next_index < len(planned_path):
                 next_pos = planned_path[1]
-                print(f"  {name}: Branch 3 : no robots to avoid, was blocked, not in narrow path - re-planning with A*, appending {next_pos}")
+                print(f"  {name}: Branch 3 ")
                 actual_paths[name].append(next_pos)
                 Robot_details[name]["Actual_path_frame_counter"] += 1
                 Robot_details[name]["Global_path_frame_counter"] += 1
@@ -235,7 +256,7 @@ def update(frame):
 
             if next_index < len(planned_path):
                 next_pos = planned_path[1]
-                print(f"  {name}: Branch 4 : no robots to avoid, was blocked, in narrow path - re-planning with A*, appending {next_pos}")
+                print(f"  {name}: Branch 4 ")
                 actual_paths[name].append(next_pos)
                 Robot_details[name]["Actual_path_frame_counter"] += 1
                 Robot_details[name]["Global_path_frame_counter"] += 1
@@ -250,7 +271,7 @@ def update(frame):
         if A and not B and not C:
             Robot_details[name]["Was_blocked"] = True
             next_pos = robots[name].simple_apf_choose_next(pos,goal,obstacles,A,priority_dict)
-            print(f"  {name}: Branch 5 : robots to avoid, not blocked, not in narrow path - using simple APF, appending {next_pos}")
+            print(f"  {name}: Branch 5 ")
             actual_paths[name].append(next_pos)
             Robot_details[name]["Actual_path_frame_counter"] += 1
             return next_pos
@@ -258,8 +279,8 @@ def update(frame):
 
         if A and not B and C:
             Robot_details[name]["Was_blocked"] = True
-            next_pos = robots[name].narrow_path_apf_choose_next(pos,goal,obstacles,A,priority_dict)
-            print(f"  {name}: Branch 6 : robots to avoid, not blocked, in narrow path - using narrow path APF, appending {next_pos}")
+            next_pos = robots[name].narrow_path_apf_choose_next(pos,narrow_end,obstacles,A,priority_dict)
+            print(f"  {name}: Branch 6 ")
             actual_paths[name].append(next_pos)
             Robot_details[name]["Actual_path_frame_counter"] += 1
             return next_pos
@@ -267,15 +288,15 @@ def update(frame):
         if A and B and not C:
             Robot_details[name]["Was_blocked"] = True
             next_pos = robots[name].simple_apf_choose_next(pos,goal,obstacles,A,priority_dict)
-            print(f"  {name}: Branch 7 : robots to avoid, not blocked, not in narrow path - using simple APF, appending {next_pos}")
+            print(f"  {name}: Branch 7 ")
             actual_paths[name].append(next_pos)
             Robot_details[name]["Actual_path_frame_counter"] += 1
             return next_pos
         
         if A and B and C:
             Robot_details[name]["Was_blocked"] = True
-            next_pos = robots[name].narrow_path_apf_choose_next(pos,goal,obstacles,A,priority_dict)
-            print(f"  {name}: Branch 8 : robots to avoid, not blocked, in narrow path - using narrow path APF, appending {next_pos}")
+            next_pos = robots[name].narrow_path_apf_choose_next(pos,narrow_end,obstacles,A,priority_dict)
+            print(f"  {name}: Branch 8 ")
             actual_paths[name].append(next_pos)
             Robot_details[name]["Actual_path_frame_counter"] += 1
             return next_pos
@@ -337,17 +358,34 @@ def update(frame):
                 if priority_dict[name1] < priority_dict[name2]:
                     # Lower priority waits
                     actual_paths[name1][-1] = pos_all[name1]
-                else:
+                    print(f"{name1} holded")
+
+                if priority_dict[name1] > priority_dict[name2]:
                     actual_paths[name2][-1] = pos_all[name2]
+                    print(f"{name2} holded")
 
 #----------------------------------------------------- narrow path detector
 
     for rid, rob in robots.items():
+        
         if len(actual_paths[rid]) >= 2:
-            Robot_details[rid]["Narrow_path_status"] = rob.narrow_path_detector(
+            Robot_details[rid]["Narrow_path_status"] , Robot_details[rid]["Narrow_path_end"] = rob.narrow_path_detector(
                 actual_paths[rid][-2],
                 actual_paths[rid][-1]
             )
+        if Robot_details[rid]["Narrow_path_status"]:
+            if Robot_details[rid]["Narrow_origin_marker"]:
+                Robot_details[rid]["Narrow_origin_marker"] = False
+                Robot_details[rid]["Narrow_path_start"] = Robot_details[rid]["Current_position"]
+        else:
+            Robot_details[rid]["Narrow_origin_marker"] = True
+
+        print(Robot_details[rid]["Narrow_path_status"])
+        print(Robot_details[rid]["Narrow_path_start"])
+        print(Robot_details[rid]["Narrow_path_end"])
+
+        
+
 
 #------------------------------------------------------ Return statment, not important
 
