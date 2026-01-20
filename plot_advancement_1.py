@@ -77,15 +77,15 @@ def generate_robots(robot_configs):
             "Goal": rob.goal,
             "Global_path": rob.global_path,
             "Robot_priority": rob.priority,
-            "Was_blocked": False,
-            "Narrow_path_status": False,
+            "Was_blocked": rob.was_blocked,
+            "Narrow_path_status": rob.narrow_path_status,
             "Narrow_origin_marker": True, #
-            "Narrow_path_start" : None,
-            "Narrow_path_end" : None,
+            "Narrow_path_start" : rob.narrow_entry,
+            "Narrow_path_end" : rob.narrow_exit,
             "BackTrack_status": False,
-            "Reached_goal": False,
+            "Reached_goal": rob.reached_goal,
             "A_star_calculated_for_narrow_path": False, #
-            "Global_path_frame_counter": False, #
+            "Global_path_frame_counter": 0, #
             "Actual_path_frame_counter": 0 #
         }
 
@@ -374,7 +374,15 @@ def update(frame):
                 actual_paths[rid][-1]
             )
         
+        if Robot_details[rid]["Narrow_path_status"] and Robot_details[rid]["Narrow_origin_marker"]:
+            Robot_details[rid]["Narrow_origin_marker"] = False
+            Robot_details[rid]["Narrow_path_start"] , Robot_details[rid]["Narrow_path_end"] = rob.update_narrow_path_bounds(actual_paths[name2][-2])
+            
 
+        if not Robot_details[rid]["Narrow_path_status"]:
+            Robot_details[rid]["Narrow_origin_marker"] = True
+            
+        print(Robot_details[rid]["Narrow_path_status"] ,Robot_details[rid]["Narrow_path_start"] , Robot_details[rid]["Narrow_path_end"])
         
 
 
@@ -382,7 +390,20 @@ def update(frame):
 
     print("*"*25)
 
+    for rid,rob in robots.items():
+        robots[rid].sync_from_plot(
+            Robot_details[rid]["Global_path"],
+            Robot_details[rid]["Was_blocked"],
+            Robot_details[rid]["Current_position"],
+            Robot_details[rid]["Narrow_path_status"],
+            Robot_details[rid]["Narrow_path_start"],
+            Robot_details[rid]["Narrow_path_end"],
+        )
+
     return (list(robot_rectangles.values()) + list(robot_labels.values()) + list(robot_trails.values()))
+
+    
+
 
 #-------------------------------------------------------- animation initialisation
 

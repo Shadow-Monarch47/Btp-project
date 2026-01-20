@@ -43,6 +43,22 @@ class custom_algo:
         self.backtrack_path = []
         
         self.set_priority(robot_id)
+
+    def sync_from_plot(self, global_path, block, current_pos, narrow_active, narrow_start, narrow_end ):
+        """
+        HARD RULES:
+        - No logic
+        - No conditions
+        - No recomputation
+        - Just assignment
+        """
+
+        self.current_pos = tuple(current_pos)
+        self.was_blocked = bool(block)
+        self.narrow_path_status = bool(narrow_active)
+        self.narrow_entry = narrow_start
+        self.narrow_exit = narrow_end
+        self.global_path = global_path
     
 
 #---------------------------------------------A-star starts here-----------------------------------------------------------
@@ -262,7 +278,7 @@ class custom_algo:
             above = (next_x, next_y + 1)
             below = (next_x, next_y - 1)
             
-            if is_blocked(above[0], above[1]) or is_blocked(below[0], below[1]):
+            if is_blocked(above[0], above[1]) and is_blocked(below[0], below[1]):
                 return True
         
         # ========================================
@@ -273,11 +289,73 @@ class custom_algo:
             left = (next_x - 1, next_y)
             right = (next_x + 1, next_y)
             
-            if is_blocked(left[0], left[1]) or is_blocked(right[0], right[1]):
+            if is_blocked(left[0], left[1]) and is_blocked(right[0], right[1]):
                 return True
         
         # No narrow path detected
         return False
+    
+    def update_narrow_path_bounds(self, current_pos, grid_size=55):
+        """
+        Finds start and end of the narrow path segment on the GLOBAL PATH.
+        Sets entry/exit to None when not in narrow path.
+        """
+
+        path = self.global_path
+        if not path or current_pos not in path:
+            self.narrow_entry = None
+            self.narrow_exit = None
+            self.narrow_path_status = False
+            return None, None
+
+        curr_idx = path.index(current_pos)
+
+        def is_narrow_cell(p, nxt):
+            x, y = p
+            nx, ny = nxt
+            dx, dy = nx - x, ny - y
+
+            def blocked(cx, cy):
+                if not (0 <= cx < grid_size and 0 <= cy < grid_size):
+                    return True
+                return (cx, cy) in self.obstacles
+
+            # vertical corridor
+            if dx == 0 and dy != 0:
+                return blocked(nx - 1, ny) or blocked(nx + 1, ny)
+
+            # horizontal corridor
+            if dx != 0 and dy == 0:
+                return blocked(nx, ny - 1) or blocked(nx, ny + 1)
+
+            return False
+
+        # ---------- FIND ENTRY ----------
+        entry_idx = None
+        for i in range(curr_idx, len(path) - 1):
+            if is_narrow_cell(path[i], path[i + 1]):
+                entry_idx = i
+                break
+
+        if entry_idx is None:
+            self.narrow_entry = None
+            self.narrow_exit = None
+            self.narrow_path_status = False
+            return None, None
+
+        # ---------- FIND EXIT ----------
+        exit_idx = entry_idx
+        for i in range(entry_idx, len(path) - 1):
+            if not is_narrow_cell(path[i], path[i + 1]):
+                break
+            exit_idx = i + 1
+
+        self.narrow_entry = path[entry_idx]
+        self.narrow_exit = path[exit_idx]
+        self.narrow_path_status = True
+
+        return self.narrow_entry, self.narrow_exit
+
 
 
     
