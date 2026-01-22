@@ -1,3 +1,3 @@
-#write a code to divide 2 numbers
-
-def divide()
+list = [1,2,3]
+list2 = list.remove(2)
+print(list)

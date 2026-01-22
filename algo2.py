@@ -146,7 +146,7 @@ class custom_algo:
         for name, (rx, ry) in list_of_robots_in_avoidance_range.items():
             if (rx, ry) == (x, y):
                 # If robot has higher priority → block
-                if priority_dict.get(name, 0) > self.priority:
+                if priority_dict.get(name, 0) > priority_dict[self.robot_id]:
                     return False
                 # If lower priority → ALLOW cell
                 else:
@@ -268,29 +268,53 @@ class custom_algo:
                 return True
             return False
         
+        if not self.narrow_path_status:      # First point of narrow path must have both sides blocked
         
-        
-        # ========================================
-        # CASE 1: HORIZONTAL MOVEMENT (dy == 0)
-        # ========================================
-        if dx != 0 and dy == 0:
-            # Check cells above and below destination
-            above = (next_x, next_y + 1)
-            below = (next_x, next_y - 1)
+            # ========================================
+            # CASE 1: HORIZONTAL MOVEMENT (dy == 0)
+            # ========================================
+            if dx != 0 and dy == 0:
+                # Check cells above and below destination
+                above = (curr_x, curr_y + 1)
+                below = (curr_x, curr_y - 1)
+                
+                if is_blocked(above[0], above[1]) and is_blocked(below[0], below[1]):
+                    return True
             
-            if is_blocked(above[0], above[1]) and is_blocked(below[0], below[1]):
-                return True
-        
-        # ========================================
-        # CASE 2: VERTICAL MOVEMENT (dx == 0)
-        # ========================================
-        elif dx == 0 and dy != 0:
-            # Check cells left and right of destination
-            left = (next_x - 1, next_y)
-            right = (next_x + 1, next_y)
+            # ========================================
+            # CASE 2: VERTICAL MOVEMENT (dx == 0)
+            # ========================================
+            elif dx == 0 and dy != 0:
+                # Check cells left and right of destination
+                left = (curr_x - 1, curr_y)
+                right = (curr_x + 1, curr_y)
+                
+                if is_blocked(left[0], left[1]) and is_blocked(right[0], right[1]):
+                    return True
+
+        else:
+            # ========================================
+            # CASE 1: HORIZONTAL MOVEMENT (dy == 0)
+            # ========================================
+            if dx != 0 and dy == 0:
+                # Check cells above and below destination
+                above = (next_x, next_y + 1)
+                below = (next_x, next_y - 1)
+                
+                if is_blocked(above[0], above[1]) or is_blocked(below[0], below[1]):
+                    return True
             
-            if is_blocked(left[0], left[1]) and is_blocked(right[0], right[1]):
-                return True
+            # ========================================
+            # CASE 2: VERTICAL MOVEMENT (dx == 0)
+            # ========================================
+            elif dx == 0 and dy != 0:
+                # Check cells left and right of destination
+                left = (next_x - 1, next_y)
+                right = (next_x + 1, next_y)
+                
+                if is_blocked(left[0], left[1]) or is_blocked(right[0], right[1]):
+                    return True
+
         
         # No narrow path detected
         return False
@@ -404,7 +428,7 @@ class custom_algo:
         k_rep = 5.0
 
         robots_to_avoid = {rname: rpos for rname, rpos in list_of_robots_in_avoidance_range.items() 
-                    if priority_dict.get(rname, 0) > self.priority}
+                    if priority_dict.get(rname, 0) > priority_dict[self.robot_id]}
         
     # Find robot with highest priority from robots_to_avoid
         highest_priority_robot = max(robots_to_avoid.items(), 
@@ -423,6 +447,9 @@ class custom_algo:
 
     # Total force (pure repulsion for backtracking)
         F = F_rep + F_att
+        if F[0] == 0.0 and F[1] == 0.0:
+            goal = np.array(self.goal, dtype=float)
+            F = (goal - pos)
 
     # Angle of resultant force
         angle = math.degrees(math.atan2(F[1], F[0]))

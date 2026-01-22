@@ -1,1104 +1,912 @@
 Maps loaded from yielding_robot_obstacle_maps.json
-Current mode: simple with 296 obstacles
+Current mode: simple with 300 obstacles
 Frame: 0
 *************************
  R_1: Branch 1 
-False None None
+ R_2: Branch 1 
+ R_3: Branch 1 
+ R_4: Branch 1 
 *************************
 Frame: 0
 *************************
 Frame: 1
 *************************
-R_1 moved to (18, 17)
+R_1 moved to (27, 20)
+R_2 moved to (27, 41)
+R_3 moved to (27, 18)
+R_4 moved to (27, 43)
  R_1: Branch 1 
-False None None
+ R_2: Branch 1 
+ R_3: Branch 1 
+ R_4: Branch 1 
 *************************
 Frame: 2
 *************************
-R_1 moved to (19, 17)
- R_1: Branch 1 
-False None None
+R_1 moved to (27, 21)
+R_2 moved to (27, 40)
+R_3 moved to (27, 19)
+R_4 moved to (27, 42)
+  R_1: Branch 2 
+ R_2: Branch 1 
+ R_3: Branch 1 
+ R_4: Branch 1 
 *************************
 Frame: 3
 *************************
-R_1 moved to (20, 17)
- R_1: Branch 1 
-False None None
+R_1 moved to (27, 22)
+R_2 moved to (27, 39)
+R_3 moved to (27, 20)
+R_4 moved to (27, 41)
+  R_1: Branch 2 
+ R_2: Branch 1 
+ R_3: Branch 1 
+ R_4: Branch 1 
 *************************
 Frame: 4
 *************************
-R_1 moved to (21, 17)
- R_1: Branch 1 
-False None None
+R_1 moved to (27, 23)
+R_2 moved to (27, 38)
+R_3 moved to (27, 21)
+R_4 moved to (27, 40)
+  R_1: Branch 2 
+  R_2: Branch 2 
+  R_3: Branch 2 
+ R_4: Branch 1 
 *************************
 Frame: 5
 *************************
-R_1 moved to (22, 17)
- R_1: Branch 1 
-False None None
+R_1 moved to (27, 24)
+R_2 moved to (27, 37)
+R_3 moved to (27, 22)
+R_4 moved to (27, 39)
+  R_1: Branch 2 
+  R_2: Branch 2 
+  R_3: Branch 2 
+ R_4: Branch 1 
 *************************
 Frame: 6
 *************************
-R_1 moved to (23, 17)
- R_1: Branch 1 
-False None None
+R_1 moved to (27, 25)
+R_2 moved to (27, 36)
+R_3 moved to (27, 23)
+R_4 moved to (27, 38)
+  R_1: Branch 2 
+  R_2: Branch 2 
+  R_3: Branch 2 
+  R_4: Branch 2 
 *************************
 Frame: 7
 *************************
-R_1 moved to (24, 17)
- R_1: Branch 1 
-False None None
+R_1 moved to (27, 26)
+R_2 moved to (27, 35)
+R_3 moved to (27, 24)
+R_4 moved to (27, 37)
+  R_1: Branch 2 
+  R_2: Branch 2 
+  R_3: Branch 2 
+  R_4: Branch 2 
 *************************
 Frame: 8
 *************************
-R_1 moved to (25, 17)
- R_1: Branch 1 
-False None None
+R_1 moved to (27, 27)
+R_2 moved to (27, 34)
+R_3 moved to (27, 25)
+R_4 moved to (27, 36)
+  R_1: Branch 2 
+  R_2: Branch 2 
+  R_3: Branch 2 
+  R_4: Branch 2 
 *************************
 Frame: 9
 *************************
-R_1 moved to (26, 17)
- R_1: Branch 1 
-False None None
+R_1 moved to (27, 28)
+R_2 moved to (27, 33)
+R_3 moved to (27, 26)
+R_4 moved to (27, 35)
+  R_1: Branch 2 
+  R_2: Branch 2 
+  R_3: Branch 2 
+  R_4: Branch 2 
 *************************
 Frame: 10
 *************************
-R_1 moved to (27, 17)
- R_1: Branch 1 
-True (27, 17) (31, 29)
+R_1 moved to (27, 29)
+R_2 moved to (27, 32)
+R_3 moved to (27, 27)
+R_4 moved to (27, 34)
+  R_1: Branch 2 
+  R_2: Branch 2 
+  R_3: Branch 2 
+  R_4: Branch 2 
 *************************
 Frame: 11
 *************************
-R_1 moved to (27, 18)
-  R_1: Branch 2 
-True (27, 17) (31, 29)
+R_1 moved to (27, 30)
+R_2 moved to (27, 31)
+R_3 moved to (27, 28)
+R_4 moved to (27, 33)
+R_1: 55
+R_1: 17
+  R_1: Branch 8 
+R_2: 45
+R_2: 20
+  R_2: Branch 8 
+  R_3: Branch 2 
+  R_4: Branch 2 
+R_4 holded
+R_4 holded
 *************************
 Frame: 12
 *************************
-R_1 moved to (27, 19)
-  R_1: Branch 2 
-True (27, 17) (31, 29)
+R_1 moved to (27, 31)
+R_2 moved to (27, 32)
+R_3 moved to (27, 29)
+R_4 moved to (27, 33)
+R_1: 60
+R_1: 16
+  R_1: Branch 8 
+R_2: 40
+R_2: 21
+  R_2: Branch 8 
+  R_3: Branch 2 
+  R_4: Branch 5 
 *************************
 Frame: 13
 *************************
-R_1 moved to (27, 20)
-  R_1: Branch 2 
-True (27, 17) (31, 29)
+R_1 moved to (27, 32)
+R_2 moved to (27, 33)
+R_3 moved to (27, 30)
+R_4 moved to (27, 34)
+R_1: 65
+R_1: 15
+  R_1: Branch 8 
+R_2: 35
+R_2: 22
+  R_2: Branch 8 
+  R_3: Branch 2 
+R_4: 14
+R_4: 27
+  R_4: Branch 8 
 *************************
 Frame: 14
 *************************
-R_1 moved to (27, 21)
-  R_1: Branch 2 
-True (27, 17) (31, 29)
+R_1 moved to (27, 33)
+R_2 moved to (27, 34)
+R_3 moved to (27, 31)
+R_4 moved to (27, 35)
+R_1: 70
+R_1: 14
+  R_1: Branch 8 
+R_2: 30
+R_2: 23
+  R_2: Branch 8 
+  R_3: Branch 2 
+R_4: 21
+R_4: 28
+  R_4: Branch 8 
 *************************
 Frame: 15
 *************************
-R_1 moved to (27, 22)
-  R_1: Branch 2 
-False (27, 17) (31, 29)
+R_1 moved to (27, 34)
+R_2 moved to (27, 35)
+R_3 moved to (27, 32)
+R_4 moved to (27, 36)
+R_1: 75
+R_1: 13
+  R_1: Branch 8 
+R_2: 25
+R_2: 24
+  R_2: Branch 8 
+  R_3: Branch 2 
+R_4: 28
+R_4: 29
+  R_4: Branch 8 
 *************************
 Frame: 16
 *************************
-R_1 moved to (27, 23)
- R_1: Branch 1 
-True (27, 23) (31, 29)
+R_1 moved to (27, 35)
+R_2 moved to (27, 36)
+R_3 moved to (27, 33)
+R_4 moved to (27, 37)
+R_1: 80
+R_1: 12
+  R_1: Branch 8 
+R_2: 20
+R_2: 25
+  R_2: Branch 8 
+  R_3: Branch 2 
+R_4: 35
+R_4: 30
+  R_4: Branch 8 
 *************************
 Frame: 17
 *************************
-R_1 moved to (27, 24)
-  R_1: Branch 2 
-True (27, 23) (31, 29)
+R_1 moved to (27, 36)
+R_2 moved to (27, 37)
+R_3 moved to (27, 34)
+R_4 moved to (27, 38)
+R_1: 85
+R_1: 11
+  R_1: Branch 8 
+R_2: 15
+R_2: 26
+  R_2: Branch 8 
+  R_3: Branch 2 
+R_4: 42
+R_4: 31
+  R_4: Branch 8 
 *************************
 Frame: 18
 *************************
-R_1 moved to (27, 25)
-  R_1: Branch 2 
-False (27, 23) (31, 29)
+R_1 moved to (27, 37)
+R_2 moved to (27, 38)
+R_3 moved to (27, 35)
+R_4 moved to (27, 39)
+R_1: 90
+R_1: 10
+  R_1: Branch 8 
+R_2: 10
+R_2: 27
+  R_2: Branch 8 
+  R_3: Branch 2 
+R_4: 50
+R_4: 32
+  R_4: Branch 8 
 *************************
 Frame: 19
 *************************
-R_1 moved to (27, 26)
- R_1: Branch 1 
-True (27, 26) (31, 29)
+R_1 moved to (27, 38)
+R_2 moved to (27, 39)
+R_3 moved to (27, 36)
+R_4 moved to (28, 40)
+R_1: 95
+R_1: 9
+  R_1: Branch 8 
+R_2: 5
+R_2: 28
+  R_2: Branch 8 
+  R_3: Branch 2 
+  R_4: Branch 7 
 *************************
 Frame: 20
 *************************
-R_1 moved to (28, 26)
-  R_1: Branch 2 
-True (27, 26) (31, 29)
+R_1 moved to (27, 39)
+R_2 moved to (28, 40)
+R_3 moved to (27, 37)
+R_4 moved to (29, 40)
+R_1: 100
+R_1: 8
+  R_1: Branch 8 
+  R_2: Branch 7 
+  R_3: Branch 2 
+  R_4: Branch 7 
 *************************
 Frame: 21
 *************************
-R_1 moved to (29, 26)
-  R_1: Branch 2 
-True (27, 26) (31, 29)
+R_1 moved to (26, 40)
+R_2 moved to (29, 39)
+R_3 moved to (27, 38)
+R_4 moved to (30, 39)
+  R_1: Branch 3 
+  R_2: Branch 7 
+  R_3: Branch 2 
+  R_4: Branch 7 
 *************************
 Frame: 22
 *************************
-R_1 moved to (30, 26)
-  R_1: Branch 2 
-False (27, 26) (31, 29)
+R_1 moved to (25, 41)
+R_2 moved to (29, 38)
+R_3 moved to (27, 39)
+R_4 moved to (31, 39)
+ R_1: Branch 1 
+  R_2: Branch 3 
+  R_3: Branch 2 
+  R_4: Branch 3 
 *************************
 Frame: 23
 *************************
-R_1 moved to (31, 26)
+R_1 moved to (24, 42)
+R_2 moved to (29, 39)
+R_3 moved to (27, 40)
+R_4 moved to (30, 39)
  R_1: Branch 1 
-True (31, 26) (31, 29)
+  R_2: Branch 5 
+ R_3: Branch 1 
+  R_4: Branch 5 
 *************************
 Frame: 24
 *************************
-R_1 moved to (31, 27)
-  R_1: Branch 2 
-True (31, 26) (31, 29)
+R_1 moved to (23, 42)
+R_2 moved to (29, 38)
+R_3 moved to (28, 41)
+R_4 moved to (31, 39)
+ R_1: Branch 1 
+  R_2: Branch 3 
+ R_3: Branch 1 
+  R_4: Branch 3 
 *************************
 Frame: 25
 *************************
-R_1 moved to (31, 28)
-  R_1: Branch 2 
-True (31, 26) (31, 29)
+R_1 moved to (22, 42)
+R_2 moved to (29, 39)
+R_3 moved to (29, 42)
+R_4 moved to (30, 39)
+ R_1: Branch 1 
+  R_2: Branch 5 
+ R_3: Branch 1 
+  R_4: Branch 5 
 *************************
 Frame: 26
 *************************
-R_1 moved to (31, 29)
-  R_1: Branch 2 
-False (31, 26) (31, 29)
+R_1 moved to (21, 42)
+R_2 moved to (30, 40)
+R_3 moved to (30, 42)
+R_4 moved to (29, 40)
+ R_1: Branch 1 
+  R_2: Branch 7 
+ R_3: Branch 1 
+  R_4: Branch 7 
+R_4 holded
+R_4 holded
 *************************
 Frame: 27
 *************************
-R_1 moved to (31, 30)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (29, 39)
+R_3 moved to (31, 42)
+R_4 moved to (29, 40)
+  R_2: Branch 7 
+ R_3: Branch 1 
+  R_4: Branch 7 
+R_1 reached goal
 *************************
 Frame: 28
 *************************
-R_1 moved to (30, 31)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (29, 40)
+R_3 moved to (32, 42)
+R_4 moved to (29, 41)
+  R_2: Branch 7 
+ R_3: Branch 1 
+  R_4: Branch 7 
+R_1 reached goal
 *************************
 Frame: 29
 *************************
-R_1 moved to (29, 32)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (29, 39)
+R_3 moved to (33, 42)
+R_4 moved to (30, 42)
+  R_2: Branch 3 
+ R_3: Branch 1 
+  R_4: Branch 3 
+R_1 reached goal
 *************************
 Frame: 30
 *************************
-R_1 moved to (29, 33)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (30, 38)
+R_3 moved to (34, 42)
+R_4 moved to (29, 41)
+ R_2: Branch 1 
+ R_3: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
 *************************
 Frame: 31
 *************************
-R_1 moved to (29, 34)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (28, 40)
+R_3 moved to (35, 42)
+R_4 moved to (28, 41)
+  R_2: Branch 5 
+ R_3: Branch 1 
+  R_4: Branch 5 
+R_1 reached goal
 *************************
 Frame: 32
 *************************
-R_1 moved to (29, 35)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 39)
+R_3 moved to (36, 42)
+R_4 moved to (29, 42)
+  R_2: Branch 3 
+ R_3: Branch 1 
+  R_4: Branch 3 
+R_1 reached goal
 *************************
 Frame: 33
 *************************
-R_1 moved to (29, 36)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 38)
+R_3 moved to (37, 42)
+R_4 moved to (28, 41)
+  R_2: Branch 2 
+ R_3: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
 *************************
 Frame: 34
 *************************
-R_1 moved to (29, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 37)
+R_3 moved to (38, 42)
+R_4 moved to (27, 40)
+  R_2: Branch 2 
+ R_3: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
 *************************
 Frame: 35
 *************************
-R_1 moved to (28, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 36)
+R_3 moved to (39, 42)
+R_4 moved to (27, 39)
+  R_2: Branch 2 
+ R_3: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
 *************************
 Frame: 36
 *************************
-R_1 moved to (27, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 35)
+R_3 moved to (40, 42)
+R_4 moved to (27, 38)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 37
 *************************
-R_1 moved to (26, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 34)
+R_3 moved to (40, 42)
+R_4 moved to (27, 37)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 38
 *************************
-R_1 moved to (25, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 33)
+R_3 moved to (40, 42)
+R_4 moved to (27, 36)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 39
 *************************
-R_1 moved to (24, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 32)
+R_3 moved to (40, 42)
+R_4 moved to (27, 35)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 40
 *************************
-R_1 moved to (23, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 31)
+R_3 moved to (40, 42)
+R_4 moved to (27, 34)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 41
 *************************
-R_1 moved to (22, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 30)
+R_3 moved to (40, 42)
+R_4 moved to (27, 33)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 42
 *************************
-R_1 moved to (21, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 29)
+R_3 moved to (40, 42)
+R_4 moved to (27, 32)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 43
 *************************
-R_1 moved to (20, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 28)
+R_3 moved to (40, 42)
+R_4 moved to (27, 31)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 44
 *************************
-R_1 moved to (19, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 27)
+R_3 moved to (40, 42)
+R_4 moved to (27, 30)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 45
 *************************
-R_1 moved to (18, 37)
- R_1: Branch 1 
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 26)
+R_3 moved to (40, 42)
+R_4 moved to (27, 29)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 46
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 25)
+R_3 moved to (40, 42)
+R_4 moved to (27, 28)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 47
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 24)
+R_3 moved to (40, 42)
+R_4 moved to (27, 27)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 48
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 23)
+R_3 moved to (40, 42)
+R_4 moved to (27, 26)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 49
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 22)
+R_3 moved to (40, 42)
+R_4 moved to (27, 25)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 50
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 21)
+R_3 moved to (40, 42)
+R_4 moved to (27, 24)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 51
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 20)
+R_3 moved to (40, 42)
+R_4 moved to (27, 23)
+  R_2: Branch 2 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 52
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (27, 19)
+R_3 moved to (40, 42)
+R_4 moved to (27, 22)
+ R_2: Branch 1 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 53
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (26, 18)
+R_3 moved to (40, 42)
+R_4 moved to (27, 21)
+ R_2: Branch 1 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 54
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (25, 17)
+R_3 moved to (40, 42)
+R_4 moved to (27, 20)
+ R_2: Branch 1 
+  R_4: Branch 2 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 55
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (24, 16)
+R_3 moved to (40, 42)
+R_4 moved to (27, 19)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 56
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (23, 15)
+R_3 moved to (40, 42)
+R_4 moved to (28, 18)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 57
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (22, 15)
+R_3 moved to (40, 42)
+R_4 moved to (29, 17)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 58
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (21, 15)
+R_3 moved to (40, 42)
+R_4 moved to (30, 16)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 59
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (20, 15)
+R_3 moved to (40, 42)
+R_4 moved to (31, 15)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
 *************************
 Frame: 60
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (32, 15)
+ R_4: Branch 1 
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
 *************************
 Frame: 61
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (33, 15)
+ R_4: Branch 1 
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
 *************************
 Frame: 62
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (34, 15)
+ R_4: Branch 1 
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
 *************************
 Frame: 63
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (35, 15)
+ R_4: Branch 1 
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
 *************************
 Frame: 64
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (36, 15)
+ R_4: Branch 1 
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
 *************************
 Frame: 65
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (37, 15)
+ R_4: Branch 1 
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
 *************************
 Frame: 66
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (38, 15)
+ R_4: Branch 1 
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
 *************************
 Frame: 67
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
 Frame: 68
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
 Frame: 69
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
 Frame: 70
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
 Frame: 71
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
 Frame: 72
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
 Frame: 73
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
 Frame: 74
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
 Frame: 75
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
 Frame: 76
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
 Frame: 77
 *************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 78
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 79
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 80
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 81
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 82
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 83
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 84
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 85
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 86
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 87
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 88
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 89
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 90
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 91
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 92
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 93
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 94
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 95
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 96
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 97
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 98
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 99
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 100
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 101
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 102
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 103
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 104
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 105
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 106
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 107
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 108
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 109
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 110
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 111
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 112
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 113
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 114
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 115
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 116
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 117
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 118
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 119
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 120
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 121
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 122
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 123
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 124
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 125
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 126
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 127
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 128
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 129
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 130
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 131
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 132
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 133
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 134
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 135
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 136
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 137
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 138
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 139
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 140
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 141
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 142
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 143
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 144
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 145
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 146
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 147
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 148
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 149
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 150
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 151
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 152
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 153
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 154
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 155
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 156
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 157
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 158
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 159
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 160
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 161
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 162
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 163
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 164
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 165
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 166
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 167
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 168
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 169
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 170
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 171
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 172
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 173
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 174
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 175
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 176
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 177
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 178
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 179
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 180
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 181
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 182
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 183
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 184
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 185
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 186
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 187
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 188
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 189
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 190
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 191
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 192
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 193
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 194
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 195
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 196
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 197
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 198
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 199
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 200
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 201
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 202
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 203
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 204
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 205
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 206
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 207
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 208
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 209
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
-*************************
-Frame: 210
-*************************
-R_1 moved to (17, 37)
-False (31, 26) (31, 29)
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
 *************************
