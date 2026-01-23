@@ -54,7 +54,7 @@ robot_configs = [
 
 robot_configs = [
     {"robot_id": "R_1", "start": (27, 19), "goal": (20, 42), "color": "red"},
-    {"robot_id": "R_2", "start": (27,42), "goal": (19,15), "color": "green"},
+    {"robot_id": "R_2", "start": (27,40), "goal": (19,15), "color": "green"},
     {"robot_id": "R_3", "start": (27,17), "goal": (40,42), "color": "blue"},                 
     {"robot_id": "R_4", "start": (27,44), "goal": (39, 15), "color": "purple"},
 ]
@@ -96,7 +96,7 @@ def generate_robots(robot_configs):
             "Narrow_path_start" : rob.narrow_entry,
             "Narrow_path_end" : rob.narrow_exit,
             "Narrow_path_priority": rob.priority,
-            "BackTrack_status": False,
+            "Backtrack_status": False,
             "Reached_goal": rob.reached_goal,
             "A_star_calculated_for_narrow_path": False, #
             "Global_path_frame_counter": 0, #
@@ -143,11 +143,11 @@ trail_y = {}
 for rid, details in Robot_details.items():
     x0, y0 = details["Global_path"][0]
 
-    rect = Rectangle((x0, y0), 1, 1, color=robots[rid].color, alpha = 0.5)
+    rect = Rectangle((x0 + 0.25, y0 + 0.25), 0.5, 0.5, color=robots[rid].color, alpha = 1)
     ax.add_patch(rect)
     robot_rectangles[rid] = rect
 
-    label = ax.text(x0, y0, rid.replace("R_", "R"), color="black", fontsize=12, fontweight="bold")
+    label = ax.text(x0, y0, rid.replace("R_", "R"), color="Black", fontsize=12, fontweight="bold", alpha=0)
     robot_labels[rid] = label
 
     trail_x[rid] = [x0 + 0.5]
@@ -171,7 +171,7 @@ def move_robot(name,path, current_pos, rect, label, trail_x, trail_y):
         print(f"{name} moved to {current_pos}")
         
 
-        rect.set_xy((x, y))
+        rect.set_xy((x+0.3, y+0.3))
         label.set_position((x, y))
 
         if current_pos == Robot_details[name]["Goal"]:
@@ -301,6 +301,7 @@ def update(frame):
 
             if (A and not B and C) or (A and B and C):
                 Robot_details[name]["Was_blocked"] = True
+
                 
                 x_distance = Robot_details[name]["Narrow_path_end"][0] - Robot_details[name]["Narrow_path_start"][0]
                 y_distance = Robot_details[name]["Narrow_path_end"][1] - Robot_details[name]["Narrow_path_start"][1]
@@ -314,16 +315,29 @@ def update(frame):
 
                 print(f"{name}: {int(percent_narrow_path_covered)}")
 
+                dx,dy = direction_dict[name]
+                forward_coordinates = (pos[0] + dx, pos[1] + dy)
+                reverse_direction = (-dx,-dy)
+                straight_direction_list = [(1,0),(-1,0),(0,1),(0,-1)]
+                    
+                straight_direction_list.remove(reverse_direction)
+
+                for other_name,other_pos in robots_to_avoid.items():
+                    if (other_pos == forward_coordinates) and Robot_details[other_name]["Backtrack_status"]:
+                        next_pos = (pos[0] - dx, pos[1] - dy)
+                        print(f"  {name}: Branch 6 ")
+                        print("Robot found back tracking in front of me")
+                        actual_paths[name].append(next_pos)
+                        Robot_details[name]["Actual_path_frame_counter"] += 1
+                        return next_pos
+
                 if percent_narrow_path_covered >= 70:
                     Robot_details[name]["Narrow_path_priority"] = Robot_details[name]["Robot_priority"] + 1
                     narrow_priority_dict[name] = Robot_details[name]["Robot_priority"] + 1
                 
                 
                 if 50<percent_narrow_path_covered<=70:
-                    dx,dy = direction_dict[name]
-                    straight_direction_list = [(1,0),(-1,0),(0,1),(0,-1)]
                     
-                    straight_direction_list.remove((-dx,-dy))
                     
 
                     for other_name,other_pos in robots_to_avoid.items():
@@ -414,6 +428,10 @@ def update(frame):
                     
                 # Head-on collision: both want same cell
                 if next_pos_all[name1] == next_pos_all[name2]:
+                    if Robot_details[name1]["Backtrack_status"] and Robot_details[name2]["Backtrack_status"]:
+                        if priority_dict[name1] < priority_dict[name2]:
+                            print()
+                            
                     if priority_dict[name1] < priority_dict[name2]:
                         # Lower priority waits
                         actual_paths[name1][-1] = pos_all[name1]
@@ -455,12 +473,26 @@ def update(frame):
                 Robot_details[rid]["Narrow_origin_marker"] = True 
                 Robot_details[rid]["Narrow_path_start"] , Robot_details[rid]["Narrow_path_end"] = None, None
 
-            
+
+    #----------------------------------------------------- deadlock detector
+
+        random_pos_dict = {}
         for rid,pos in pos_all.items():
             if actual_paths[rid][-1:-7:-1].count(pos) >= 3 and not Robot_details[rid]["Reached_goal"] :
-                avail_positions = robots[rid].get_neighbors_for_APF(pos , obstacles , GRID , robots_in_avoidance_range[rid] , priority_dict)
+                avail_positions = robots[rid].get_neighbors_for_APF(pos , obstacles , GRID , robots_in_avoidance_range[rid], priority_dict)
+                avail_positions = [rand for rand in avail_positions if rand not in random_pos_dict.values()]
                 random_pos = random.choice(avail_positions)
+                random_pos_dict[rid] = random_pos
                 actual_paths[rid][-1] = random_pos
+
+        for rid in Robot_details.keys():
+            if Robot_details[rid]["Narrow_path_status"]:
+                if actual_paths[rid][-1] == actual_paths[rid][-3]:
+                    Robot_details[rid]["BackTrack_status"] = True
+                    print(f"{rid} backtracked")
+            else: 
+                Robot_details[rid]["BackTrack_status"] = False
+                
 
         for rid,pos in pos_all.items():
             if pos == Robot_details[rid]["Goal"]:

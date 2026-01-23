@@ -10,4 +10,4 @@ less narrow path , more global path - revert back - Checked
 code the following,
 
     backtrack status
-    deadlock detector
+    deadlock detector  --  Done

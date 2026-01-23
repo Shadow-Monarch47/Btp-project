@@ -12,7 +12,7 @@ Frame: 0
 Frame: 1
 *************************
 R_1 moved to (27, 20)
-R_2 moved to (27, 41)
+R_2 moved to (27, 39)
 R_3 moved to (27, 18)
 R_4 moved to (27, 43)
  R_1: Branch 1 
@@ -23,29 +23,29 @@ R_4 moved to (27, 43)
 Frame: 2
 *************************
 R_1 moved to (27, 21)
-R_2 moved to (27, 40)
+R_2 moved to (27, 38)
 R_3 moved to (27, 19)
 R_4 moved to (27, 42)
   R_1: Branch 2 
- R_2: Branch 1 
+  R_2: Branch 2 
  R_3: Branch 1 
  R_4: Branch 1 
 *************************
 Frame: 3
 *************************
 R_1 moved to (27, 22)
-R_2 moved to (27, 39)
+R_2 moved to (27, 37)
 R_3 moved to (27, 20)
 R_4 moved to (27, 41)
   R_1: Branch 2 
- R_2: Branch 1 
+  R_2: Branch 2 
  R_3: Branch 1 
  R_4: Branch 1 
 *************************
 Frame: 4
 *************************
 R_1 moved to (27, 23)
-R_2 moved to (27, 38)
+R_2 moved to (27, 36)
 R_3 moved to (27, 21)
 R_4 moved to (27, 40)
   R_1: Branch 2 
@@ -56,7 +56,7 @@ R_4 moved to (27, 40)
 Frame: 5
 *************************
 R_1 moved to (27, 24)
-R_2 moved to (27, 37)
+R_2 moved to (27, 35)
 R_3 moved to (27, 22)
 R_4 moved to (27, 39)
   R_1: Branch 2 
@@ -67,7 +67,7 @@ R_4 moved to (27, 39)
 Frame: 6
 *************************
 R_1 moved to (27, 25)
-R_2 moved to (27, 36)
+R_2 moved to (27, 34)
 R_3 moved to (27, 23)
 R_4 moved to (27, 38)
   R_1: Branch 2 
@@ -78,7 +78,7 @@ R_4 moved to (27, 38)
 Frame: 7
 *************************
 R_1 moved to (27, 26)
-R_2 moved to (27, 35)
+R_2 moved to (27, 33)
 R_3 moved to (27, 24)
 R_4 moved to (27, 37)
   R_1: Branch 2 
@@ -89,7 +89,7 @@ R_4 moved to (27, 37)
 Frame: 8
 *************************
 R_1 moved to (27, 27)
-R_2 moved to (27, 34)
+R_2 moved to (27, 32)
 R_3 moved to (27, 25)
 R_4 moved to (27, 36)
   R_1: Branch 2 
@@ -100,7 +100,7 @@ R_4 moved to (27, 36)
 Frame: 9
 *************************
 R_1 moved to (27, 28)
-R_2 moved to (27, 33)
+R_2 moved to (27, 31)
 R_3 moved to (27, 26)
 R_4 moved to (27, 35)
   R_1: Branch 2 
@@ -111,13 +111,18 @@ R_4 moved to (27, 35)
 Frame: 10
 *************************
 R_1 moved to (27, 29)
-R_2 moved to (27, 32)
+R_2 moved to (27, 30)
 R_3 moved to (27, 27)
 R_4 moved to (27, 34)
-  R_1: Branch 2 
-  R_2: Branch 2 
+R_1: 50
+R_1: 18
+  R_1: Branch 8 
+R_2: 50
+R_2: 19
+  R_2: Branch 8 
   R_3: Branch 2 
   R_4: Branch 2 
+R_2 backtracked
 *************************
 Frame: 11
 *************************
@@ -341,31 +346,29 @@ Frame: 26
 R_1 moved to (21, 42)
 R_2 moved to (30, 40)
 R_3 moved to (30, 42)
-R_4 moved to (29, 40)
+R_4 moved to (29, 38)
  R_1: Branch 1 
-  R_2: Branch 7 
+  R_2: Branch 3 
  R_3: Branch 1 
-  R_4: Branch 7 
-R_4 holded
-R_4 holded
+  R_4: Branch 3 
 *************************
 Frame: 27
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (29, 39)
+R_2 moved to (29, 40)
 R_3 moved to (31, 42)
-R_4 moved to (29, 40)
-  R_2: Branch 7 
+R_4 moved to (29, 39)
+  R_2: Branch 5 
  R_3: Branch 1 
-  R_4: Branch 7 
+  R_4: Branch 5 
 R_1 reached goal
 *************************
 Frame: 28
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (29, 40)
+R_2 moved to (29, 39)
 R_3 moved to (32, 42)
-R_4 moved to (29, 41)
+R_4 moved to (29, 38)
   R_2: Branch 7 
  R_3: Branch 1 
   R_4: Branch 7 
@@ -374,273 +377,274 @@ R_1 reached goal
 Frame: 29
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (29, 39)
+R_2 moved to (29, 38)
 R_3 moved to (33, 42)
-R_4 moved to (30, 42)
-  R_2: Branch 3 
+R_4 moved to (29, 37)
+  R_2: Branch 7 
  R_3: Branch 1 
-  R_4: Branch 3 
+  R_4: Branch 7 
 R_1 reached goal
 *************************
 Frame: 30
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (30, 38)
+R_2 moved to (29, 37)
 R_3 moved to (34, 42)
-R_4 moved to (29, 41)
- R_2: Branch 1 
+R_4 moved to (29, 36)
+  R_2: Branch 7 
  R_3: Branch 1 
- R_4: Branch 1 
+  R_4: Branch 7 
 R_1 reached goal
 *************************
 Frame: 31
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (28, 40)
+R_2 moved to (29, 36)
 R_3 moved to (35, 42)
-R_4 moved to (28, 41)
-  R_2: Branch 5 
+R_4 moved to (29, 35)
+  R_2: Branch 7 
  R_3: Branch 1 
-  R_4: Branch 5 
+  R_4: Branch 7 
 R_1 reached goal
 *************************
 Frame: 32
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 39)
+R_2 moved to (29, 35)
 R_3 moved to (36, 42)
-R_4 moved to (29, 42)
-  R_2: Branch 3 
+R_4 moved to (29, 34)
+  R_2: Branch 7 
  R_3: Branch 1 
-  R_4: Branch 3 
+  R_4: Branch 7 
 R_1 reached goal
 *************************
 Frame: 33
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 38)
+R_2 moved to (29, 34)
 R_3 moved to (37, 42)
-R_4 moved to (28, 41)
-  R_2: Branch 2 
+R_4 moved to (29, 33)
+  R_2: Branch 7 
  R_3: Branch 1 
- R_4: Branch 1 
+  R_4: Branch 7 
 R_1 reached goal
 *************************
 Frame: 34
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 37)
+R_2 moved to (29, 33)
 R_3 moved to (38, 42)
-R_4 moved to (27, 40)
-  R_2: Branch 2 
+R_4 moved to (29, 32)
+  R_2: Branch 7 
  R_3: Branch 1 
- R_4: Branch 1 
+  R_4: Branch 7 
 R_1 reached goal
 *************************
 Frame: 35
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 36)
+R_2 moved to (29, 32)
 R_3 moved to (39, 42)
-R_4 moved to (27, 39)
-  R_2: Branch 2 
+R_4 moved to (29, 31)
+  R_2: Branch 7 
  R_3: Branch 1 
- R_4: Branch 1 
+  R_4: Branch 7 
 R_1 reached goal
 *************************
 Frame: 36
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 35)
+R_2 moved to (29, 31)
 R_3 moved to (40, 42)
-R_4 moved to (27, 38)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (29, 30)
+  R_2: Branch 7 
+  R_4: Branch 7 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 37
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 34)
+R_2 moved to (29, 30)
 R_3 moved to (40, 42)
-R_4 moved to (27, 37)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (30, 30)
+  R_2: Branch 7 
+  R_4: Branch 7 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 38
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 33)
+R_2 moved to (30, 30)
 R_3 moved to (40, 42)
-R_4 moved to (27, 36)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (31, 30)
+  R_2: Branch 7 
+  R_4: Branch 7 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 39
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 32)
+R_2 moved to (31, 29)
 R_3 moved to (40, 42)
-R_4 moved to (27, 35)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (32, 30)
+  R_2: Branch 7 
+  R_4: Branch 7 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 40
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 31)
+R_2 moved to (31, 28)
 R_3 moved to (40, 42)
-R_4 moved to (27, 34)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (33, 30)
+  R_2: Branch 4 
+  R_4: Branch 3 
+R_2 backtracked
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 41
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 30)
+R_2 moved to (31, 29)
 R_3 moved to (40, 42)
-R_4 moved to (27, 33)
+R_4 moved to (33, 31)
   R_2: Branch 2 
-  R_4: Branch 2 
+ R_4: Branch 1 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 42
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 29)
+R_2 moved to (31, 30)
 R_3 moved to (40, 42)
-R_4 moved to (27, 32)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (33, 32)
+ R_2: Branch 1 
+ R_4: Branch 1 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 43
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 28)
+R_2 moved to (30, 31)
 R_3 moved to (40, 42)
-R_4 moved to (27, 31)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (33, 33)
+ R_2: Branch 1 
+ R_4: Branch 1 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 44
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 27)
+R_2 moved to (29, 32)
 R_3 moved to (40, 42)
-R_4 moved to (27, 30)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (32, 34)
+ R_2: Branch 1 
+ R_4: Branch 1 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 45
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 26)
+R_2 moved to (29, 33)
 R_3 moved to (40, 42)
-R_4 moved to (27, 29)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (31, 35)
+ R_2: Branch 1 
+ R_4: Branch 1 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 46
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 25)
+R_2 moved to (29, 34)
 R_3 moved to (40, 42)
-R_4 moved to (27, 28)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (30, 36)
+ R_2: Branch 1 
+ R_4: Branch 1 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 47
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 24)
+R_2 moved to (29, 35)
 R_3 moved to (40, 42)
-R_4 moved to (27, 27)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (30, 37)
+ R_2: Branch 1 
+ R_4: Branch 1 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 48
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 23)
+R_2 moved to (29, 36)
 R_3 moved to (40, 42)
-R_4 moved to (27, 26)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (30, 38)
+ R_2: Branch 1 
+ R_4: Branch 1 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 49
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 22)
+R_2 moved to (29, 37)
 R_3 moved to (40, 42)
-R_4 moved to (27, 25)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (30, 39)
+ R_2: Branch 1 
+ R_4: Branch 1 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 50
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 21)
+R_2 moved to (29, 38)
 R_3 moved to (40, 42)
-R_4 moved to (27, 24)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (29, 40)
+ R_2: Branch 1 
+ R_4: Branch 1 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 51
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 20)
+R_2 moved to (29, 39)
 R_3 moved to (40, 42)
-R_4 moved to (27, 23)
-  R_2: Branch 2 
-  R_4: Branch 2 
+R_4 moved to (28, 40)
+  R_2: Branch 5 
+  R_4: Branch 5 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 52
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (27, 19)
+R_2 moved to (29, 38)
 R_3 moved to (40, 42)
-R_4 moved to (27, 22)
- R_2: Branch 1 
-  R_4: Branch 2 
+R_4 moved to (27, 39)
+  R_2: Branch 3 
+  R_4: Branch 3 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 53
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (26, 18)
+R_2 moved to (29, 39)
 R_3 moved to (40, 42)
-R_4 moved to (27, 21)
+R_4 moved to (27, 38)
  R_2: Branch 1 
   R_4: Branch 2 
 R_1 reached goal
@@ -649,9 +653,9 @@ R_3 reached goal
 Frame: 54
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (25, 17)
+R_2 moved to (29, 40)
 R_3 moved to (40, 42)
-R_4 moved to (27, 20)
+R_4 moved to (27, 37)
  R_2: Branch 1 
   R_4: Branch 2 
 R_1 reached goal
@@ -660,235 +664,334 @@ R_3 reached goal
 Frame: 55
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (24, 16)
+R_2 moved to (28, 40)
 R_3 moved to (40, 42)
-R_4 moved to (27, 19)
+R_4 moved to (27, 36)
  R_2: Branch 1 
- R_4: Branch 1 
+  R_4: Branch 2 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 56
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (23, 15)
+R_2 moved to (27, 40)
 R_3 moved to (40, 42)
-R_4 moved to (28, 18)
+R_4 moved to (27, 35)
  R_2: Branch 1 
- R_4: Branch 1 
+  R_4: Branch 2 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 57
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (22, 15)
+R_2 moved to (27, 39)
 R_3 moved to (40, 42)
-R_4 moved to (29, 17)
+R_4 moved to (27, 34)
  R_2: Branch 1 
- R_4: Branch 1 
+  R_4: Branch 2 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 58
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (21, 15)
+R_2 moved to (27, 38)
 R_3 moved to (40, 42)
-R_4 moved to (30, 16)
- R_2: Branch 1 
- R_4: Branch 1 
+R_4 moved to (27, 33)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 59
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (20, 15)
+R_2 moved to (27, 37)
 R_3 moved to (40, 42)
-R_4 moved to (31, 15)
- R_2: Branch 1 
- R_4: Branch 1 
+R_4 moved to (27, 32)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
 R_3 reached goal
 *************************
 Frame: 60
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 36)
 R_3 moved to (40, 42)
-R_4 moved to (32, 15)
- R_4: Branch 1 
+R_4 moved to (27, 31)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
 *************************
 Frame: 61
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 35)
 R_3 moved to (40, 42)
-R_4 moved to (33, 15)
- R_4: Branch 1 
+R_4 moved to (27, 30)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
 *************************
 Frame: 62
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 34)
 R_3 moved to (40, 42)
-R_4 moved to (34, 15)
- R_4: Branch 1 
+R_4 moved to (27, 29)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
 *************************
 Frame: 63
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 33)
 R_3 moved to (40, 42)
-R_4 moved to (35, 15)
- R_4: Branch 1 
+R_4 moved to (27, 28)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
 *************************
 Frame: 64
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 32)
 R_3 moved to (40, 42)
-R_4 moved to (36, 15)
- R_4: Branch 1 
+R_4 moved to (27, 27)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
 *************************
 Frame: 65
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 31)
 R_3 moved to (40, 42)
-R_4 moved to (37, 15)
- R_4: Branch 1 
+R_4 moved to (27, 26)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
 *************************
 Frame: 66
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 30)
 R_3 moved to (40, 42)
-R_4 moved to (38, 15)
- R_4: Branch 1 
+R_4 moved to (27, 25)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
 *************************
 Frame: 67
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 29)
 R_3 moved to (40, 42)
-R_4 moved to (39, 15)
+R_4 moved to (27, 24)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
-R_4 reached goal
 *************************
 Frame: 68
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 28)
 R_3 moved to (40, 42)
-R_4 moved to (39, 15)
+R_4 moved to (27, 23)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
-R_4 reached goal
 *************************
 Frame: 69
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 27)
 R_3 moved to (40, 42)
-R_4 moved to (39, 15)
+R_4 moved to (27, 22)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
-R_4 reached goal
 *************************
 Frame: 70
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 26)
 R_3 moved to (40, 42)
-R_4 moved to (39, 15)
+R_4 moved to (27, 21)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
-R_4 reached goal
 *************************
 Frame: 71
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 25)
 R_3 moved to (40, 42)
-R_4 moved to (39, 15)
+R_4 moved to (27, 20)
+  R_2: Branch 2 
+  R_4: Branch 2 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
-R_4 reached goal
 *************************
 Frame: 72
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 24)
 R_3 moved to (40, 42)
-R_4 moved to (39, 15)
+R_4 moved to (27, 19)
+  R_2: Branch 2 
+ R_4: Branch 1 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
-R_4 reached goal
 *************************
 Frame: 73
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 23)
 R_3 moved to (40, 42)
-R_4 moved to (39, 15)
+R_4 moved to (28, 18)
+  R_2: Branch 2 
+ R_4: Branch 1 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
-R_4 reached goal
 *************************
 Frame: 74
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 22)
 R_3 moved to (40, 42)
-R_4 moved to (39, 15)
+R_4 moved to (29, 17)
+  R_2: Branch 2 
+ R_4: Branch 1 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
-R_4 reached goal
 *************************
 Frame: 75
 *************************
 R_1 moved to (20, 42)
-R_2 moved to (19, 15)
+R_2 moved to (27, 21)
+R_3 moved to (40, 42)
+R_4 moved to (30, 16)
+  R_2: Branch 2 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
+*************************
+Frame: 76
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (27, 20)
+R_3 moved to (40, 42)
+R_4 moved to (31, 15)
+  R_2: Branch 2 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
+*************************
+Frame: 77
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (27, 19)
+R_3 moved to (40, 42)
+R_4 moved to (32, 15)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
+*************************
+Frame: 78
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (26, 18)
+R_3 moved to (40, 42)
+R_4 moved to (33, 15)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
+*************************
+Frame: 79
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (25, 17)
+R_3 moved to (40, 42)
+R_4 moved to (34, 15)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
+*************************
+Frame: 80
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (24, 16)
+R_3 moved to (40, 42)
+R_4 moved to (35, 15)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
+*************************
+Frame: 81
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (23, 15)
+R_3 moved to (40, 42)
+R_4 moved to (36, 15)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
+*************************
+Frame: 82
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (22, 15)
+R_3 moved to (40, 42)
+R_4 moved to (37, 15)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
+*************************
+Frame: 83
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (21, 15)
+R_3 moved to (40, 42)
+R_4 moved to (38, 15)
+ R_2: Branch 1 
+ R_4: Branch 1 
+R_1 reached goal
+R_3 reached goal
+*************************
+Frame: 84
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (20, 15)
 R_3 moved to (40, 42)
 R_4 moved to (39, 15)
+ R_2: Branch 1 
 R_1 reached goal
-R_2 reached goal
 R_3 reached goal
 R_4 reached goal
 *************************
-Frame: 76
+Frame: 85
 *************************
 R_1 moved to (20, 42)
 R_2 moved to (19, 15)
@@ -899,7 +1002,7256 @@ R_2 reached goal
 R_3 reached goal
 R_4 reached goal
 *************************
-Frame: 77
+Frame: 86
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 87
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 88
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 89
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 90
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 91
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 92
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 93
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 94
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 95
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 96
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 97
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 98
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 99
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 100
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 101
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 102
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 103
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 104
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 105
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 106
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 107
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 108
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 109
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 110
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 111
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 112
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 113
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 114
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 115
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 116
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 117
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 118
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 119
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 120
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 121
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 122
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 123
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 124
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 125
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 126
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 127
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 128
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 129
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 130
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 131
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 132
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 133
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 134
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 135
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 136
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 137
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 138
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 139
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 140
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 141
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 142
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 143
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 144
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 145
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 146
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 147
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 148
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 149
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 150
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 151
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 152
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 153
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 154
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 155
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 156
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 157
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 158
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 159
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 160
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 161
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 162
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 163
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 164
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 165
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 166
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 167
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 168
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 169
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 170
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 171
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 172
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 173
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 174
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 175
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 176
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 177
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 178
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 179
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 180
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 181
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 182
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 183
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 184
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 185
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 186
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 187
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 188
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 189
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 190
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 191
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 192
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 193
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 194
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 195
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 196
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 197
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 198
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 199
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 200
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 201
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 202
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 203
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 204
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 205
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 206
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 207
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 208
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 209
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 210
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 211
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 212
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 213
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 214
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 215
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 216
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 217
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 218
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 219
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 220
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 221
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 222
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 223
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 224
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 225
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 226
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 227
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 228
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 229
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 230
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 231
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 232
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 233
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 234
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 235
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 236
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 237
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 238
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 239
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 240
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 241
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 242
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 243
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 244
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 245
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 246
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 247
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 248
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 249
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 250
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 251
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 252
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 253
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 254
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 255
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 256
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 257
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 258
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 259
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 260
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 261
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 262
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 263
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 264
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 265
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 266
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 267
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 268
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 269
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 270
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 271
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 272
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 273
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 274
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 275
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 276
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 277
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 278
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 279
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 280
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 281
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 282
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 283
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 284
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 285
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 286
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 287
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 288
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 289
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 290
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 291
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 292
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 293
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 294
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 295
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 296
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 297
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 298
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 299
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 300
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 301
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 302
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 303
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 304
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 305
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 306
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 307
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 308
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 309
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 310
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 311
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 312
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 313
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 314
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 315
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 316
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 317
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 318
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 319
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 320
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 321
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 322
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 323
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 324
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 325
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 326
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 327
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 328
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 329
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 330
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 331
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 332
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 333
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 334
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 335
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 336
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 337
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 338
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 339
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 340
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 341
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 342
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 343
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 344
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 345
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 346
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 347
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 348
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 349
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 350
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 351
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 352
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 353
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 354
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 355
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 356
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 357
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 358
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 359
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 360
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 361
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 362
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 363
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 364
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 365
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 366
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 367
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 368
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 369
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 370
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 371
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 372
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 373
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 374
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 375
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 376
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 377
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 378
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 379
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 380
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 381
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 382
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 383
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 384
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 385
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 386
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 387
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 388
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 389
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 390
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 391
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 392
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 393
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 394
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 395
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 396
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 397
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 398
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 399
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 400
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 401
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 402
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 403
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 404
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 405
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 406
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 407
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 408
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 409
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 410
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 411
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 412
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 413
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 414
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 415
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 416
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 417
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 418
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 419
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 420
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 421
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 422
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 423
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 424
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 425
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 426
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 427
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 428
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 429
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 430
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 431
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 432
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 433
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 434
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 435
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 436
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 437
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 438
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 439
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 440
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 441
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 442
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 443
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 444
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 445
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 446
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 447
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 448
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 449
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 450
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 451
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 452
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 453
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 454
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 455
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 456
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 457
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 458
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 459
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 460
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 461
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 462
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 463
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 464
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 465
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 466
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 467
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 468
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 469
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 470
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 471
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 472
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 473
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 474
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 475
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 476
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 477
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 478
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 479
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 480
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 481
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 482
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 483
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 484
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 485
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 486
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 487
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 488
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 489
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 490
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 491
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 492
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 493
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 494
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 495
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 496
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 497
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 498
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 499
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 500
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 501
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 502
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 503
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 504
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 505
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 506
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 507
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 508
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 509
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 510
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 511
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 512
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 513
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 514
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 515
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 516
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 517
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 518
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 519
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 520
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 521
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 522
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 523
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 524
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 525
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 526
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 527
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 528
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 529
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 530
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 531
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 532
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 533
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 534
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 535
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 536
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 537
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 538
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 539
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 540
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 541
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 542
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 543
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 544
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 545
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 546
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 547
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 548
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 549
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 550
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 551
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 552
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 553
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 554
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 555
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 556
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 557
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 558
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 559
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 560
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 561
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 562
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 563
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 564
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 565
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 566
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 567
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 568
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 569
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 570
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 571
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 572
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 573
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 574
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 575
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 576
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 577
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 578
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 579
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 580
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 581
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 582
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 583
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 584
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 585
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 586
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 587
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 588
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 589
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 590
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 591
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 592
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 593
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 594
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 595
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 596
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 597
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 598
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 599
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 600
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 601
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 602
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 603
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 604
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 605
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 606
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 607
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 608
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 609
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 610
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 611
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 612
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 613
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 614
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 615
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 616
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 617
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 618
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 619
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 620
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 621
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 622
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 623
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 624
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 625
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 626
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 627
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 628
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 629
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 630
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 631
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 632
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 633
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 634
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 635
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 636
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 637
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 638
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 639
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 640
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 641
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 642
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 643
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 644
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 645
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 646
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 647
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 648
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 649
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 650
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 651
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 652
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 653
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 654
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 655
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 656
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 657
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 658
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 659
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 660
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 661
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 662
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 663
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 664
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 665
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 666
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 667
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 668
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 669
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 670
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 671
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 672
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 673
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 674
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 675
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 676
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 677
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 678
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 679
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 680
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 681
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 682
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 683
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 684
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 685
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 686
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 687
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 688
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 689
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 690
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 691
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 692
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 693
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 694
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 695
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 696
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 697
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 698
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 699
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 700
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 701
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 702
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 703
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 704
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 705
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 706
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 707
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 708
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 709
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 710
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 711
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 712
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 713
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 714
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 715
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 716
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 717
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 718
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 719
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 720
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 721
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 722
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 723
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 724
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 725
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 726
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 727
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 728
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 729
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 730
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 731
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 732
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 733
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 734
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 735
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 736
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 737
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 738
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 739
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 740
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 741
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 742
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 743
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 744
+*************************
+R_1 moved to (20, 42)
+R_2 moved to (19, 15)
+R_3 moved to (40, 42)
+R_4 moved to (39, 15)
+R_1 reached goal
+R_2 reached goal
+R_3 reached goal
+R_4 reached goal
+*************************
+Frame: 745
 *************************
 R_1 moved to (20, 42)
 R_2 moved to (19, 15)

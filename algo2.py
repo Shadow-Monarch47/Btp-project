@@ -493,3 +493,22 @@ class custom_algo:
 
     def manhattan_dist(self,a, b):
         return abs(a[0] - b[0]) + abs(a[1] - b[1])
+    
+    def get_neighbors_for_deadlock(self, pos, obstacles, grid_size, list_of_robots_in_avoidance_range : dict = {} ):
+        x, y = pos
+        neighbors = []
+
+        for dx in range(-1,2):
+            for dy in range(-1,2):
+                if dx == 0 and dy == 0:
+                    continue
+
+                new_x, new_y = x + dx, y + dy
+
+                if not self.is_valid_position_for_obstacle(new_x, new_y, obstacles, grid_size):
+                    continue 
+
+                if (new_x, new_y) in list_of_robots_in_avoidance_range.values():  #robots occupied space eliminated
+                    continue
+
+                neighbors.append((new_x, new_y))
