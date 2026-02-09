@@ -4,19 +4,19 @@ import matplotlib.animation as animation
 from matplotlib.patches import Rectangle
 from helping_functions import *
 from algo2 import custom_algo
-from obstacle_creator import ObstacleMapManager
+#from obstacle_creator import ObstacleMapManager
+from obs2 import ObstacleMapManager
 import traceback
 import random
+import itertools
 
-
-#I'll analyze the code you've provided and help
 
 #-----------------------------------------------Logger File code
 
 import sys
 from terminal_logger import TerminalLogger
 
-LOG_FILE = "run_log.txt"
+LOG_FILE = "run_log_1.txt"
 
 # 🔴 CLEAR previous run log
 open(LOG_FILE, "w").close()
@@ -32,7 +32,7 @@ sys.stderr = sys.stdout
 GRID = 55
 interval_ms = 500 
 max_limit_frames = 1000
-initial , final = 24,10
+initial , final = 1,53
 frame_counter = 0
 last_processed_frame = -1
 
@@ -45,24 +45,32 @@ robot_configs = [
     {"robot_id": "R_4", "start": (final, initial), "goal": (initial, final), "color": "purple"},
 ]
 
-robot_configs = [
-    {"robot_id": "R_1", "start": (initial, initial), "goal": (initial, final), "color": "red"},
-    # {"robot_id": "R_2", "start": (initial, final), "goal": (final, initial), "color": "green"},
-    # {"robot_id": "R_3", "start": (final, final), "goal": (initial, initial), "color": "blue"},                 
-    # {"robot_id": "R_4", "start": (final, initial), "goal": (final, final), "color": "purple"},
-]
+# robot_configs = [
+#     {"robot_id": "R_1", "start": (initial, initial), "goal": (initial, final), "color": "red"},
+#     # {"robot_id": "R_2", "start": (initial, final), "goal": (final, initial), "color": "green"},
+#     # {"robot_id": "R_3", "start": (final, final), "goal": (initial, initial), "color": "blue"},                 
+#     # {"robot_id": "R_4", "start": (final, initial), "goal": (final, final), "color": "purple"},
+# ]
 
-robot_configs = [
-    {"robot_id": "R_1", "start": (27, 19), "goal": (20, 42), "color": "red"},
-    {"robot_id": "R_2", "start": (27,40), "goal": (19,15), "color": "green"},
-    {"robot_id": "R_3", "start": (27,17), "goal": (40,42), "color": "blue"},                 
-    {"robot_id": "R_4", "start": (27,44), "goal": (39, 15), "color": "purple"},
-]
+# robot_configs = [
+#     {"robot_id": "R_1", "start": (27, 19), "goal": (20, 42), "color": "red"},
+#     {"robot_id": "R_2", "start": (27,40), "goal": (19,15), "color": "green"},
+#     # {"robot_id": "R_3", "start": (27,17), "goal": (40,42), "color": "blue"},                 
+#     # {"robot_id": "R_4", "start": (27,44), "goal": (39, 15), "color": "purple"},
+# ]
+
+# robot_configs = [
+#     {"robot_id": "R_1", "start": (27, 19), "goal": (20, 42), "color": "red"},
+#     {"robot_id": "R_2", "start": (27,40), "goal": (19,15), "color": "green"},
+#     {"robot_id": "R_3", "start": (27,17), "goal": (40,42), "color": "blue"},                 
+#     {"robot_id": "R_4", "start": (27,44), "goal": (39, 15), "color": "purple"},
+# ]
 
 # --------------------------------------------- OBSTACLE setup
 obstacle_manager = ObstacleMapManager(
             grid_size=55,
-            save_file="yielding_robot_obstacle_maps.json"
+            #save_file="yielding_robot_obstacle_maps.json"
+            save_file="Maps/maps5.json"
         )
 
 obstacles = set(obstacle_manager.get_obstacles())
@@ -152,7 +160,7 @@ for rid, details in Robot_details.items():
 
     trail_x[rid] = [x0 + 0.5]
     trail_y[rid] = [y0 + 0.5]
-    trail, = ax.plot(trail_x[rid], trail_y[rid], color=robots[rid].color, linewidth=1.8)
+    trail, = ax.plot(trail_x[rid], trail_y[rid], color=robots[rid].color, linewidth=1.5)
     robot_trails[rid] = trail
 
 #-------------------------------------------------- dictionaries to store current position and priorities of all robots
@@ -328,6 +336,7 @@ def update(frame):
                         print(f"  {name}: Branch 6 ")
                         print("Robot found back tracking in front of me")
                         actual_paths[name].append(next_pos)
+                        Robot_details[name]["Backtrack_status"] = True
                         Robot_details[name]["Actual_path_frame_counter"] += 1
                         return next_pos
 
@@ -428,9 +437,10 @@ def update(frame):
                     
                 # Head-on collision: both want same cell
                 if next_pos_all[name1] == next_pos_all[name2]:
-                    if Robot_details[name1]["Backtrack_status"] and Robot_details[name2]["Backtrack_status"]:
-                        if priority_dict[name1] < priority_dict[name2]:
-                            print()
+                    if Robot_details[name1]["Backtrack_status"] :
+                        actual_paths[name2][-1] = pos_all[name2]
+                        print(f"{name2} holded")
+                        continue
                             
                     if priority_dict[name1] < priority_dict[name2]:
                         # Lower priority waits
@@ -453,6 +463,36 @@ def update(frame):
                             actual_paths[name2][-1] = pos_all[name2]
                             print(f"{name2} holded")
                             continue
+
+        for pair in itertools.combinations(list(Robot_details.keys()), 2):
+            name1, name2 = pair
+            if next_pos_all[name1] == next_pos_all[name2]:
+                if Robot_details[name1]["Backtrack_status"] :
+                    actual_paths[name2][-1] = pos_all[name2]
+                    continue
+                elif Robot_details[name2]["Backtrack_status"] :
+                    actual_paths[name1][-1] = pos_all[name1]
+                    continue
+                elif priority_dict[name1] < priority_dict[name2]:
+                    # Lower priority waits
+                    actual_paths[name1][-1] = pos_all[name1]
+                elif priority_dict[name1] > priority_dict[name2]:
+                    actual_paths[name2][-1] = pos_all[name2]
+            
+            if next_pos_all[name1] == pos_all[name2]:
+                if Robot_details[name1]["Narrow_path_status"] and Robot_details[name2]["Narrow_path_status"]:
+                        if narrow_priority_dict[name1] < narrow_priority_dict[name2]:
+                            x,y = direction_dict[name1][0], direction_dict[name1][1]
+                            actual_paths[name1][-1] = (actual_paths[name1][-2][0] - x, actual_paths[name1][-2][1] - y)
+                            print(f"{name1} reverted back")
+                            continue
+                            
+                        if narrow_priority_dict[name1] < narrow_priority_dict[name2]:
+                            actual_paths[name2][-1] = pos_all[name2]
+                            print(f"{name2} holded")
+                            continue
+
+                
 
     #----------------------------------------------------- narrow path detector
 
@@ -534,7 +574,7 @@ def update(frame):
 ani = animation.FuncAnimation(
     fig,
     update,
-    frames=max_limit_frames,
+    frames=itertools.count(),
     interval=interval_ms,
     blit=False,
     repeat=False,

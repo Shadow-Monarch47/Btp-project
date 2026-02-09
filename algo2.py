@@ -93,7 +93,7 @@ class custom_algo:
                     orth2 = (x, y + dy)
 
                     if (self.is_valid_position_for_obstacle(orth1[0], orth1[1], obstacles, grid_size) and
-                        self.is_valid_position_for_obstacle(orth2[0], orth2[1], obstacles, grid_size)):
+                        self.is_valid_position_for_obstacle(orth2[0], orth2[1], obstacles, grid_size)):    #diagonal cell valid 
                         neighbors.append((new_x, new_y))
                         
                 else:
@@ -133,6 +133,10 @@ class custom_algo:
                     f_score[neighbor] = tentative + self.manhattan_dist(neighbor, goal)
                     heappush(open_set, (f_score[neighbor], neighbor))
 
+            #print global path
+
+
+
         return []
 
 #---------------------------------------------A-Star ends here----------------------------------------------------
@@ -140,15 +144,23 @@ class custom_algo:
     def is_valid_position_for_robots_priority(
         self, x, y, grid_size,
         list_of_robots_in_avoidance_range,
-        priority_dict):
+        priority_dict = {}):
 
         # Loop through robots in sensing area
-        for name, (rx, ry) in list_of_robots_in_avoidance_range.items():
-            if (rx, ry) == (x, y):
-                # If robot has higher priority → block
-                if priority_dict.get(name, 0) > priority_dict[self.robot_id]:
+        if priority_dict:
+            for name, (rx, ry) in list_of_robots_in_avoidance_range.items():
+                if (rx, ry) == (x, y):
+                    # If robot has higher priority → block
+                    if priority_dict.get(name, 0) > priority_dict[self.robot_id]:
+                        return False
+                    # If lower priority → ALLOW cell
+                    else:
+                        return True
+                    
+        else:
+            for (rx, ry) in list_of_robots_in_avoidance_range.values():
+                if (rx, ry) == (x, y):
                     return False
-                # If lower priority → ALLOW cell
                 else:
                     return True
 
@@ -168,6 +180,14 @@ class custom_algo:
                 if not self.is_valid_position_for_obstacle(new_x, new_y, obstacles, grid_size):
                     continue
 
+                # if dx != 0 and dy != 0:
+                #     orth1 = (x + dx, y)
+                #     orth2 = (x, y + dy)
+
+                #     if (self.is_valid_position_for_obstacle(orth1[0], orth1[1], obstacles, grid_size) and
+                #         self.is_valid_position_for_obstacle(orth2[0], orth2[1], obstacles, grid_size)):    #diagonal cell valid 
+                #         neighbors.append((new_x, new_y))
+
                 if not self.is_valid_position_for_robots_priority(new_x, new_y, grid_size, list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range, priority_dict=priority_dict): #
                     continue 
         
@@ -177,7 +197,7 @@ class custom_algo:
         return neighbors
     
 
-    def simple_apf_choose_next(self, pos, goal, obstacles, list_of_robots_in_avoidance_range : dict = {}, priority_dict : dict = {}):
+    def simple_apf_choose_next(self, pos, goal, prev_pos, obstacles, list_of_robots_in_avoidance_range : dict = {}, priority_dict : dict = {}):
         """
     Simple APF that applies attraction toward goal and repulsion from nearby robots.
     Rounds to nearest available 45° neighbor direction.
@@ -190,8 +210,13 @@ class custom_algo:
                                         list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range,
                                         priority_dict=priority_dict)
     
+        neighbours.remove(prev_pos) if prev_pos in neighbours else neighbours
+        
+        
         if not neighbours:
             return (int(pos[0]), int(pos[1]))  # FIXED: explicit tuple
+        
+        
     
     # Attractive force toward goal
         F_att = (goal - pos)
@@ -202,13 +227,12 @@ class custom_algo:
         k_rep = 50.0
 
         higher_robots = {rname: rpos for rname, rpos in list_of_robots_in_avoidance_range.items() 
-                    if priority_dict.get(rname, 0) > self.priority}
+                    if priority_dict.get(rname, 0) > priority_dict[self.robot_id]}
     
         for robot_name, (rx, ry) in higher_robots.items():
             rob = np.array([rx, ry], dtype=float)
             dvec = pos - rob
             dist = np.linalg.norm(dvec)
-        
             if dist >= 1e-6 and dist <= rep_radius:
                 F_rep += k_rep * (1.0 / (dist**2)) * (dvec / dist)
     
@@ -217,7 +241,11 @@ class custom_algo:
         angle = math.degrees(math.atan2(F[1], F[0]))
     
     # Find nearest 45° direction
-        best_idx = min(range(8), key=lambda i: abs(angle - DIR_ANGLES[i]))
+        def angular_distance(a, b):
+            diff = abs(a - b) % 360
+            return min(diff, 360 - diff)
+        
+        best_idx = min(range(8),key=lambda i: angular_distance(angle, DIR_ANGLES[i]))
         chosen_dir = DIRS[best_idx]
     
         dx, dy = chosen_dir
@@ -228,7 +256,7 @@ class custom_algo:
             def angle_to(npos):
                 vec = np.array(npos) - pos
                 return math.degrees(math.atan2(vec[1], vec[0]))
-            final_pos = min(neighbours, key=lambda n: abs(angle - angle_to(n)))
+            final_pos = min(neighbours, key=lambda n: angular_distance(angle, angle_to(n)))
     
     # FIXED: Always return regular Python tuple
         return (int(final_pos[0]), int(final_pos[1]))
@@ -355,7 +383,7 @@ class custom_algo:
             return False
 
         # ---------- FIND ENTRY ----------
-        entry_idx = None
+        entry_idx = 0
         for i in range(curr_idx, len(path) - 1):
             if is_narrow_cell(path[i], path[i + 1]):
                 entry_idx = i
@@ -402,6 +430,14 @@ class custom_algo:
 
                 elif not self.is_valid_position_for_robots_priority(new_x, new_y, grid_size, list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range, priority_dict=priority_dict): #
                     continue 
+
+                # if dx != 0 and dy != 0:
+                #     orth1 = (x + dx, y)
+                #     orth2 = (x, y + dy)
+
+                #     if (self.is_valid_position_for_obstacle(orth1[0], orth1[1], obstacles, grid_size) and
+                #         self.is_valid_position_for_obstacle(orth2[0], orth2[1], obstacles, grid_size)):    #diagonal cell valid 
+                #         neighbors.append((new_x, new_y))
         
                 else:
                     neighbors.append((new_x, new_y))
@@ -414,8 +450,8 @@ class custom_algo:
         if not neighbours:
         # FIXED: Convert pos to regular tuple
             if isinstance(pos, (list, np.ndarray)):
-                return (int(pos[0]), int(pos[1]))
-            return pos
+                return (int(pos[0]), int(pos[1])), False
+            return pos, False
 
         pos = np.array(pos, dtype=float)
         goal = np.array(goal, dtype=float)  # FIXED: Ensure goal is numpy array
@@ -448,14 +484,17 @@ class custom_algo:
     # Total force (pure repulsion for backtracking)
         F = F_rep + F_att
         if F[0] == 0.0 and F[1] == 0.0:
-            goal = np.array(self.goal, dtype=float)
-            F = (goal - pos)
+            return pos, True
 
     # Angle of resultant force
         angle = math.degrees(math.atan2(F[1], F[0]))
 
     # Find nearest 45° direction
-        best_idx = min(range(8), key=lambda i: abs(angle - DIR_ANGLES[i]))
+        def angular_distance(a, b):
+            diff = abs(a - b) % 360
+            return min(diff, 360 - diff)
+        
+        best_idx = min(range(8),key=lambda i: angular_distance(angle, DIR_ANGLES[i]))
         chosen_dir = DIRS[best_idx]
 
     # Convert selected direction to actual neighbor
@@ -468,13 +507,48 @@ class custom_algo:
             def angle_to(npos):
                 vec = np.array(npos) - pos
                 return math.degrees(math.atan2(vec[1], vec[0]))
-            final_pos = min(neighbours, key=lambda n: abs(angle - angle_to(n)))
+            final_pos = min(neighbours, key=lambda n: angular_distance(angle,angle_to(n)))
 
         
 
-        return (int(final_pos[0]), int(final_pos[1])) 
+        return (int(final_pos[0]), int(final_pos[1])) , False
 
 #---------------------------------------------Narrow path APF ends here-------------------------------------------
+#---------------------------------------------Deadlock neighbours starts here--------------------------------------
+
+    def get_neighbors_for_deadlock(self, pos, obstacles, grid_size, list_of_robots_in_avoidance_range : dict = {}):
+        x, y = pos
+        neighbors = []
+
+        for dx in range(-1,2):
+            for dy in range(-1,2):
+                if dx == 0 and dy == 0:
+                    continue
+
+                new_x, new_y = x + dx, y + dy
+
+                if not self.is_valid_position_for_obstacle(new_x, new_y, obstacles, grid_size):
+                    continue
+
+                # if dx != 0 and dy != 0:
+                #     orth1 = (x + dx, y)
+                #     orth2 = (x, y + dy)
+
+                #     if (self.is_valid_position_for_obstacle(orth1[0], orth1[1], obstacles, grid_size) and
+                #         self.is_valid_position_for_obstacle(orth2[0], orth2[1], obstacles, grid_size)):    #diagonal cell valid 
+                #         neighbors.append((new_x, new_y))
+
+                if not self.is_valid_position_for_robots_priority(new_x, new_y, grid_size, list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range): 
+                    continue 
+        
+                else:
+                    neighbors.append((new_x, new_y))
+
+        print(True)
+
+        return neighbors
+
+#---------------------------------------------Deadlock neighbours ends here---------------------------------------
 #--------------------------------------------Extra functions start here--------------------------------------------
 
     def priority_resolution(self, name, p1 , other_name, p2):
@@ -494,21 +568,3 @@ class custom_algo:
     def manhattan_dist(self,a, b):
         return abs(a[0] - b[0]) + abs(a[1] - b[1])
     
-    def get_neighbors_for_deadlock(self, pos, obstacles, grid_size, list_of_robots_in_avoidance_range : dict = {} ):
-        x, y = pos
-        neighbors = []
-
-        for dx in range(-1,2):
-            for dy in range(-1,2):
-                if dx == 0 and dy == 0:
-                    continue
-
-                new_x, new_y = x + dx, y + dy
-
-                if not self.is_valid_position_for_obstacle(new_x, new_y, obstacles, grid_size):
-                    continue 
-
-                if (new_x, new_y) in list_of_robots_in_avoidance_range.values():  #robots occupied space eliminated
-                    continue
-
-                neighbors.append((new_x, new_y))

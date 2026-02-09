@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib.patches import Rectangle
 from helping_functions import *
-from algo1 import custom_algo
+from algo2 import custom_algo
 from obstacle_creator import ObstacleMapManager
 
 #----------------------------------------------- Base Variables

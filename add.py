@@ -1,3 +1,5 @@
-list = [1,2,3]
-list2 = list.remove(2)
-print(list)
+text = " Moving info "
+
+print("\n" + "=" * 50)
+print(f"\033[1;36m{text.center(50)}\033[0m")
+print("=" * 50 + "\n")
