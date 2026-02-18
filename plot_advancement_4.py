@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 from matplotlib.patches import Rectangle
-from matplotlib.widgets import Slider
 from algo2 import custom_algo
 from obs2 import ObstacleMapManager as obs1
 from helping_functions import *
@@ -14,9 +13,7 @@ import itertools
 import sys
 from terminal_logger import TerminalLogger
 
-file_name = "narrow_path"                       #               ADD FILE NAME OF THE MAP HERE
-
-LOG_FILE = "Maps/Map_logs/" + file_name + ".txt"
+LOG_FILE = "run_log_4.txt"
 
 # 🔴 CLEAR previous run log
 open(LOG_FILE, "w").close()
@@ -34,7 +31,6 @@ frame_counter = 0
 last_processed_frame = -1
 frame_history = []
 simulation_finished = False
-current_slider_frame = 0
 
 
 #----------------------------------------------- Robot Configurations
@@ -62,7 +58,7 @@ robot_configs = [
 obstacle_manager = obs1(
             grid_size=55,
             #save_file="Maps/narrow_path.json"              
-            save_file="Maps/"+file_name+".json"
+            save_file="Maps/maps3.json"
         )
 
 obstacles = set(obstacle_manager.get_obstacles())
@@ -136,60 +132,16 @@ ax.grid(True)
 
 paused = False
 
-slider_ax = plt.axes([0.2, 0.02, 0.6, 0.03])
-frame_slider = Slider(
-    slider_ax,
-    'Frame',
-    0,
-    1,
-    valinit=0,
-    valstep=1
-)
-
-
-def on_key_navigation(event):
-    global current_slider_frame
+def on_key(event):
     global paused
-
-    if len(frame_history) == 0:
-        return
-
-    if event.key == 'right':
-        current_slider_frame = min(int(frame_slider.val) + 1, len(frame_history) - 1)
-        frame_slider.set_val(current_slider_frame)
-
-    elif event.key == 'left':
-        current_slider_frame = max(int(frame_slider.val) - 1, 0)
-        frame_slider.set_val(current_slider_frame)
-
-    elif event.key == ' ':
+    if event.key == ' ':
         if paused:
             ani.event_source.start()
         else:
             ani.event_source.stop()
         paused = not paused
 
-
-def load_frame(frame_index):
-    if frame_index >= len(frame_history):
-        return
-
-    snapshot = frame_history[int(frame_index)]
-
-    for rid in Robot_details:
-        x, y = snapshot["positions"][rid]
-        robot_rectangles[rid].set_xy((x, y))
-        robot_labels[rid].set_position((x, y))
-
-        trail_points = snapshot["trails"][rid]
-        xs = [p[0] for p in trail_points]
-        ys = [p[1] for p in trail_points]
-
-        robot_trails[rid].set_data(xs, ys)
-
-    fig.canvas.draw_idle()
-
-fig.canvas.mpl_connect('key_press_event', on_key_navigation)
+fig.canvas.mpl_connect('key_press_event', on_key)
 
 # ---------------------------------------------- DRAW OBSTACLES 
 for ox, oy in obstacles:
@@ -357,33 +309,30 @@ def update(frame):
                         actual_paths[name].append(pos)
                         return pos
                     
-            if (A and B and not C) or (A and not B and not C):               
-                    print(f"{name}: Branch 5 ")                                #Cross-Checked
+            if A and not B and not C:
+                    print(f"{name}: Branch 5 ")                                               #Cross-Checked
+                    
                     Robot_details[name]["Was_blocked"] = True
                     for other_name, other_pos in robots_to_avoid.items():
                         if Robot_details[other_name]["Narrow_path_status"]:
                             priority_dict[other_name] += 1  
                             Robot_details[name]["Apf_switch"] = True
-                            print(f"Robot {other_name} in range is inside narrow path,")
-                            continue
+                            break
                         
                         elif priority_dict[name] < priority_dict[other_name]:
                             Robot_details[name]["Apf_switch"] = True
-                            print(f"Robot {other_name} in range has higher priority,")
-                            continue
+                            break
 
                     if Robot_details[name]["Apf_switch"]:
-                        print(f"{name}: Branch 5.1 ")
                         next_pos = robots[name].simple_apf_choose_next(pos,goal,actual_paths[name][-2],obstacles,A,priority_dict)
                         actual_paths[name].append(next_pos)
                         Robot_details[name]["Actual_path_frame_counter"] += 1
                         Robot_details[name]["Apf_switch"] = False
-                        
+                        print(f"{name}: Branch 5.1 ")
                         return next_pos
                     
                     else:
-                        Robot_details[name]["Was_blocked"] = False
-                        print(f"{name}: Branch 5.2 ")
+                        
                         Robot_details[name]["Global_path"] = robots[name].a_star(pos, goal, obstacles)
                         planned_path = Robot_details[name]["Global_path"]
                         Robot_details[name]["Global_path_frame_counter"] = 0
@@ -391,7 +340,7 @@ def update(frame):
 
                         if next_index < len(planned_path):
                             next_pos = planned_path[1]
-                            
+                            print(f"{name}: Branch 5.2 ")
                             actual_paths[name].append(next_pos)
                             Robot_details[name]["Actual_path_frame_counter"] += 1
                             Robot_details[name]["Global_path_frame_counter"] += 1
@@ -400,7 +349,6 @@ def update(frame):
                             #print(f"  {name}: ELIF branch - end of path, staying at {pos}")
                             actual_paths[name].append(pos)
                             return pos
-            
             
             if (A and not B and C) or (A and B and C):
                     Robot_details[name]["Was_blocked"] = True
@@ -429,11 +377,11 @@ def update(frame):
 
                         for (other_name1, other_pos1), (other_name2, other_pos2) in itertools.permutations(robots_to_avoid.items(), 2):
                             
-                            if Robot_details[other_name1]["Narrow_path_status"] and Robot_details[other_name2]["Narrow_path_status"]:
-                            
-                                if other_pos1 == forward_coordinates and other_pos2 == reverse_coordinates:
+                            if other_pos1 == forward_coordinates and other_pos2 == reverse_coordinates:
+                                B1 , B2 , B0 = Robot_details[other_name1]["Backtrack_status"] , Robot_details[other_name2]["Backtrack_status"] , Robot_details[name]["Backtrack_status"]
 
-                                    B1 , B2 , B0 = Robot_details[other_name1]["Backtrack_status"] , Robot_details[other_name2]["Backtrack_status"] , Robot_details[name]["Backtrack_status"]
+                                if Robot_details[other_name1]["Narrow_path_status"] and Robot_details[other_name2]["Narrow_path_status"]:
+
 
                                     if not B0 and not B1 and not B2:
                                         print(f"{name}: Rare Branch 6.1.1 Triggered")
@@ -457,9 +405,8 @@ def update(frame):
 
                                     elif B0 and not B1 and not B2:
                                         print(f"{name}: Branch 6.1.5 Triggered")
-                                        
-                                        priority_dict[other_name1] -= 1
-                                        priority_dict[other_name2] += 1
+                                        priority_dict[other_name1] += 1
+                                        priority_dict[other_name2] -= 1
                                         break
 
                                     elif B0 and not B1 and B2:
@@ -468,43 +415,27 @@ def update(frame):
                                         priority_dict[other_name2] += 1
                                         break
 
-                                    elif B0 and B1 and not B2:  #################### Solve it's logic
+                                    elif B0 and B1 and not B2:
                                         print(f"{name}: Branch 6.1.7 Triggered")
-                                        priority_dict[other_name1] -= 1
-                                        priority_dict[other_name2] += 1
+                                        priority_dict[other_name1] += 1
+                                        priority_dict[other_name2] -= 1
                                         break
 
                                     elif B0 and B1 and B2:
                                         print(f"{name}: Rare Branch 6.1.8 Triggered")
                                         break
                                         
-                                # elif Robot_details[other_name1]["Narrow_path_status"] and not Robot_details[other_name2]["Narrow_path_status"]:
-                                #     print(f"{name}: Branch 6.1.8 Triggered")
-                                #     priority_dict[other_name1] += 1
-                                #     priority_dict[other_name2] -= 1
-                                #     break
+                                elif Robot_details[other_name1]["Narrow_path_status"] and not Robot_details[other_name2]["Narrow_path_status"]:
+                                    print(f"{name}: Branch 6.1.8 Triggered")
+                                    priority_dict[other_name1] += 1
+                                    priority_dict[other_name2] -= 1
+                                    break
 
-                                # elif not Robot_details[other_name1]["Narrow_path_status"] and Robot_details[other_name2]["Narrow_path_status"]:
-                                #     print(f"{name}: Branch 6.1.9 Triggered")
-                                #     priority_dict[other_name1] -= 1
-                                #     priority_dict[other_name2] += 1
-                                #     break
-
-                            elif Robot_details[other_name1]["Narrow_path_status"] and not Robot_details[other_name2]["Narrow_path_status"]:
-                                print(f"{name}: Branch 6.1.10 Triggered")
-                                priority_dict[other_name2] -= 1
-                                break
-
-                            elif not Robot_details[other_name1]["Narrow_path_status"] and Robot_details[other_name2]["Narrow_path_status"]:
-                                print(f"{name}: Branch 6.1.11 Triggered")
-                                priority_dict[other_name1] -= 1
-                                break
-
-                            elif not Robot_details[other_name1]["Narrow_path_status"] and not Robot_details[other_name2]["Narrow_path_status"]:
-                                print(f"{name}: Branch 6.1.12 Triggered")
-                                priority_dict[other_name1] -= 1
-                                priority_dict[other_name2] -= 1
-                                break
+                                elif not Robot_details[other_name1]["Narrow_path_status"] and Robot_details[other_name2]["Narrow_path_status"]:
+                                    print(f"{name}: Branch 6.1.9 Triggered")
+                                    priority_dict[other_name1] -= 1
+                                    priority_dict[other_name2] += 1
+                                    break
 
                         next_pos, zero_force_check = robots[name].narrow_path_apf_choose_next(pos,narrow_end,obstacles,A,priority_dict)
                         if zero_force_check:
@@ -531,75 +462,126 @@ def update(frame):
                                             priority_dict[other_name] += 1
 
                                 if not Robot_details[name]["Backtrack_status"] and other_pos == reverse_coordinates :
-                                    if Robot_details[other_name]["Backtrack_status"]:
                                         print(f"{name}: Branch 6.2.3 ")
-                                        priority_dict[other_name] += 1
-                                        pass
-                                    else:
-                                        print(f"{name}: Branch 6.2.4 ")
                                         pass
 
                                 if Robot_details[name]["Backtrack_status"] and other_pos == reverse_coordinates:
                                         
                                         if Robot_details[other_name]["Backtrack_status"]:
-                                            print(f"{name}: Branch 6.2.5 ")
+                                            print(f"{name}: Branch 6.2.4 ")
                                             pass # Some unique and rarest bugs might arrive here. But will leave for now.
                                         elif not Robot_details[other_name]["Backtrack_status"]:
-                                            print(f"{name}: Branch 6.2.6 ")
+                                            print(f"{name}: Branch 6.2.5 ")
                                             priority_dict[other_name] += 1
                                         pass
                                 
                                 if Robot_details[name]["Backtrack_status"] and other_pos == forward_coordinates:
                                     if Robot_details[other_name]["Backtrack_status"]:
-                                        print(f"{name}: Branch 6.2.7 ")
+                                        print(f"{name}: Branch 6.2.6 ")
                                         pass # Some unique and rarest bugs might arrive here. But will leave for now.
                                     elif not Robot_details[other_name]["Backtrack_status"]:
-                                        print(f"{name}: Branch 6.2.8 ")
+                                        print(f"{name}: Branch 6.2.7 ")
                                         priority_dict[other_name] -= 1
 
                             else:
-                                if percent_narrow_path_covered < 30:
-                                    print(f"{name}: Branch 6.3.1 ")
-                                    
-                                    priority_dict[name] = Rob_priority - 1
-                                    
-                                
-                                
-                                elif 30<=percent_narrow_path_covered<=70:
-                                    print(f"{name}: Branch 6.3.2 ")
-                                    for other_name,other_pos in robots_to_avoid.items():
-                                        direction_of_other_robot = (other_pos[0] - pos[0], other_pos[1] - pos[1])
-                                        try:
-                                            if direction_of_other_robot in straight_direction_list:
-                                                if Robot_details[name]["Remaining_global_path_length"] < Robot_details[other_name]["Remaining_global_path_length"] :
-                                                    priority_dict[name] = Rob_priority + 1
-                                                elif Robot_details[name]["Remaining_global_path_length"] == Robot_details[other_name]["Remaining_global_path_length"] :
-                                                    continue
-                                                elif Robot_details[name]["Remaining_global_path_length"] > Robot_details[other_name]["Remaining_global_path_length"]:
-                                                    priority_dict[name] = Rob_priority - 1
-                                                    
-                                            print("Try block")
-                                        except:
-                                            if robots[name].manhattan_dist(Robot_details[name]["Goal"] , pos) < robots[other_name].manhattan_dist(Robot_details[other_name]["Goal"] , other_pos):
-                                                priority_dict[name] = Rob_priority + 1
-                                            elif robots[name].manhattan_dist(Robot_details[name]["Goal"] , pos) == robots[other_name].manhattan_dist(Robot_details[other_name]["Goal"] , other_pos):
-                                                continue
-                                            else:
-                                                priority_dict[name] = Rob_priority - 1
-                                            print("Except block")
-
-                                elif percent_narrow_path_covered >= 70:
-                                    print(f"{name}: Branch 6.3.3 ")
-                                    priority_dict[name] = Rob_priority + 1
-
-                        print(f"{name}: {Robot_details[name]["Remaining_global_path_length"]} steps Remain")
+                                continue
+                        
                         next_pos, zero_force_check = robots[name].narrow_path_apf_choose_next(pos,narrow_end,obstacles,A,priority_dict)
                         if zero_force_check:
                             next_pos = forward_coordinates
                         actual_paths[name].append(next_pos)
                         Robot_details[name]["Actual_path_frame_counter"] += 1
                         return next_pos
+                            
+                        
+                    if percent_narrow_path_covered < 30:
+                        print(f"{name}: Branch 6.3.1 ")
+                        
+                        priority_dict[name] = Rob_priority - 1
+                        
                     
+                    
+                    elif 30<=percent_narrow_path_covered<=70:
+                        print(f"{name}: Branch 6.3.2 ")
+                        for other_name,other_pos in robots_to_avoid.items():
+                            direction_of_other_robot = (other_pos[0] - pos[0], other_pos[1] - pos[1])
+                            try:
+                                if direction_of_other_robot in straight_direction_list:
+                                    if Robot_details[name]["Remaining_global_path_length"] < Robot_details[other_name]["Remaining_global_path_length"] :
+                                        priority_dict[name] = Rob_priority + 1
+                                    elif Robot_details[name]["Remaining_global_path_length"] == Robot_details[other_name]["Remaining_global_path_length"] :
+                                        continue
+                                    elif Robot_details[name]["Remaining_global_path_length"] > Robot_details[other_name]["Remaining_global_path_length"]:
+                                        priority_dict[name] = Rob_priority - 1
+                                        
+                                print("Try block")
+                            except:
+                                 if robots[name].manhattan_dist(Robot_details[name]["Goal"] , pos) < robots[other_name].manhattan_dist(Robot_details[other_name]["Goal"] , other_pos):
+                                    priority_dict[name] = Rob_priority + 1
+                                 elif robots[name].manhattan_dist(Robot_details[name]["Goal"] , pos) == robots[other_name].manhattan_dist(Robot_details[other_name]["Goal"] , other_pos):
+                                    continue
+                                 else:
+                                    priority_dict[name] = Rob_priority - 1
+                                 print("Except block")
+
+                    elif percent_narrow_path_covered >= 70:
+                        print(f"{name}: Branch 6.3.3 ")
+                        priority_dict[name] = Rob_priority + 1
+                                    
+                    print(f"{name}: {Robot_details[name]["Remaining_global_path_length"]} steps Remain")
+                    print(f"{name}: Priority = {priority_dict[name]}")
+                    next_pos, zero_force_check = robots[name].narrow_path_apf_choose_next(pos,narrow_end,obstacles,A,priority_dict)
+                    if zero_force_check:
+                        next_pos = forward_coordinates
+                    actual_paths[name].append(next_pos)
+                    Robot_details[name]["Actual_path_frame_counter"] += 1
+                    return next_pos
+
+            if A and B and not C:               
+                    print(f"{name}: Branch 7 ")                                #Cross-Checked
+                    Robot_details[name]["Was_blocked"] = True
+                    for other_name, other_pos in robots_to_avoid.items():
+                        if Robot_details[other_name]["Narrow_path_status"]:
+                            priority_dict[other_name] += 1  
+                            Robot_details[name]["Apf_switch"] = True
+                            break
+                        
+                        elif priority_dict[name] < priority_dict[other_name]:
+                            Robot_details[name]["Apf_switch"] = True
+                            break
+
+                    if Robot_details[name]["Apf_switch"]:
+                        next_pos = robots[name].simple_apf_choose_next(pos,goal,actual_paths[name][-2],obstacles,A,priority_dict)
+                        actual_paths[name].append(next_pos)
+                        Robot_details[name]["Actual_path_frame_counter"] += 1
+                        Robot_details[name]["Apf_switch"] = False
+                        print(f"{name}: Branch 7.1 ")
+                        return next_pos
+                    
+                    else:
+                        Robot_details[name]["Was_blocked"] = False
+                        Robot_details[name]["Global_path"] = robots[name].a_star(pos, goal, obstacles)
+                        planned_path = Robot_details[name]["Global_path"]
+                        Robot_details[name]["Global_path_frame_counter"] = 0
+                        next_index = Robot_details[name]["Global_path_frame_counter"] + 1
+
+                        if next_index < len(planned_path):
+                            next_pos = planned_path[1]
+                            print(f"{name}: Branch 7.2 ")
+                            actual_paths[name].append(next_pos)
+                            Robot_details[name]["Actual_path_frame_counter"] += 1
+                            Robot_details[name]["Global_path_frame_counter"] += 1
+                            return next_pos
+                        else:
+                            #print(f"  {name}: ELIF branch - end of path, staying at {pos}")
+                            actual_paths[name].append(pos)
+                            return pos
+            
+
+            
+            
+
+            
             
 
     #----------------------------------------------- Robots moved to the latest positions
@@ -624,23 +606,6 @@ def update(frame):
         print("/"*50)
         print()
 
-        # -------- STORE VISUAL FRAME --------
-        snapshot = {
-            "positions": {
-                rid: Robot_details[rid]["Current_position"]
-                for rid in Robot_details
-            },
-            "trails": {
-                rid: list(zip(trail_x[rid], trail_y[rid]))
-                for rid in Robot_details
-            }
-        }
-
-        frame_history.append(snapshot)
-
-
-        print("Direction Info")
-        print("/"*50)
         for name in Robot_details.keys():
             try:
                 x_direction = actual_paths[name][-1][0] - actual_paths[name][-2][0]
@@ -656,8 +621,7 @@ def update(frame):
             else:
                 past_direction_dict[name] = direction_dict[name]
                 print(f"Direction: {direction_dict[name]}")
-        print("/"*50)
-        print()
+
     
 
     #----------------------------------------------------- Backtrack detector
@@ -920,12 +884,6 @@ def update(frame):
                     Robot_details[rid]["Narrow_path_end"],
                 )
 
-        if all(Robot_details[rid]["Reached_goal"] for rid in Robot_details):
-            ani.event_source.stop()
-            simulation_finished = True
-
-        frame_slider.valmax = len(frame_history) - 1
-        frame_slider.ax.set_xlim(frame_slider.valmin, frame_slider.valmax)
 
         return (list(robot_rectangles.values()) + list(robot_labels.values()) + list(robot_trails.values()))
     
@@ -946,13 +904,6 @@ ani = animation.FuncAnimation(
     blit=False,
     repeat=False,
 )
-
-def on_slider_change(val):
-    ani.event_source.stop()   # stop animation when manually sliding
-    load_frame(int(val))
-
-frame_slider.on_changed(on_slider_change)
-
 
 plt.show()
 

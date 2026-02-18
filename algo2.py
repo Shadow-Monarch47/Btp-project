@@ -32,6 +32,9 @@ class custom_algo:
         self.narrow_path_status = False
         self.narrow_entry = None
         self.narrow_exit = None
+        entry = self.get_first_narrow_entry()
+        self.narrow_attractor = entry if entry is not None else self.goal
+        self.current_pos = start
         self.reached_goal = False
 
         # independent variables
@@ -63,14 +66,13 @@ class custom_algo:
 
 #---------------------------------------------A-star starts here-----------------------------------------------------------
 
-    def is_valid_position_for_obstacle(self, x, y, obstacles, grid_size, robot_size=1 ,):
-        for dx in range(robot_size):
-            for dy in range(robot_size):
-                px, py = x + dx, y + dy
-                if not (0 <= px < grid_size and 0 <= py < grid_size):
-                    return False
-                if (px, py) in obstacles:
-                    return False
+    def is_valid_position_for_obstacle(self, x, y, obstacles, grid_size):
+                
+        if not (0 <= x < grid_size and 0 <= y < grid_size):
+            return False
+        if (x, y) in obstacles:
+            return False
+        
         return True
     
 
@@ -170,8 +172,8 @@ class custom_algo:
         x, y = pos
         neighbors = []
 
-        for dx in range(-1,2):
-            for dy in range(-1,2):
+        for dx in [-1,0,1]:
+            for dy in [-1,0,1]:
                 if dx == 0 and dy == 0:
                     continue
 
@@ -180,16 +182,17 @@ class custom_algo:
                 if not self.is_valid_position_for_obstacle(new_x, new_y, obstacles, grid_size):
                     continue
 
-                # if dx != 0 and dy != 0:
-                #     orth1 = (x + dx, y)
-                #     orth2 = (x, y + dy)
 
-                #     if (self.is_valid_position_for_obstacle(orth1[0], orth1[1], obstacles, grid_size) and
-                #         self.is_valid_position_for_obstacle(orth2[0], orth2[1], obstacles, grid_size)):    #diagonal cell valid 
-                #         neighbors.append((new_x, new_y))
-
-                if not self.is_valid_position_for_robots_priority(new_x, new_y, grid_size, list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range, priority_dict=priority_dict): #
+                elif not self.is_valid_position_for_robots_priority(new_x, new_y, grid_size, list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range, priority_dict=priority_dict): #
                     continue 
+
+                elif dx != 0 and dy != 0:
+                    orth1 = (x + dx, y)
+                    orth2 = (x, y + dy)
+
+                    if (self.is_valid_position_for_obstacle(orth1[0], orth1[1], obstacles, grid_size) and
+                        self.is_valid_position_for_obstacle(orth2[0], orth2[1], obstacles, grid_size)):    #diagonal cell valid 
+                        neighbors.append((new_x, new_y))
         
                 else:
                     neighbors.append((new_x, new_y))
@@ -211,11 +214,7 @@ class custom_algo:
                                         priority_dict=priority_dict)
     
         neighbours.remove(prev_pos) if prev_pos in neighbours else neighbours
-        
-        
-        if not neighbours:
-            return (int(pos[0]), int(pos[1]))  # FIXED: explicit tuple
-        
+        print(f"Neighbours: {neighbours}")
         
     
     # Attractive force toward goal
@@ -228,6 +227,11 @@ class custom_algo:
 
         higher_robots = {rname: rpos for rname, rpos in list_of_robots_in_avoidance_range.items() 
                     if priority_dict.get(rname, 0) > priority_dict[self.robot_id]}
+        
+        if not neighbours:
+            if prev_pos not in higher_robots.values():
+                return prev_pos
+            
     
         for robot_name, (rx, ry) in higher_robots.items():
             rob = np.array([rx, ry], dtype=float)
@@ -309,6 +313,7 @@ class custom_algo:
                 if is_blocked(above[0], above[1]) and is_blocked(below[0], below[1]):
                     return True
             
+
             # ========================================
             # CASE 2: VERTICAL MOVEMENT (dx == 0)
             # ========================================
@@ -319,6 +324,9 @@ class custom_algo:
                 
                 if is_blocked(left[0], left[1]) and is_blocked(right[0], right[1]):
                     return True
+                
+            elif dx == 0 and dy == 0:
+                return False
 
         else:
             # ========================================
@@ -342,6 +350,10 @@ class custom_algo:
                 
                 if is_blocked(left[0], left[1]) or is_blocked(right[0], right[1]):
                     return True
+                
+            elif dx == 0 and dy == 0:
+                print("Holded inside narrow path")
+                return True
 
         
         # No narrow path detected
@@ -431,13 +443,13 @@ class custom_algo:
                 elif not self.is_valid_position_for_robots_priority(new_x, new_y, grid_size, list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range, priority_dict=priority_dict): #
                     continue 
 
-                # if dx != 0 and dy != 0:
-                #     orth1 = (x + dx, y)
-                #     orth2 = (x, y + dy)
+                elif dx != 0 and dy != 0:
+                    orth1 = (x + dx, y)
+                    orth2 = (x, y + dy)
 
-                #     if (self.is_valid_position_for_obstacle(orth1[0], orth1[1], obstacles, grid_size) and
-                #         self.is_valid_position_for_obstacle(orth2[0], orth2[1], obstacles, grid_size)):    #diagonal cell valid 
-                #         neighbors.append((new_x, new_y))
+                    if (self.is_valid_position_for_obstacle(orth1[0], orth1[1], obstacles, grid_size) and
+                        self.is_valid_position_for_obstacle(orth2[0], orth2[1], obstacles, grid_size)):    #diagonal cell valid 
+                        neighbors.append((new_x, new_y))
         
                 else:
                     neighbors.append((new_x, new_y))
@@ -530,6 +542,9 @@ class custom_algo:
                 if not self.is_valid_position_for_obstacle(new_x, new_y, obstacles, grid_size):
                     continue
 
+                if not self.is_valid_position_for_robots_priority(new_x, new_y, grid_size, list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range): 
+                    continue 
+
                 # if dx != 0 and dy != 0:
                 #     orth1 = (x + dx, y)
                 #     orth2 = (x, y + dy)
@@ -537,9 +552,6 @@ class custom_algo:
                 #     if (self.is_valid_position_for_obstacle(orth1[0], orth1[1], obstacles, grid_size) and
                 #         self.is_valid_position_for_obstacle(orth2[0], orth2[1], obstacles, grid_size)):    #diagonal cell valid 
                 #         neighbors.append((new_x, new_y))
-
-                if not self.is_valid_position_for_robots_priority(new_x, new_y, grid_size, list_of_robots_in_avoidance_range=list_of_robots_in_avoidance_range): 
-                    continue 
         
                 else:
                     neighbors.append((new_x, new_y))
@@ -549,6 +561,47 @@ class custom_algo:
         return neighbors
 
 #---------------------------------------------Deadlock neighbours ends here---------------------------------------
+
+    def get_first_narrow_entry(self, grid_size=55):
+        """
+        Returns the starting coordinate of the FIRST narrow path
+        segment in the global path.
+
+        Does NOT modify any class variables.
+        Returns None if no narrow segment exists.
+        """
+
+        path = self.global_path
+        if not path or len(path) < 2:
+            return None
+
+        def is_narrow_cell(p, nxt):
+            x, y = p
+            nx, ny = nxt
+            dx, dy = nx - x, ny - y
+
+            def blocked(cx, cy):
+                if not (0 <= cx < grid_size and 0 <= cy < grid_size):
+                    return True
+                return (cx, cy) in self.obstacles
+
+            # vertical corridor
+            if dx == 0 and dy != 0:
+                return blocked(nx - 1, ny) or blocked(nx + 1, ny)
+
+            # horizontal corridor
+            if dx != 0 and dy == 0:
+                return blocked(nx, ny - 1) or blocked(nx, ny + 1)
+
+            return False
+
+        for i in range(len(path) - 1):
+            if is_narrow_cell(path[i], path[i + 1]):
+                return path[i]
+
+        return None
+
+
 #--------------------------------------------Extra functions start here--------------------------------------------
 
     def priority_resolution(self, name, p1 , other_name, p2):

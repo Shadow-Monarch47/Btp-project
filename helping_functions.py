@@ -35,3 +35,20 @@ def check_visible(name, posA, other_positions):
 
 
 
+def get_next_three(position, direction):
+    directions = [
+        (1,0), (1,1), (0,1), (-1,1),
+        (-1,0), (-1,-1), (0,-1), (1,-1)
+    ]
+
+    x, y = position
+    i = directions.index(direction)
+
+    candidates = [
+        directions[(i - 1) % 8],       # left neighbor
+        directions[i],                 # forward
+        directions[(i + 1) % 8]        # right neighbor
+    ]
+
+    return [(x + dx, y + dy) for dx, dy in candidates]
+
