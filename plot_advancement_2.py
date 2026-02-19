@@ -55,9 +55,15 @@ robot_configs = [
     {"robot_id": "R_2", "start": (54,54), "goal": (0,0), "color": "green"},
     {"robot_id": "R_3", "start": (0, 54), "goal": (54, 0), "color": "blue"},
     {"robot_id": "R_4", "start": (54, 0), "goal": (0, 54), "color": "purple"},
-    #{"robot_id": "R_5", "start": (8, 8), "goal": (54, 45), "color": "orange"},
+    {"robot_id": "R_5", "start": (8, 8), "goal": (54, 45), "color": "orange"},
     
 ]
+
+# robot_configs = [
+#     {"robot_id": "R_1", "start": (12, 54), "goal": (21, 45), "color": "red"},
+#     {"robot_id": "R_2", "start": (21,45), "goal": (12,54), "color": "green"},
+# ]
+
 # ---------------------------------------------- OBSTACLE setup
 obstacle_manager = obs1(
             grid_size=55,
@@ -104,7 +110,8 @@ def generate_robots(robot_configs):
             "Reached_goal": rob.reached_goal,
             "Past_direction": None, #
             "Global_path_frame_counter": 0, #
-            "Actual_path_frame_counter": 0 #
+            "Actual_path_frame_counter": 0, #
+            "Holding_position": False
         }
 
 
@@ -470,14 +477,20 @@ def update(frame):
 
                                     elif B0 and B1 and not B2:  #################### Solve it's logic
                                         print(f"{name}: Branch 6.1.7 Triggered")
-                                        priority_dict[other_name1] -= 1
-                                        priority_dict[other_name2] += 1
+                                        priority_dict[other_name1] += 1
+                                        priority_dict[other_name2] -= 1
                                         break
 
                                     elif B0 and B1 and B2:
                                         print(f"{name}: Rare Branch 6.1.8 Triggered")
                                         break
                                         
+                                else:
+                                    if Robot_details[name]["Backtrack_status"]:
+                                        print(f"{name}: Branch 6.1.9 Triggered")
+                                        priority_dict[other_name1] += 1
+                                        priority_dict[other_name2] += 1
+                                        break
                                 # elif Robot_details[other_name1]["Narrow_path_status"] and not Robot_details[other_name2]["Narrow_path_status"]:
                                 #     print(f"{name}: Branch 6.1.8 Triggered")
                                 #     priority_dict[other_name1] += 1
@@ -717,6 +730,8 @@ def update(frame):
         print("/"*50)
         for rid in robot_ids:
             print("__"*12)
+            print(f"Narrow Path Starting Point: {Robot_details[rid]['Narrow_path_start']}")
+            print(f"Narrow Path Ending Point: {Robot_details[rid]['Narrow_path_end']}")
             next_pos_all[rid] = algo_switch(
                 rid,
                 Robot_details[rid]["Current_position"],
@@ -749,6 +764,8 @@ def update(frame):
                 if Robot_details[rid]["Narrow_path_status"] and Robot_details[rid]["Narrow_origin_marker"]:
                         Robot_details[rid]["Narrow_origin_marker"] = False
                         Robot_details[rid]["Narrow_path_start"] , Robot_details[rid]["Narrow_path_end"] = rob.update_narrow_path_bounds(actual_paths[rid][-2])
+                        
+                        
                         
 
                 if not Robot_details[rid]["Narrow_path_status"]:
@@ -855,6 +872,11 @@ def update(frame):
                 
         print("/"*50)
         print()
+
+#________________________________________________________________________________________________________________________________________________________________________________________
+
+
+# Holding code
             
 #________________________________________________________________________________________________________________________________________________________________________________________
         print("Deadlock Prevention")

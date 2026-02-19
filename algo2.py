@@ -291,14 +291,26 @@ class custom_algo:
         
         # Helper function to check if a cell is blocked
         def is_blocked(x, y):
-            """Cell is blocked if out of bounds OR is an obstacle."""
-            # Out of bounds check
             if not (0 <= x < grid_size and 0 <= y < grid_size):
                 return True
-            # Obstacle check
-            if (x, y) in self.obstacles:
-                return True
-            return False
+            return (x, y) in self.obstacles
+
+        def diagonal_block_degree(x, y):
+            directions = [(1,1),(1,-1),(-1,1),(-1,-1)]
+            count = 0
+            for dx, dy in directions:
+                if is_blocked(x + dx, y + dy):
+                    count += 1
+            return count
+        
+        def free_degree(x, y):
+            directions = [(1,0),(0,-1),(-1,0),(0,1)]
+            count = 0
+            for dx, dy in directions:
+                if not is_blocked(x + dx, y + dy):
+                    count += 1
+            return count
+        
         
         if not self.narrow_path_status:      # First point of narrow path must have both sides blocked
         
@@ -329,29 +341,38 @@ class custom_algo:
                 return False
 
         else:
+            
+            above = (next_x, next_y + 1)
+            below = (next_x, next_y - 1)
+            left = (next_x - 1, next_y)
+            right = (next_x + 1, next_y)
+            
+            
             # ========================================
             # CASE 1: HORIZONTAL MOVEMENT (dy == 0)
             # ========================================
             if dx != 0 and dy == 0:
-                # Check cells above and below destination
-                above = (next_x, next_y + 1)
-                below = (next_x, next_y - 1)
                 
-                if is_blocked(above[0], above[1]) or is_blocked(below[0], below[1]):
-                    return True
+                if not is_blocked(above[0], above[1]) and not is_blocked(below[0], below[1]):
+                    if not is_blocked(left[0], left[1]) and not is_blocked(right[0], right[1]):
+                        if diagonal_block_degree(next_x, next_y) < 4:
+                            return False
+                
+                return True
             
             # ========================================
             # CASE 2: VERTICAL MOVEMENT (dx == 0)
             # ========================================
-            elif dx == 0 and dy != 0:
-                # Check cells left and right of destination
-                left = (next_x - 1, next_y)
-                right = (next_x + 1, next_y)
+            if dx == 0 and dy != 0:
                 
-                if is_blocked(left[0], left[1]) or is_blocked(right[0], right[1]):
-                    return True
+                if not is_blocked(left[0], left[1]) and not is_blocked(right[0], right[1]):
+                    if not is_blocked(above[0], above[1]) and not is_blocked(below[0], below[1]):
+                        if diagonal_block_degree(next_x, next_y) < 4:
+                            return False
+                        
+                return True
                 
-            elif dx == 0 and dy == 0:
+            if dx == 0 and dy == 0:
                 print("Holded inside narrow path")
                 return True
 
@@ -359,61 +380,153 @@ class custom_algo:
         # No narrow path detected
         return False
     
+    # def update_narrow_path_bounds(self, current_pos, grid_size=55):
+    #     """
+    #     Finds start and end of the narrow path segment on the GLOBAL PATH.
+    #     Sets entry/exit to None when not in narrow path.
+    #     """
+
+    #     path = self.global_path
+    #     if not path or current_pos not in path:
+    #         self.narrow_entry = None
+    #         self.narrow_exit = None
+    #         self.narrow_path_status = False
+    #         return None, None
+
+    #     curr_idx = path.index(current_pos)
+
+    #     def is_narrow_cell(p, nxt):
+    #         x, y = p
+    #         nx, ny = nxt
+    #         dx, dy = nx - x, ny - y
+
+    #         def blocked(cx, cy):
+    #             if not (0 <= cx < grid_size and 0 <= cy < grid_size):
+    #                 return True
+    #             return (cx, cy) in self.obstacles
+
+    #         # vertical corridor
+    #         if dx == 0 and dy != 0:
+    #             return blocked(nx - 1, ny) or blocked(nx + 1, ny)
+
+    #         # horizontal corridor
+    #         if dx != 0 and dy == 0:
+    #             return blocked(nx, ny - 1) or blocked(nx, ny + 1)
+
+    #         return False
+
+    #     # ---------- FIND ENTRY ----------
+    #     entry_idx = 0
+    #     for i in range(curr_idx, len(path) - 1):
+    #         if is_narrow_cell(path[i], path[i + 1]):
+    #             entry_idx = i
+    #             break
+
+    #     if entry_idx is None:
+    #         self.narrow_entry = None
+    #         self.narrow_exit = None
+    #         self.narrow_path_status = False
+    #         return None, None
+
+    #     # ---------- FIND EXIT ----------
+    #     exit_idx = entry_idx
+    #     for i in range(entry_idx, len(path) - 1):
+    #         if not is_narrow_cell(path[i], path[i + 1]):
+    #             break
+    #         exit_idx = i + 1
+
+    #     self.narrow_entry = path[entry_idx]
+    #     self.narrow_exit = path[exit_idx]
+    #     self.narrow_path_status = True
+
+    #     return self.narrow_entry, self.narrow_exit
+
     def update_narrow_path_bounds(self, current_pos, grid_size=55):
         """
-        Finds start and end of the narrow path segment on the GLOBAL PATH.
-        Sets entry/exit to None when not in narrow path.
+        Robust narrow path detection using node-degree logic.
+
+        - Uses global_path
+        - Starts from current_pos
+        - Scans forward to find corridor exit
+        - If current_pos not in global_path, recomputes temporary path
         """
 
-        path = self.global_path
-        if not path or current_pos not in path:
+        # ---------------------------------------------------
+        # SAFETY: If current_pos not in global_path
+        # ---------------------------------------------------
+        if not self.global_path or current_pos not in self.global_path:
+            temp_path = self.a_star(current_pos, self.goal, self.obstacles, grid_size)
+            if not temp_path:
+                self.narrow_entry = None
+                self.narrow_exit = None
+                self.narrow_path_status = False
+                return None, None
+            path = temp_path
+        else:
+            path = self.global_path
+
+        # ---------------------------------------------------
+        # Degree logic helper
+        # ---------------------------------------------------
+        def is_blocked(x, y):
+            if not (0 <= x < grid_size and 0 <= y < grid_size):
+                return True
+            return (x, y) in self.obstacles
+
+        def diagonal_block_degree(x, y):
+            directions = [(1,1),(1,-1),(-1,1),(-1,-1)]
+            count = 0
+            for dx, dy in directions:
+                if is_blocked(x + dx, y + dy):
+                    count += 1
+            return count
+        
+        def free_degree(x, y):
+            directions = [(1,0),(0,-1),(-1,0),(0,1)]
+            count = 0
+            for dx, dy in directions:
+                if not is_blocked(x + dx, y + dy):
+                    count += 1
+            return count
+
+        # ---------------------------------------------------
+        # Find index of current position
+        # ---------------------------------------------------
+        try:
+            curr_idx = path.index(current_pos)
+        except ValueError:
             self.narrow_entry = None
             self.narrow_exit = None
             self.narrow_path_status = False
             return None, None
 
-        curr_idx = path.index(current_pos)
+        # ---------------------------------------------------
+        # Mark entry
+        # ---------------------------------------------------
+        entry_idx = curr_idx
 
-        def is_narrow_cell(p, nxt):
-            x, y = p
-            nx, ny = nxt
-            dx, dy = nx - x, ny - y
+        # ---------------------------------------------------
+        # Scan forward until corridor ends
+        # ---------------------------------------------------
+        exit_idx = curr_idx
 
-            def blocked(cx, cy):
-                if not (0 <= cx < grid_size and 0 <= cy < grid_size):
-                    return True
-                return (cx, cy) in self.obstacles
+        for i in range(curr_idx + 1, len(path)):
+            x, y = path[i]
+            
+            if not is_blocked(x-1,y) and not is_blocked(x+1,y):
+                if not is_blocked(x,y-1) and not is_blocked(x,y+1):
+                    if diagonal_block_degree(x,y) < 4:
+                        break
+                
+            exit_idx = i
 
-            # vertical corridor
-            if dx == 0 and dy != 0:
-                return blocked(nx - 1, ny) or blocked(nx + 1, ny)
+            
+            
+            
 
-            # horizontal corridor
-            if dx != 0 and dy == 0:
-                return blocked(nx, ny - 1) or blocked(nx, ny + 1)
-
-            return False
-
-        # ---------- FIND ENTRY ----------
-        entry_idx = 0
-        for i in range(curr_idx, len(path) - 1):
-            if is_narrow_cell(path[i], path[i + 1]):
-                entry_idx = i
-                break
-
-        if entry_idx is None:
-            self.narrow_entry = None
-            self.narrow_exit = None
-            self.narrow_path_status = False
-            return None, None
-
-        # ---------- FIND EXIT ----------
-        exit_idx = entry_idx
-        for i in range(entry_idx, len(path) - 1):
-            if not is_narrow_cell(path[i], path[i + 1]):
-                break
-            exit_idx = i + 1
-
+        # ---------------------------------------------------
+        # Set class variables
+        # ---------------------------------------------------
         self.narrow_entry = path[entry_idx]
         self.narrow_exit = path[exit_idx]
         self.narrow_path_status = True
@@ -620,4 +733,6 @@ class custom_algo:
 
     def manhattan_dist(self,a, b):
         return abs(a[0] - b[0]) + abs(a[1] - b[1])
+    
+
     

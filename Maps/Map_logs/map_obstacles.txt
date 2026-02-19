@@ -1,0 +1,261 @@
+c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py:957: UserWarning: frames=count(0) which we can infer the length of, did not pass an explicit *save_count* and passed cache_frame_data=True.  To avoid a possibly unbounded cache, frame data caching has been disabled. To suppress this warning either pass `cache_frame_data=False` or `save_count=MAX_FRAMES`.
+  ani = animation.FuncAnimation(
+Frame: 0
+****************************************************************************************************
+ 
+Moving Info
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+Direction Info
+//////////////////////////////////////////////////
+R_1: Holded inside Algo
+Direction: None
+R_2: Holded inside Algo
+Direction: None
+//////////////////////////////////////////////////
+
+Backtracing Status
+//////////////////////////////////////////////////
+R_1: False
+R_2: False
+//////////////////////////////////////////////////
+
+Computed Position and Direction
+//////////////////////////////////////////////////
+________________________
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
+R_1: Branch 1 
+R_1: computed (12, 53) from algo switch
+________________________
+
+________________________
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
+R_2: Branch 1 
+R_2: computed (20, 45) from algo switch
+________________________
+
+//////////////////////////////////////////////////
+
+R_1:- Narrow path status : True
+R_2:- Narrow path status : True
+Conflict Resolution
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+Deadlock Prevention
+//////////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+****************************************************************************************************
+c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py:944: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  frame_slider.ax.set_xlim(frame_slider.valmin, frame_slider.valmax)
+Frame: 1
+****************************************************************************************************
+ 
+Moving Info
+//////////////////////////////////////////////////
+R_1 : Moved to (12, 53)
+R_2 : Moved to (20, 45)
+//////////////////////////////////////////////////
+
+Direction Info
+//////////////////////////////////////////////////
+Direction: (0, -1)
+Direction: (-1, 0)
+//////////////////////////////////////////////////
+
+Backtracing Status
+//////////////////////////////////////////////////
+list index out of range
+Traceback (most recent call last):
+  File "c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py", line 681, in update
+    if actual_paths[rid][-1] == actual_paths[rid][-4]:
+                                ~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+Frame: 2
+****************************************************************************************************
+ 
+Moving Info
+//////////////////////////////////////////////////
+R_1 : Moved to (12, 53)
+R_2 : Moved to (20, 45)
+//////////////////////////////////////////////////
+
+Direction Info
+//////////////////////////////////////////////////
+Direction: (0, -1)
+Direction: (-1, 0)
+//////////////////////////////////////////////////
+
+Backtracing Status
+//////////////////////////////////////////////////
+list index out of range
+Traceback (most recent call last):
+  File "c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py", line 681, in update
+    if actual_paths[rid][-1] == actual_paths[rid][-4]:
+                                ~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+Frame: 3
+****************************************************************************************************
+ 
+Moving Info
+//////////////////////////////////////////////////
+R_1 : Moved to (12, 53)
+R_2 : Moved to (20, 45)
+//////////////////////////////////////////////////
+
+Direction Info
+//////////////////////////////////////////////////
+Direction: (0, -1)
+Direction: (-1, 0)
+//////////////////////////////////////////////////
+
+Backtracing Status
+//////////////////////////////////////////////////
+list index out of range
+Traceback (most recent call last):
+  File "c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py", line 681, in update
+    if actual_paths[rid][-1] == actual_paths[rid][-4]:
+                                ~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+Frame: 4
+****************************************************************************************************
+ 
+Moving Info
+//////////////////////////////////////////////////
+R_1 : Moved to (12, 53)
+R_2 : Moved to (20, 45)
+//////////////////////////////////////////////////
+
+Direction Info
+//////////////////////////////////////////////////
+Direction: (0, -1)
+Direction: (-1, 0)
+//////////////////////////////////////////////////
+
+Backtracing Status
+//////////////////////////////////////////////////
+list index out of range
+Traceback (most recent call last):
+  File "c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py", line 681, in update
+    if actual_paths[rid][-1] == actual_paths[rid][-4]:
+                                ~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+Frame: 5
+****************************************************************************************************
+ 
+Moving Info
+//////////////////////////////////////////////////
+R_1 : Moved to (12, 53)
+R_2 : Moved to (20, 45)
+//////////////////////////////////////////////////
+
+Direction Info
+//////////////////////////////////////////////////
+Direction: (0, -1)
+Direction: (-1, 0)
+//////////////////////////////////////////////////
+
+Backtracing Status
+//////////////////////////////////////////////////
+list index out of range
+Traceback (most recent call last):
+  File "c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py", line 681, in update
+    if actual_paths[rid][-1] == actual_paths[rid][-4]:
+                                ~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+Frame: 6
+****************************************************************************************************
+ 
+Moving Info
+//////////////////////////////////////////////////
+R_1 : Moved to (12, 53)
+R_2 : Moved to (20, 45)
+//////////////////////////////////////////////////
+
+Direction Info
+//////////////////////////////////////////////////
+Direction: (0, -1)
+Direction: (-1, 0)
+//////////////////////////////////////////////////
+
+Backtracing Status
+//////////////////////////////////////////////////
+list index out of range
+Traceback (most recent call last):
+  File "c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py", line 681, in update
+    if actual_paths[rid][-1] == actual_paths[rid][-4]:
+                                ~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+Frame: 7
+****************************************************************************************************
+ 
+Moving Info
+//////////////////////////////////////////////////
+R_1 : Moved to (12, 53)
+R_2 : Moved to (20, 45)
+//////////////////////////////////////////////////
+
+Direction Info
+//////////////////////////////////////////////////
+Direction: (0, -1)
+Direction: (-1, 0)
+//////////////////////////////////////////////////
+
+Backtracing Status
+//////////////////////////////////////////////////
+list index out of range
+Traceback (most recent call last):
+  File "c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py", line 681, in update
+    if actual_paths[rid][-1] == actual_paths[rid][-4]:
+                                ~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+Frame: 8
+****************************************************************************************************
+ 
+Moving Info
+//////////////////////////////////////////////////
+R_1 : Moved to (12, 53)
+R_2 : Moved to (20, 45)
+//////////////////////////////////////////////////
+
+Direction Info
+//////////////////////////////////////////////////
+Direction: (0, -1)
+Direction: (-1, 0)
+//////////////////////////////////////////////////
+
+Backtracing Status
+//////////////////////////////////////////////////
+list index out of range
+Traceback (most recent call last):
+  File "c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py", line 681, in update
+    if actual_paths[rid][-1] == actual_paths[rid][-4]:
+                                ~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range
+Frame: 9
+****************************************************************************************************
+ 
+Moving Info
+//////////////////////////////////////////////////
+R_1 : Moved to (12, 53)
+R_2 : Moved to (20, 45)
+//////////////////////////////////////////////////
+
+Direction Info
+//////////////////////////////////////////////////
+Direction: (0, -1)
+Direction: (-1, 0)
+//////////////////////////////////////////////////
+
+Backtracing Status
+//////////////////////////////////////////////////
+list index out of range
+Traceback (most recent call last):
+  File "c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py", line 681, in update
+    if actual_paths[rid][-1] == actual_paths[rid][-4]:
+                                ~~~~~~~~~~~~~~~~~^^^^
+IndexError: list index out of range

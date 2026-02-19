@@ -1,4 +1,4 @@
-c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py:958: UserWarning: frames=count(0) which we can infer the length of, did not pass an explicit *save_count* and passed cache_frame_data=True.  To avoid a possibly unbounded cache, frame data caching has been disabled. To suppress this warning either pass `cache_frame_data=False` or `save_count=MAX_FRAMES`.
+c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py:957: UserWarning: frames=count(0) which we can infer the length of, did not pass an explicit *save_count* and passed cache_frame_data=True.  To avoid a possibly unbounded cache, frame data caching has been disabled. To suppress this warning either pass `cache_frame_data=False` or `save_count=MAX_FRAMES`.
   ani = animation.FuncAnimation(
 Frame: 0
 ****************************************************************************************************
@@ -17,10 +17,6 @@ R_3: Holded inside Algo
 Direction: None
 R_4: Holded inside Algo
 Direction: None
-R_5: Holded inside Algo
-Direction: None
-R_6: Holded inside Algo
-Direction: None
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -29,8 +25,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -63,28 +57,12 @@ R_4: Branch 1
 R_4: computed (53, 1) from algo switch
 ________________________
 
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (9, 9) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 44) from algo switch
-________________________
-
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -94,7 +72,7 @@ Deadlock Prevention
 //////////////////////////////////////////////////
 
 ****************************************************************************************************
-c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py:945: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+c:\Chetan\BTP 2\plot_advancements\plot_advancement_2.py:944: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
   frame_slider.ax.set_xlim(frame_slider.valmin, frame_slider.valmax)
 Frame: 1
 ****************************************************************************************************
@@ -105,8 +83,6 @@ R_1 : Moved to (1, 1)
 R_2 : Moved to (53, 53)
 R_3 : Moved to (1, 53)
 R_4 : Moved to (53, 1)
-R_5 : Moved to (9, 9)
-R_6 : Moved to (53, 44)
 //////////////////////////////////////////////////
 
 Direction Info
@@ -115,8 +91,6 @@ Direction: (1, 1)
 Direction: (-1, -1)
 Direction: (1, -1)
 Direction: (-1, 1)
-Direction: (1, 1)
-Direction: (-1, -1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -125,8 +99,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -135,7 +107,7 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (2, 2) from algo switch
+R_1: computed (2, 1) from algo switch
 ________________________
 
 ________________________
@@ -156,21 +128,7 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 2) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (10, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 43) from algo switch
+R_4: computed (52, 2) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -179,8 +137,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -195,22 +151,18 @@ Frame: 2
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (2, 2)
+R_1 : Moved to (2, 1)
 R_2 : Moved to (53, 52)
 R_3 : Moved to (2, 52)
-R_4 : Moved to (53, 2)
-R_5 : Moved to (10, 10)
-R_6 : Moved to (53, 43)
+R_4 : Moved to (52, 2)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 1)
+Direction: (1, 0)
 Direction: (0, -1)
 Direction: (1, -1)
-Direction: (0, 1)
-Direction: (1, 1)
-Direction: (0, -1)
+Direction: (-1, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -219,8 +171,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -229,7 +179,7 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (3, 3) from algo switch
+R_1: computed (3, 2) from algo switch
 ________________________
 
 ________________________
@@ -250,21 +200,7 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 3) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (11, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 42) from algo switch
+R_4: computed (51, 3) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -273,8 +209,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -289,12 +223,10 @@ Frame: 3
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (3, 3)
+R_1 : Moved to (3, 2)
 R_2 : Moved to (53, 51)
 R_3 : Moved to (3, 51)
-R_4 : Moved to (53, 3)
-R_5 : Moved to (11, 10)
-R_6 : Moved to (53, 42)
+R_4 : Moved to (51, 3)
 //////////////////////////////////////////////////
 
 Direction Info
@@ -302,9 +234,7 @@ Direction Info
 Direction: (1, 1)
 Direction: (0, -1)
 Direction: (1, -1)
-Direction: (0, 1)
-Direction: (1, 0)
-Direction: (0, -1)
+Direction: (-1, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -313,8 +243,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -323,7 +251,7 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (4, 4) from algo switch
+R_1: computed (4, 2) from algo switch
 ________________________
 
 ________________________
@@ -344,21 +272,7 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 4) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (12, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 41) from algo switch
+R_4: computed (51, 4) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -367,8 +281,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -383,22 +295,18 @@ Frame: 4
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (4, 4)
+R_1 : Moved to (4, 2)
 R_2 : Moved to (53, 50)
 R_3 : Moved to (4, 50)
-R_4 : Moved to (53, 4)
-R_5 : Moved to (12, 10)
-R_6 : Moved to (53, 41)
+R_4 : Moved to (51, 4)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 1)
+Direction: (1, 0)
 Direction: (0, -1)
 Direction: (1, -1)
 Direction: (0, 1)
-Direction: (1, 0)
-Direction: (0, -1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -407,8 +315,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -417,7 +323,7 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (5, 5) from algo switch
+R_1: computed (5, 2) from algo switch
 ________________________
 
 ________________________
@@ -438,21 +344,7 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 5) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (13, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 40) from algo switch
+R_4: computed (51, 5) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -461,8 +353,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -477,22 +367,18 @@ Frame: 5
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (5, 5)
+R_1 : Moved to (5, 2)
 R_2 : Moved to (53, 49)
 R_3 : Moved to (5, 49)
-R_4 : Moved to (53, 5)
-R_5 : Moved to (13, 10)
-R_6 : Moved to (53, 40)
+R_4 : Moved to (51, 5)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 1)
+Direction: (1, 0)
 Direction: (0, -1)
 Direction: (1, -1)
 Direction: (0, 1)
-Direction: (1, 0)
-Direction: (0, -1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -501,8 +387,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -511,7 +395,7 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (6, 6) from algo switch
+R_1: computed (6, 2) from algo switch
 ________________________
 
 ________________________
@@ -525,28 +409,14 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 48) from algo switch
+R_3: computed (6, 49) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 6) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (14, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 39) from algo switch
+R_4: computed (51, 6) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -555,8 +425,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -571,22 +439,18 @@ Frame: 6
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (6, 6)
+R_1 : Moved to (6, 2)
 R_2 : Moved to (53, 48)
-R_3 : Moved to (6, 48)
-R_4 : Moved to (53, 6)
-R_5 : Moved to (14, 10)
-R_6 : Moved to (53, 39)
+R_3 : Moved to (6, 49)
+R_4 : Moved to (51, 6)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 1)
-Direction: (0, -1)
-Direction: (1, -1)
-Direction: (0, 1)
 Direction: (1, 0)
 Direction: (0, -1)
+Direction: (1, 0)
+Direction: (0, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -595,8 +459,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -605,7 +467,7 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (7, 7) from algo switch
+R_1: computed (7, 2) from algo switch
 ________________________
 
 ________________________
@@ -619,28 +481,14 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 47) from algo switch
+R_3: computed (7, 49) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 7) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (15, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 38) from algo switch
+R_4: computed (51, 7) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -649,8 +497,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -665,22 +511,18 @@ Frame: 7
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (7, 7)
+R_1 : Moved to (7, 2)
 R_2 : Moved to (53, 47)
-R_3 : Moved to (6, 47)
-R_4 : Moved to (53, 7)
-R_5 : Moved to (15, 10)
-R_6 : Moved to (53, 38)
+R_3 : Moved to (7, 49)
+R_4 : Moved to (51, 7)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 1)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
 Direction: (1, 0)
 Direction: (0, -1)
+Direction: (1, 0)
+Direction: (0, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -689,8 +531,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -699,42 +539,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (8, 8) from algo switch
+R_1: computed (8, 2) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 46) from algo switch
+R_2: computed (52, 47) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 46) from algo switch
+R_3: computed (8, 49) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 8) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (16, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 37) from algo switch
+R_4: computed (51, 8) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -743,8 +569,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -759,22 +583,18 @@ Frame: 8
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (8, 8)
-R_2 : Moved to (53, 46)
-R_3 : Moved to (6, 46)
-R_4 : Moved to (53, 8)
-R_5 : Moved to (16, 10)
-R_6 : Moved to (53, 37)
+R_1 : Moved to (8, 2)
+R_2 : Moved to (52, 47)
+R_3 : Moved to (8, 49)
+R_4 : Moved to (51, 8)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 1)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
 Direction: (1, 0)
-Direction: (0, -1)
+Direction: (-1, 0)
+Direction: (1, 0)
+Direction: (0, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -783,8 +603,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -793,42 +611,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (9, 9) from algo switch
+R_1: computed (9, 2) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 45) from algo switch
+R_2: computed (51, 47) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 45) from algo switch
+R_3: computed (9, 49) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 9) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (17, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 36) from algo switch
+R_4: computed (51, 9) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -837,8 +641,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -853,22 +655,18 @@ Frame: 9
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (9, 9)
-R_2 : Moved to (53, 45)
-R_3 : Moved to (6, 45)
-R_4 : Moved to (53, 9)
-R_5 : Moved to (17, 10)
-R_6 : Moved to (53, 36)
+R_1 : Moved to (9, 2)
+R_2 : Moved to (51, 47)
+R_3 : Moved to (9, 49)
+R_4 : Moved to (51, 9)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 1)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
 Direction: (1, 0)
-Direction: (0, -1)
+Direction: (-1, 0)
+Direction: (1, 0)
+Direction: (0, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -877,8 +675,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -887,42 +683,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (10, 10) from algo switch
+R_1: computed (10, 3) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 44) from algo switch
+R_2: computed (51, 48) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 44) from algo switch
+R_3: computed (10, 49) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (18, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 35) from algo switch
+R_4: computed (51, 10) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -931,8 +713,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -947,22 +727,18 @@ Frame: 10
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (10, 10)
-R_2 : Moved to (53, 44)
-R_3 : Moved to (6, 44)
-R_4 : Moved to (53, 10)
-R_5 : Moved to (18, 10)
-R_6 : Moved to (53, 35)
+R_1 : Moved to (10, 3)
+R_2 : Moved to (51, 48)
+R_3 : Moved to (10, 49)
+R_4 : Moved to (51, 10)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (1, 1)
-Direction: (0, -1)
-Direction: (0, -1)
 Direction: (0, 1)
 Direction: (1, 0)
-Direction: (0, -1)
+Direction: (0, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -971,8 +747,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -981,42 +755,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (11, 10) from algo switch
+R_1: computed (11, 4) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 43) from algo switch
+R_2: computed (50, 49) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 43) from algo switch
+R_3: computed (11, 49) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 11) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (19, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 34) from algo switch
+R_4: computed (50, 11) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -1025,8 +785,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1041,22 +799,18 @@ Frame: 11
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (11, 10)
-R_2 : Moved to (53, 43)
-R_3 : Moved to (6, 43)
-R_4 : Moved to (53, 11)
-R_5 : Moved to (19, 10)
-R_6 : Moved to (53, 34)
+R_1 : Moved to (11, 4)
+R_2 : Moved to (50, 49)
+R_3 : Moved to (11, 49)
+R_4 : Moved to (50, 11)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
+Direction: (1, 1)
+Direction: (-1, 1)
 Direction: (1, 0)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
-Direction: (1, 0)
-Direction: (0, -1)
+Direction: (-1, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -1065,8 +819,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -1075,42 +827,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (12, 10) from algo switch
+R_1: computed (12, 5) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 42) from algo switch
+R_2: computed (49, 50) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 42) from algo switch
+R_3: computed (12, 49) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 12) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (20, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_6: Branch 1 
-R_6: computed (53, 33) from algo switch
+R_4: computed (49, 11) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -1119,8 +857,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1135,22 +871,18 @@ Frame: 12
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (12, 10)
-R_2 : Moved to (53, 42)
-R_3 : Moved to (6, 42)
-R_4 : Moved to (53, 12)
-R_5 : Moved to (20, 10)
-R_6 : Moved to (53, 33)
+R_1 : Moved to (12, 5)
+R_2 : Moved to (49, 50)
+R_3 : Moved to (12, 49)
+R_4 : Moved to (49, 11)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
+Direction: (1, 1)
+Direction: (-1, 1)
 Direction: (1, 0)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
-Direction: (1, 0)
-Direction: (0, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -1159,8 +891,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -1169,42 +899,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (13, 10) from algo switch
+R_1: computed (13, 6) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 41) from algo switch
+R_2: computed (48, 51) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 41) from algo switch
+R_3: computed (13, 49) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 13) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (21, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 2 
-R_6: computed (53, 32) from algo switch
+R_4: computed (48, 11) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -1213,8 +929,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1229,22 +943,18 @@ Frame: 13
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (13, 10)
-R_2 : Moved to (53, 41)
-R_3 : Moved to (6, 41)
-R_4 : Moved to (53, 13)
-R_5 : Moved to (21, 10)
-R_6 : Moved to (53, 32)
+R_1 : Moved to (13, 6)
+R_2 : Moved to (48, 51)
+R_3 : Moved to (13, 49)
+R_4 : Moved to (48, 11)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
+Direction: (1, 1)
+Direction: (-1, 1)
 Direction: (1, 0)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
-Direction: (1, 0)
-Direction: (0, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -1253,8 +963,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -1263,42 +971,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (14, 10) from algo switch
+R_1: computed (14, 7) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 40) from algo switch
+R_2: computed (48, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 40) from algo switch
+R_3: computed (14, 49) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 14) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (22, 10) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 2 
-R_6: computed (53, 31) from algo switch
+R_4: computed (47, 11) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -1307,8 +1001,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1323,22 +1015,18 @@ Frame: 14
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (14, 10)
-R_2 : Moved to (53, 40)
-R_3 : Moved to (6, 40)
-R_4 : Moved to (53, 14)
-R_5 : Moved to (22, 10)
-R_6 : Moved to (53, 31)
+R_1 : Moved to (14, 7)
+R_2 : Moved to (48, 52)
+R_3 : Moved to (14, 49)
+R_4 : Moved to (47, 11)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (0, -1)
-Direction: (0, -1)
+Direction: (1, 1)
 Direction: (0, 1)
 Direction: (1, 0)
-Direction: (0, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -1347,8 +1035,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -1357,42 +1043,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (15, 10) from algo switch
+R_1: computed (15, 8) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 39) from algo switch
+R_2: computed (47, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 39) from algo switch
+R_3: computed (15, 48) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 15) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 11) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 2 
-R_6: computed (53, 30) from algo switch
+R_4: computed (46, 11) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -1401,8 +1073,6 @@ R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1417,22 +1087,18 @@ Frame: 15
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (15, 10)
-R_2 : Moved to (53, 39)
-R_3 : Moved to (6, 39)
-R_4 : Moved to (53, 15)
-R_5 : Moved to (23, 11)
-R_6 : Moved to (53, 30)
+R_1 : Moved to (15, 8)
+R_2 : Moved to (47, 52)
+R_3 : Moved to (15, 48)
+R_4 : Moved to (46, 11)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
 Direction: (1, 1)
-Direction: (0, -1)
+Direction: (-1, 0)
+Direction: (1, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -1441,8 +1107,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -1451,42 +1115,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (16, 10) from algo switch
+R_1: computed (16, 9) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 38) from algo switch
+R_2: computed (46, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 38) from algo switch
+R_3: computed (16, 47) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_4: Branch 1 
-R_4: computed (53, 16) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 12) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 2 
-R_6: computed (53, 29) from algo switch
+R_4: computed (45, 11) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -1494,9 +1144,7 @@ ________________________
 R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
+R_4:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1511,22 +1159,18 @@ Frame: 16
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (16, 10)
-R_2 : Moved to (53, 38)
-R_3 : Moved to (6, 38)
-R_4 : Moved to (53, 16)
-R_5 : Moved to (23, 12)
-R_6 : Moved to (53, 29)
+R_1 : Moved to (16, 9)
+R_2 : Moved to (46, 52)
+R_3 : Moved to (16, 47)
+R_4 : Moved to (45, 11)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
-Direction: (0, 1)
-Direction: (0, -1)
+Direction: (1, 1)
+Direction: (-1, 0)
+Direction: (1, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -1535,8 +1179,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -1552,35 +1194,21 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 37) from algo switch
+R_2: computed (45, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 37) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 15)
-Narrow Path Ending Point: (53, 21)
-R_4: Branch 2 
-R_4: computed (53, 17) from algo switch
+R_3: computed (16, 46) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 13) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 2 
-R_6: computed (52, 28) from algo switch
+R_4: Branch 1 
+R_4: computed (44, 11) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -1588,9 +1216,7 @@ ________________________
 R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
+R_4:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1606,21 +1232,17 @@ Frame: 17
 Moving Info
 //////////////////////////////////////////////////
 R_1 : Moved to (17, 10)
-R_2 : Moved to (53, 37)
-R_3 : Moved to (6, 37)
-R_4 : Moved to (53, 17)
-R_5 : Moved to (23, 13)
-R_6 : Moved to (52, 28)
+R_2 : Moved to (45, 52)
+R_3 : Moved to (16, 46)
+R_4 : Moved to (44, 11)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
+Direction: (1, 1)
+Direction: (-1, 0)
 Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
-Direction: (0, 1)
-Direction: (-1, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -1629,8 +1251,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -1639,42 +1259,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (18, 10) from algo switch
+R_1: computed (18, 11) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 36) from algo switch
+R_2: computed (44, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 36) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 15)
-Narrow Path Ending Point: (53, 21)
-R_4: Branch 2 
-R_4: computed (53, 18) from algo switch
+R_3: computed (16, 45) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 14) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 1 
-R_6: computed (51, 27) from algo switch
+R_4: Branch 1 
+R_4: computed (43, 12) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -1682,9 +1288,7 @@ ________________________
 R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
+R_4:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1699,22 +1303,18 @@ Frame: 18
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (18, 10)
-R_2 : Moved to (53, 36)
-R_3 : Moved to (6, 36)
-R_4 : Moved to (53, 18)
-R_5 : Moved to (23, 14)
-R_6 : Moved to (51, 27)
+R_1 : Moved to (18, 11)
+R_2 : Moved to (44, 52)
+R_3 : Moved to (16, 45)
+R_4 : Moved to (43, 12)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
+Direction: (1, 1)
+Direction: (-1, 0)
 Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
-Direction: (0, 1)
-Direction: (-1, -1)
+Direction: (-1, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -1723,8 +1323,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -1733,42 +1331,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (19, 10) from algo switch
+R_1: computed (19, 12) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 35) from algo switch
+R_2: computed (43, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 35) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 15)
-Narrow Path Ending Point: (53, 21)
-R_4: Branch 2 
-R_4: computed (53, 19) from algo switch
+R_3: computed (16, 44) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 15) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 1 
-R_6: computed (51, 26) from algo switch
+R_4: Branch 1 
+R_4: computed (42, 12) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -1776,9 +1360,7 @@ ________________________
 R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
+R_4:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1793,22 +1375,18 @@ Frame: 19
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (19, 10)
-R_2 : Moved to (53, 35)
-R_3 : Moved to (6, 35)
-R_4 : Moved to (53, 19)
-R_5 : Moved to (23, 15)
-R_6 : Moved to (51, 26)
+R_1 : Moved to (19, 12)
+R_2 : Moved to (43, 52)
+R_3 : Moved to (16, 44)
+R_4 : Moved to (42, 12)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
+Direction: (1, 1)
+Direction: (-1, 0)
 Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
-Direction: (0, 1)
-Direction: (0, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -1817,8 +1395,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -1827,42 +1403,28 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (20, 10) from algo switch
+R_1: computed (20, 13) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 34) from algo switch
+R_2: computed (42, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 34) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 15)
-Narrow Path Ending Point: (53, 21)
-R_4: Branch 2 
-R_4: computed (53, 20) from algo switch
+R_3: computed (17, 43) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 16) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 1 
-R_6: computed (51, 25) from algo switch
+R_4: Branch 1 
+R_4: computed (41, 12) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -1870,9 +1432,7 @@ ________________________
 R_1:- Narrow path status : False
 R_2:- Narrow path status : False
 R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
+R_4:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1887,22 +1447,18 @@ Frame: 20
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (20, 10)
-R_2 : Moved to (53, 34)
-R_3 : Moved to (6, 34)
-R_4 : Moved to (53, 20)
-R_5 : Moved to (23, 16)
-R_6 : Moved to (51, 25)
+R_1 : Moved to (20, 13)
+R_2 : Moved to (42, 52)
+R_3 : Moved to (17, 43)
+R_4 : Moved to (41, 12)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
-Direction: (0, 1)
-Direction: (0, -1)
+Direction: (1, 1)
+Direction: (-1, 0)
+Direction: (1, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -1911,8 +1467,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -1921,52 +1475,36 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (21, 10) from algo switch
+R_1: computed (21, 14) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (53, 33) from algo switch
+R_2: computed (41, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 33) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 15)
-Narrow Path Ending Point: (53, 21)
-R_4: Branch 2 
-R_4: computed (53, 21) from algo switch
+R_3: computed (18, 42) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 17) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 1 
-R_6: computed (51, 24) from algo switch
+R_4: Branch 1 
+R_4: computed (40, 12) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : False
-R_2:- Narrow path status : True
+R_2:- Narrow path status : False
 R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
+R_4:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -1981,22 +1519,18 @@ Frame: 21
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (21, 10)
-R_2 : Moved to (53, 33)
-R_3 : Moved to (6, 33)
-R_4 : Moved to (53, 21)
-R_5 : Moved to (23, 17)
-R_6 : Moved to (51, 24)
+R_1 : Moved to (21, 14)
+R_2 : Moved to (41, 52)
+R_3 : Moved to (18, 42)
+R_4 : Moved to (40, 12)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
-Direction: (0, 1)
-Direction: (0, -1)
+Direction: (1, 1)
+Direction: (-1, 0)
+Direction: (1, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -2005,8 +1539,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -2015,52 +1547,36 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (22, 10) from algo switch
+R_1: computed (22, 15) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_2: Branch 2 
-R_2: computed (53, 32) from algo switch
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
+R_2: Branch 1 
+R_2: computed (40, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 32) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 15)
-Narrow Path Ending Point: (53, 21)
-R_4: Branch 2 
-R_4: computed (52, 22) from algo switch
+R_3: computed (19, 41) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 18) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 1 
-R_6: computed (50, 24) from algo switch
+R_4: Branch 1 
+R_4: computed (39, 12) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : False
-R_2:- Narrow path status : True
+R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -2075,21 +1591,17 @@ Frame: 22
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (22, 10)
-R_2 : Moved to (53, 32)
-R_3 : Moved to (6, 32)
-R_4 : Moved to (52, 22)
-R_5 : Moved to (23, 18)
-R_6 : Moved to (50, 24)
+R_1 : Moved to (22, 15)
+R_2 : Moved to (40, 52)
+R_3 : Moved to (19, 41)
+R_4 : Moved to (39, 12)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (-1, 1)
-Direction: (0, 1)
+Direction: (1, 1)
+Direction: (-1, 0)
+Direction: (1, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -2099,8 +1611,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -2109,52 +1619,36 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (23, 11) from algo switch
+R_1: computed (23, 16) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_2: Branch 2 
-R_2: computed (53, 31) from algo switch
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
+R_2: Branch 1 
+R_2: computed (39, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 31) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 15)
-Narrow Path Ending Point: (53, 21)
-R_4: Branch 1 
-R_4: computed (51, 23) from algo switch
+R_3: computed (20, 40) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 19) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_6: Branch 1 
-R_6: computed (49, 24) from algo switch
+R_4: Branch 1 
+R_4: computed (38, 12) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : False
-R_2:- Narrow path status : True
+R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -2169,21 +1663,17 @@ Frame: 23
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 11)
-R_2 : Moved to (53, 31)
-R_3 : Moved to (6, 31)
-R_4 : Moved to (51, 23)
-R_5 : Moved to (23, 19)
-R_6 : Moved to (49, 24)
+R_1 : Moved to (23, 16)
+R_2 : Moved to (39, 52)
+R_3 : Moved to (20, 40)
+R_4 : Moved to (38, 12)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (1, 1)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (-1, 1)
-Direction: (0, 1)
+Direction: (-1, 0)
+Direction: (1, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -2193,8 +1683,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -2203,52 +1691,36 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (23, 12) from algo switch
+R_1: computed (24, 16) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_2: Branch 2 
-R_2: computed (53, 30) from algo switch
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
+R_2: Branch 1 
+R_2: computed (38, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 30) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 15)
-Narrow Path Ending Point: (53, 21)
-R_4: Branch 1 
-R_4: computed (51, 24) from algo switch
+R_3: computed (21, 40) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 20) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (48, 24) from algo switch
+R_4: Branch 1 
+R_4: computed (37, 12) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : False
-R_2:- Narrow path status : True
+R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -2263,21 +1735,17 @@ Frame: 24
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 12)
-R_2 : Moved to (53, 30)
-R_3 : Moved to (6, 30)
-R_4 : Moved to (51, 24)
-R_5 : Moved to (23, 20)
-R_6 : Moved to (48, 24)
+R_1 : Moved to (24, 16)
+R_2 : Moved to (38, 52)
+R_3 : Moved to (21, 40)
+R_4 : Moved to (37, 12)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (0, 1)
-Direction: (0, -1)
-Direction: (0, -1)
-Direction: (0, 1)
-Direction: (0, 1)
+Direction: (1, 0)
+Direction: (-1, 0)
+Direction: (1, 0)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -2287,8 +1755,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -2297,52 +1763,36 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (23, 13) from algo switch
+R_1: computed (24, 17) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_2: Branch 2 
-R_2: computed (53, 29) from algo switch
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
+R_2: Branch 1 
+R_2: computed (37, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 29) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 15)
-Narrow Path Ending Point: (53, 21)
-R_4: Branch 1 
-R_4: computed (50, 24) from algo switch
+R_3: computed (21, 39) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 21) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (47, 24) from algo switch
+R_4: Branch 1 
+R_4: computed (36, 12) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : False
-R_2:- Narrow path status : True
+R_2:- Narrow path status : False
 R_3:- Narrow path status : False
 R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -2357,21 +1807,17 @@ Frame: 25
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 13)
-R_2 : Moved to (53, 29)
-R_3 : Moved to (6, 29)
-R_4 : Moved to (50, 24)
-R_5 : Moved to (23, 21)
-R_6 : Moved to (47, 24)
+R_1 : Moved to (24, 17)
+R_2 : Moved to (37, 52)
+R_3 : Moved to (21, 39)
+R_4 : Moved to (36, 12)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (0, 1)
-Direction: (0, -1)
-Direction: (0, -1)
 Direction: (-1, 0)
-Direction: (0, 1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -2381,8 +1827,6 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
@@ -2391,52 +1835,36 @@ ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_1: Branch 1 
-R_1: computed (23, 14) from algo switch
+R_1: computed (24, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
-R_2: Branch 2 
-R_2: computed (52, 28) from algo switch
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
+R_2: Branch 1 
+R_2: computed (36, 52) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
 R_3: Branch 1 
-R_3: computed (6, 28) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (53, 15)
-Narrow Path Ending Point: (53, 21)
-R_4: Branch 1 
-R_4: computed (49, 24) from algo switch
+R_3: computed (21, 38) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 22) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (46, 24) from algo switch
+R_4: Branch 1 
+R_4: computed (35, 12) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
+R_1:- Narrow path status : True
 R_2:- Narrow path status : False
-R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
+R_3:- Narrow path status : True
+R_4:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -2451,21 +1879,17 @@ Frame: 26
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 14)
-R_2 : Moved to (52, 28)
-R_3 : Moved to (6, 28)
-R_4 : Moved to (49, 24)
-R_5 : Moved to (23, 22)
-R_6 : Moved to (46, 24)
+R_1 : Moved to (24, 18)
+R_2 : Moved to (36, 52)
+R_3 : Moved to (21, 38)
+R_4 : Moved to (35, 12)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (0, 1)
-Direction: (-1, -1)
-Direction: (0, -1)
 Direction: (-1, 0)
-Direction: (0, 1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -2475,62 +1899,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (23, 15) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (23, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (51, 27) from algo switch
+R_2: computed (35, 52) from algo switch
+________________________
+
+________________________
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 37) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (7, 28) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (48, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 23) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (45, 24) from algo switch
+R_4: Branch 1 
+R_4: computed (35, 13) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
+R_1:- Narrow path status : True
 R_2:- Narrow path status : False
-R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
+R_3:- Narrow path status : True
+R_4:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -2545,22 +1951,18 @@ Frame: 27
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 15)
-R_2 : Moved to (51, 27)
-R_3 : Moved to (7, 28)
-R_4 : Moved to (48, 24)
-R_5 : Moved to (23, 23)
-R_6 : Moved to (45, 24)
+R_1 : Moved to (23, 18)
+R_2 : Moved to (35, 52)
+R_3 : Moved to (21, 37)
+R_4 : Moved to (35, 13)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (0, 1)
-Direction: (-1, -1)
-Direction: (1, 0)
 Direction: (-1, 0)
-Direction: (0, 1)
 Direction: (-1, 0)
+Direction: (0, -1)
+Direction: (0, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -2569,62 +1971,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (23, 16) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (22, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (51, 26) from algo switch
+R_2: computed (34, 52) from algo switch
+________________________
+
+________________________
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 36) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (8, 28) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (47, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (23, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (44, 24) from algo switch
+R_4: Branch 1 
+R_4: computed (35, 14) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
+R_1:- Narrow path status : True
 R_2:- Narrow path status : False
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -2639,22 +2023,18 @@ Frame: 28
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 16)
-R_2 : Moved to (51, 26)
-R_3 : Moved to (8, 28)
-R_4 : Moved to (47, 24)
-R_5 : Moved to (23, 24)
-R_6 : Moved to (44, 24)
+R_1 : Moved to (22, 18)
+R_2 : Moved to (34, 52)
+R_3 : Moved to (21, 36)
+R_4 : Moved to (35, 14)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (0, 1)
+Direction: (-1, 0)
+Direction: (-1, 0)
 Direction: (0, -1)
-Direction: (1, 0)
-Direction: (-1, 0)
 Direction: (0, 1)
-Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -2663,62 +2043,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (23, 17) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (21, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (51, 25) from algo switch
+R_2: computed (33, 52) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (9, 28) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 35) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (35, 13)
+Narrow Path Ending Point: (35, 17)
 R_4: Branch 2 
-R_4: computed (46, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (24, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (43, 24) from algo switch
+R_4: computed (35, 15) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
+R_1:- Narrow path status : True
 R_2:- Narrow path status : False
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -2733,22 +2095,18 @@ Frame: 29
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 17)
-R_2 : Moved to (51, 25)
-R_3 : Moved to (9, 28)
-R_4 : Moved to (46, 24)
-R_5 : Moved to (24, 24)
-R_6 : Moved to (43, 24)
+R_1 : Moved to (21, 18)
+R_2 : Moved to (33, 52)
+R_3 : Moved to (21, 35)
+R_4 : Moved to (35, 15)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (0, 1)
+Direction: (-1, 0)
+Direction: (-1, 0)
 Direction: (0, -1)
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
+Direction: (0, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -2757,62 +2115,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (23, 18) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (51, 24) from algo switch
+R_2: computed (32, 52) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (10, 28) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 34) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (35, 13)
+Narrow Path Ending Point: (35, 17)
 R_4: Branch 2 
-R_4: computed (45, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_5: Branch 1 
-R_5: computed (25, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (42, 24) from algo switch
+R_4: computed (35, 16) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
+R_1:- Narrow path status : True
 R_2:- Narrow path status : False
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -2827,22 +2167,18 @@ Frame: 30
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 18)
-R_2 : Moved to (51, 24)
-R_3 : Moved to (10, 28)
-R_4 : Moved to (45, 24)
-R_5 : Moved to (25, 24)
-R_6 : Moved to (42, 24)
+R_1 : Moved to (21, 19)
+R_2 : Moved to (32, 52)
+R_3 : Moved to (21, 34)
+R_4 : Moved to (35, 16)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (0, 1)
+Direction: (-1, 0)
 Direction: (0, -1)
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
+Direction: (0, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -2851,62 +2187,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (23, 19) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (50, 24) from algo switch
+R_2: computed (31, 52) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (11, 28) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 33) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (35, 13)
+Narrow Path Ending Point: (35, 17)
 R_4: Branch 2 
-R_4: computed (44, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (26, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (41, 24) from algo switch
+R_4: computed (35, 17) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
+R_1:- Narrow path status : True
 R_2:- Narrow path status : False
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -2921,22 +2239,18 @@ Frame: 31
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 19)
-R_2 : Moved to (50, 24)
-R_3 : Moved to (11, 28)
-R_4 : Moved to (44, 24)
-R_5 : Moved to (26, 24)
-R_6 : Moved to (41, 24)
+R_1 : Moved to (21, 20)
+R_2 : Moved to (31, 52)
+R_3 : Moved to (21, 33)
+R_4 : Moved to (35, 17)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (0, 1)
 Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
+Direction: (0, -1)
+Direction: (0, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -2945,62 +2259,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (23, 20) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (21, 21) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (53, 34)
-Narrow Path Ending Point: (53, 29)
+Narrow Path Starting Point: None
+Narrow Path Ending Point: None
 R_2: Branch 1 
-R_2: computed (49, 24) from algo switch
+R_2: computed (30, 52) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (12, 28) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 32) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (35, 13)
+Narrow Path Ending Point: (35, 17)
 R_4: Branch 2 
-R_4: computed (43, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (27, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (40, 24) from algo switch
+R_4: computed (35, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
+R_1:- Narrow path status : True
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
+R_4:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -3015,22 +2311,18 @@ Frame: 32
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 20)
-R_2 : Moved to (49, 24)
-R_3 : Moved to (12, 28)
-R_4 : Moved to (43, 24)
-R_5 : Moved to (27, 24)
-R_6 : Moved to (40, 24)
+R_1 : Moved to (21, 21)
+R_2 : Moved to (30, 52)
+R_3 : Moved to (21, 32)
+R_4 : Moved to (35, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (0, 1)
 Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
+Direction: (0, -1)
+Direction: (0, 1)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -3039,62 +2331,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (23, 21) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (48, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (21, 22) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (13, 28) from algo switch
+R_2: Branch 1 
+R_2: computed (29, 52) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (42, 24) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 31) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (28, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (39, 24) from algo switch
+Narrow Path Starting Point: (35, 13)
+Narrow Path Ending Point: (35, 17)
+R_4: Branch 1 
+R_4: computed (34, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
+R_1:- Narrow path status : True
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
+R_4:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -3109,21 +2383,17 @@ Frame: 33
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 21)
-R_2 : Moved to (48, 24)
-R_3 : Moved to (13, 28)
-R_4 : Moved to (42, 24)
-R_5 : Moved to (28, 24)
-R_6 : Moved to (39, 24)
+R_1 : Moved to (21, 22)
+R_2 : Moved to (29, 52)
+R_3 : Moved to (21, 31)
+R_4 : Moved to (34, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (0, 1)
 Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -3133,62 +2403,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (23, 22) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (47, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (21, 23) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (14, 28) from algo switch
+R_2: Branch 1 
+R_2: computed (28, 52) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (41, 24) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 30) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (29, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (38, 24) from algo switch
+Narrow Path Starting Point: (35, 13)
+Narrow Path Ending Point: (35, 17)
+R_4: Branch 1 
+R_4: computed (33, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_1:- Narrow path status : True
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -3203,21 +2455,17 @@ Frame: 34
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 22)
-R_2 : Moved to (47, 24)
-R_3 : Moved to (14, 28)
-R_4 : Moved to (41, 24)
-R_5 : Moved to (29, 24)
-R_6 : Moved to (38, 24)
+R_1 : Moved to (21, 23)
+R_2 : Moved to (28, 52)
+R_3 : Moved to (21, 30)
+R_4 : Moved to (33, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (0, 1)
 Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -3227,62 +2475,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (23, 23) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (46, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (21, 24) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (15, 28) from algo switch
+R_2: Branch 1 
+R_2: computed (27, 51) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 29) from algo switch
+________________________
+
+________________________
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
 R_4: Branch 2 
-R_4: computed (40, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (30, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (37, 24) from algo switch
+R_4: computed (32, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_1:- Narrow path status : True
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -3297,21 +2527,17 @@ Frame: 35
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 23)
-R_2 : Moved to (46, 24)
-R_3 : Moved to (15, 28)
-R_4 : Moved to (40, 24)
-R_5 : Moved to (30, 24)
-R_6 : Moved to (37, 24)
+R_1 : Moved to (21, 24)
+R_2 : Moved to (27, 51)
+R_3 : Moved to (21, 29)
+R_4 : Moved to (32, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (0, 1)
-Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (-1, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -3321,62 +2547,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (23, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (45, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (21, 25) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (16, 28) from algo switch
+R_2: Branch 1 
+R_2: computed (27, 50) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 28) from algo switch
+________________________
+
+________________________
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
 R_4: Branch 2 
-R_4: computed (39, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (31, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (36, 24) from algo switch
+R_4: computed (31, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_1:- Narrow path status : True
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -3391,21 +2599,17 @@ Frame: 36
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (23, 24)
-R_2 : Moved to (45, 24)
-R_3 : Moved to (16, 28)
-R_4 : Moved to (39, 24)
-R_5 : Moved to (31, 24)
-R_6 : Moved to (36, 24)
+R_1 : Moved to (21, 25)
+R_2 : Moved to (27, 50)
+R_3 : Moved to (21, 28)
+R_4 : Moved to (31, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
 Direction: (0, 1)
-Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -3415,62 +2619,44 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (24, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (44, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 2 
+R_1: computed (21, 26) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (17, 28) from algo switch
+R_2: Branch 1 
+R_2: computed (27, 49) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 2 
+R_3: computed (21, 27) from algo switch
+________________________
+
+________________________
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
 R_4: Branch 2 
-R_4: computed (38, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (32, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (35, 24) from algo switch
+R_4: computed (30, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
-R_1:- Narrow path status : False
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_1:- Narrow path status : True
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -3485,21 +2671,17 @@ Frame: 37
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (24, 24)
-R_2 : Moved to (44, 24)
-R_3 : Moved to (17, 28)
-R_4 : Moved to (38, 24)
-R_5 : Moved to (32, 24)
-R_6 : Moved to (35, 24)
+R_1 : Moved to (21, 26)
+R_2 : Moved to (27, 49)
+R_3 : Moved to (21, 27)
+R_4 : Moved to (30, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, 1)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -3509,62 +2691,52 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_1: Branch 1 
-R_1: computed (25, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (43, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 44% Narrow path covered
+R_1: Branch 6.3.2 
+Try block
+R_1: 65 steps Remain
+R_1: computed (21, 25) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (18, 28) from algo switch
+R_2: Branch 1 
+R_2: computed (27, 48) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 50% Narrow path covered
+R_3: Branch 6.3.2 
+Try block
+R_3: 55 steps Remain
+R_3: computed (21, 26) from algo switch
+________________________
+
+________________________
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
 R_4: Branch 2 
-R_4: computed (37, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (33, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (34, 24) from algo switch
+R_4: computed (29, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -3579,21 +2751,17 @@ Frame: 38
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (25, 24)
-R_2 : Moved to (43, 24)
-R_3 : Moved to (18, 28)
-R_4 : Moved to (37, 24)
-R_5 : Moved to (33, 24)
-R_6 : Moved to (34, 24)
+R_1 : Moved to (21, 25)
+R_2 : Moved to (27, 48)
+R_3 : Moved to (21, 26)
+R_4 : Moved to (29, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -3603,68 +2771,52 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (26, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (42, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 41% Narrow path covered
+R_1: Branch 6.3.2 
+Try block
+R_1: 64 steps Remain
+R_1: computed (21, 24) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (19, 28) from algo switch
+R_2: Branch 1 
+R_2: computed (26, 48) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 53% Narrow path covered
+R_3: Branch 6.3.2 
+Try block
+R_3: 54 steps Remain
+R_3: computed (21, 25) from algo switch
+________________________
+
+________________________
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
 R_4: Branch 2 
-R_4: computed (36, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 37% Narrow path covered
-R_5: Branch 6.3.2 
-R_5: 40 steps Remain
-R_5: computed (34, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 6 
-R_6: 62% Narrow path covered
-R_6: Branch 6.3.2 
-R_6: 40 steps Remain
-R_6: computed (35, 24) from algo switch
+R_4: computed (28, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -3679,22 +2831,18 @@ Frame: 39
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (26, 24)
-R_2 : Moved to (42, 24)
-R_3 : Moved to (19, 28)
-R_4 : Moved to (36, 24)
-R_5 : Moved to (34, 24)
-R_6 : Moved to (35, 24)
+R_1 : Moved to (21, 24)
+R_2 : Moved to (26, 48)
+R_3 : Moved to (21, 25)
+R_4 : Moved to (28, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
+Direction: (0, -1)
 Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, -1)
 Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -3703,76 +2851,54 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (27, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (41, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 37% Narrow path covered
+R_1: Branch 6.3.2 
+Try block
+R_1: 65 steps Remain
+R_1: computed (21, 23) from algo switch
 ________________________
 
 ________________________
 Narrow Path Starting Point: None
 Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (20, 29) from algo switch
+R_2: Branch 1 
+R_2: computed (25, 48) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 6 
-R_4: 55% Narrow path covered
-R_4: Branch 6.3.2 
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 57% Narrow path covered
+R_3: Branch 6.3.2 
 Try block
-R_4: 75 steps Remain
-R_4: computed (36, 25) from algo switch
+R_3: 53 steps Remain
+R_3: computed (21, 24) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 40% Narrow path covered
-R_5: Branch 6.3.2 
-R_5: 39 steps Remain
-R_5: computed (35, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 6 
-R_6: 59% Narrow path covered
-R_6: Rare Branch 6.1.1 Triggered
-R_6: computed (35, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 2 
+R_4: computed (27, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-Holded inside narrow path
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
-Mid point conflict between R_5 and R_6
-R_6: Moved to (35, 24)
 //////////////////////////////////////////////////
 
 Deadlock Prevention
@@ -3785,23 +2911,18 @@ Frame: 40
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (27, 24)
-R_2 : Moved to (41, 24)
-R_3 : Moved to (20, 29)
-R_4 : Moved to (36, 25)
-R_5 : Moved to (35, 24)
-R_6 : Moved to (35, 24)
+R_1 : Moved to (21, 23)
+R_2 : Moved to (25, 48)
+R_3 : Moved to (21, 24)
+R_4 : Moved to (27, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
+Direction: (0, -1)
 Direction: (-1, 0)
-Direction: (1, 1)
-Direction: (0, 1)
-Direction: (1, 0)
-R_6: Holded inside Algo
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
@@ -3810,76 +2931,54 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: True
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (28, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 34% Narrow path covered
+R_1: Branch 6.3.2 
+Try block
+R_1: 66 steps Remain
+R_1: computed (21, 22) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (26, 48)
+Narrow Path Ending Point: (25, 48)
 R_2: Branch 2 
-R_2: computed (40, 24) from algo switch
+R_2: computed (24, 47) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (20, 30) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 6 
-R_4: 59% Narrow path covered
-R_4: Branch 6.3.2 
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 61% Narrow path covered
+R_3: Branch 6.3.2 
 Try block
-R_4: 74 steps Remain
-R_4: computed (36, 24) from algo switch
+R_3: 52 steps Remain
+R_3: computed (21, 23) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 44% Narrow path covered
-R_5: Branch 6.3.2 
-Try block
-R_5: 38 steps Remain
-R_5: computed (36, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 6 
-R_6: 59% Narrow path covered
-R_6: 40 steps Remain
-R_6: computed (34, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 2 
+R_4: computed (26, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
-Mid point conflict between R_4 and R_5
-R_5: Moved to (35, 24)
 //////////////////////////////////////////////////
 
 Deadlock Prevention
@@ -3892,22 +2991,17 @@ Frame: 41
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (28, 24)
-R_2 : Moved to (40, 24)
-R_3 : Moved to (20, 30)
-R_4 : Moved to (36, 24)
-R_5 : Moved to (35, 24)
-R_6 : Moved to (34, 24)
+R_1 : Moved to (21, 22)
+R_2 : Moved to (24, 47)
+R_3 : Moved to (21, 23)
+R_4 : Moved to (26, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (0, 1)
 Direction: (0, -1)
-R_5: Holded inside Algo
-Direction: (1, 0)
+Direction: (-1, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -3917,71 +3011,52 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: True
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (29, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 31% Narrow path covered
+R_1: Branch 6.3.2 
+Try block
+R_1: 67 steps Remain
+R_1: computed (21, 21) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (39, 24) from algo switch
+Narrow Path Starting Point: (26, 48)
+Narrow Path Ending Point: (25, 48)
+R_2: Branch 1 
+R_2: computed (23, 46) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (20, 31) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 65% Narrow path covered
+R_3: Branch 6.3.2 
+Try block
+R_3: 51 steps Remain
+R_3: computed (21, 22) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 6 
-R_4: 55% Narrow path covered
-R_4: Branch 6.3.2 
-Except block
-R_4: None steps Remain
-R_4: computed (36, 25) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 44% Narrow path covered
-R_5: Branch 6.1.2 Triggered
-R_5: computed (36, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 6 
-R_6: 62% Narrow path covered
-R_6: Branch 6.2.6 
-R_6: 40 steps Remain
-R_6: computed (33, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 2 
+R_4: computed (25, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -3996,21 +3071,17 @@ Frame: 42
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (29, 24)
-R_2 : Moved to (39, 24)
-R_3 : Moved to (20, 31)
-R_4 : Moved to (36, 25)
-R_5 : Moved to (36, 24)
-R_6 : Moved to (33, 24)
+R_1 : Moved to (21, 21)
+R_2 : Moved to (23, 46)
+R_3 : Moved to (21, 22)
+R_4 : Moved to (25, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (0, 1)
-Direction: (0, 1)
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (-1, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -4020,70 +3091,51 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: True
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (30, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 27% Narrow path covered
+R_1: Branch 6.3.1 
+R_1: 68 steps Remain
+R_1: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (38, 24) from algo switch
+Narrow Path Starting Point: (26, 48)
+Narrow Path Ending Point: (25, 48)
+R_2: Branch 1 
+R_2: computed (23, 45) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (20, 32) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 6 
-R_4: 59% Narrow path covered
-R_4: Branch 6.3.2 
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 69% Narrow path covered
+R_3: Branch 6.3.2 
 Try block
-R_4: 74 steps Remain
-R_4: computed (36, 26) from algo switch
+R_3: 50 steps Remain
+R_3: computed (21, 21) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 48% Narrow path covered
-R_5: Branch 6.3.2 
-Try block
-R_5: 37 steps Remain
-R_5: computed (37, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 4 
-R_6: computed (32, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 2 
+R_4: computed (24, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -4098,21 +3150,17 @@ Frame: 43
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (30, 24)
-R_2 : Moved to (38, 24)
-R_3 : Moved to (20, 32)
-R_4 : Moved to (36, 26)
-R_5 : Moved to (37, 24)
-R_6 : Moved to (32, 24)
+R_1 : Moved to (21, 20)
+R_2 : Moved to (23, 45)
+R_3 : Moved to (21, 21)
+R_4 : Moved to (24, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (0, 1)
-Direction: (0, 1)
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -4122,74 +3170,52 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: True
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (31, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 24% Narrow path covered
+R_1: Branch 6.3.1 
+R_1: 69 steps Remain
+R_1: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 6 
-R_2: 48% Narrow path covered
-R_2: Branch 6.3.2 
-Try block
-R_2: 52 steps Remain
-R_2: computed (39, 24) from algo switch
+Narrow Path Starting Point: (26, 48)
+Narrow Path Ending Point: (25, 48)
+R_2: Branch 1 
+R_2: computed (23, 44) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (20, 33) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 73% Narrow path covered
+R_3: Branch 6.3.3 
+R_3: 49 steps Remain
+R_3: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 4 
-R_4: computed (36, 25) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 51% Narrow path covered
-R_5: Branch 6.3.2 
-Try block
-R_5: 36 steps Remain
-R_5: computed (38, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (31, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 2 
+R_4: computed (23, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
-Mid point conflict between R_1 and R_6
-R_1: Moved to (30, 24)
 //////////////////////////////////////////////////
 
 Deadlock Prevention
@@ -4202,22 +3228,17 @@ Frame: 44
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (30, 24)
-R_2 : Moved to (39, 24)
-R_3 : Moved to (20, 33)
-R_4 : Moved to (36, 25)
-R_5 : Moved to (38, 24)
-R_6 : Moved to (31, 24)
+R_1 : Moved to (21, 19)
+R_2 : Moved to (23, 44)
+R_3 : Moved to (21, 20)
+R_4 : Moved to (23, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-R_1: Holded inside Algo
-Direction: (1, 0)
-Direction: (1, 0)
-Direction: (0, 1)
 Direction: (0, -1)
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
@@ -4227,76 +3248,50 @@ R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: True
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
 R_1: Branch 6 
-R_1: 25% Narrow path covered
-R_1: Branch 6.2.2 
-R_1: 51 steps Remain
-R_1: computed (29, 24) from algo switch
+R_1: 20% Narrow path covered
+R_1: Branch 6.3.1 
+R_1: 70 steps Remain
+R_1: computed (21, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 6 
-R_2: 44% Narrow path covered
-R_2: Branch 6.3.2 
-Try block
-R_2: 51 steps Remain
-R_2: computed (40, 24) from algo switch
+Narrow Path Starting Point: (26, 48)
+Narrow Path Ending Point: (25, 48)
+R_2: Branch 1 
+R_2: computed (22, 44) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (20, 34) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 76% Narrow path covered
+R_3: Branch 6.3.3 
+R_3: 48 steps Remain
+R_3: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
 R_4: Branch 2 
-R_4: computed (36, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 55% Narrow path covered
-R_5: Branch 6.3.2 
-Try block
-R_5: 35 steps Remain
-R_5: computed (39, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 6 
-R_6: 74% Narrow path covered
-R_6: Branch 6.2.8 
-R_6: 37 steps Remain
-R_6: computed (30, 24) from algo switch
+R_4: computed (22, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_2:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -4311,100 +3306,67 @@ Frame: 45
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (29, 24)
-R_2 : Moved to (40, 24)
-R_3 : Moved to (20, 34)
-R_4 : Moved to (36, 24)
-R_5 : Moved to (39, 24)
-R_6 : Moved to (30, 24)
+R_1 : Moved to (21, 18)
+R_2 : Moved to (22, 44)
+R_3 : Moved to (21, 19)
+R_4 : Moved to (22, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (0, 1)
 Direction: (0, -1)
-Direction: (1, 0)
+Direction: (-1, 0)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
+R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: True
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
 R_1: Branch 6 
-R_1: 22% Narrow path covered
-R_1: Branch 6.2.5 
-R_1: 51 steps Remain
-R_1: computed (30, 24) from algo switch
+R_1: 17% Narrow path covered
+R_1: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 6 
-R_2: 40% Narrow path covered
-R_2: Branch 6.3.2 
-Try block
-R_2: 52 steps Remain
-R_2: computed (41, 24) from algo switch
+Narrow Path Starting Point: (26, 48)
+Narrow Path Ending Point: (25, 48)
+R_2: Branch 1 
+R_2: computed (21, 44) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (20, 35) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 80% Narrow path covered
+R_3: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (35, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 59% Narrow path covered
-R_5: Branch 6.3.2 
-Try block
-R_5: 34 steps Remain
-R_5: computed (40, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 6 
-R_6: 77% Narrow path covered
-R_6: Branch 6.2.7 
-R_6: 36 steps Remain
-R_6: computed (31, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 6 
+R_4: 36% Narrow path covered
+R_4: computed (23, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -4419,100 +3381,70 @@ Frame: 46
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (30, 24)
-R_2 : Moved to (41, 24)
-R_3 : Moved to (20, 35)
-R_4 : Moved to (35, 24)
-R_5 : Moved to (40, 24)
-R_6 : Moved to (31, 24)
+R_1 : Moved to (21, 19)
+R_2 : Moved to (21, 44)
+R_3 : Moved to (21, 20)
+R_4 : Moved to (23, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (1, 0)
 Direction: (0, 1)
 Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, 1)
 Direction: (1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
+R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: True
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
 R_1: Branch 6 
-R_1: 25% Narrow path covered
-R_1: Branch 6.2.7 
-R_1: 52 steps Remain
-R_1: computed (31, 24) from algo switch
+R_1: 20% Narrow path covered
+R_1: Branch 6.3.1 
+R_1: 72 steps Remain
+R_1: computed (21, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 6 
-R_2: 37% Narrow path covered
-R_2: Branch 6.3.2 
-Try block
-R_2: 53 steps Remain
-R_2: computed (42, 24) from algo switch
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
+R_2: Branch 2 
+R_2: computed (21, 43) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (20, 36) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 76% Narrow path covered
+R_3: Branch 6.3.3 
+R_3: 46 steps Remain
+R_3: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (34, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 62% Narrow path covered
-R_5: Branch 6.3.2 
-Try block
-R_5: 33 steps Remain
-R_5: computed (41, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 6 
-R_6: 74% Narrow path covered
-R_6: Branch 6.2.5 
-R_6: 35 steps Remain
-R_6: computed (32, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 4 
+R_4: computed (22, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -4527,104 +3459,69 @@ Frame: 47
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (31, 24)
-R_2 : Moved to (42, 24)
-R_3 : Moved to (20, 36)
-R_4 : Moved to (34, 24)
-R_5 : Moved to (41, 24)
-R_6 : Moved to (32, 24)
+R_1 : Moved to (21, 18)
+R_2 : Moved to (21, 43)
+R_3 : Moved to (21, 19)
+R_4 : Moved to (22, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (1, 0)
-Direction: (0, 1)
+Direction: (0, -1)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
+R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: True
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
 R_1: Branch 6 
-R_1: 29% Narrow path covered
-R_1: Branch 6.2.7 
-R_1: 51 steps Remain
-R_1: computed (32, 24) from algo switch
+R_1: 17% Narrow path covered
+R_1: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 6 
-R_2: 33% Narrow path covered
-R_2: Branch 6.3.2 
-Try block
-R_2: 54 steps Remain
-R_2: computed (43, 24) from algo switch
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
+R_2: Branch 2 
+R_2: computed (21, 42) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (21, 36) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 80% Narrow path covered
+R_3: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (33, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 66% Narrow path covered
-R_5: Branch 6.3.2 
-Try block
-R_5: 32 steps Remain
-R_5: computed (42, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 6 
-R_6: 70% Narrow path covered
-R_6: Branch 6.2.5 
-R_6: 36 steps Remain
-R_6: computed (33, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 6 
+R_4: 36% Narrow path covered
+R_4: computed (23, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
-Mid point conflict between R_4 and R_6
-R_4: Moved to (34, 24)
 //////////////////////////////////////////////////
 
 Deadlock Prevention
@@ -4637,106 +3534,72 @@ Frame: 48
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (32, 24)
-R_2 : Moved to (43, 24)
-R_3 : Moved to (21, 36)
-R_4 : Moved to (34, 24)
-R_5 : Moved to (42, 24)
-R_6 : Moved to (33, 24)
+R_1 : Moved to (21, 19)
+R_2 : Moved to (21, 42)
+R_3 : Moved to (21, 20)
+R_4 : Moved to (23, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (1, 0)
-Direction: (1, 0)
-R_4: Holded inside Algo
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, 1)
+Direction: (0, -1)
+Direction: (0, 1)
 Direction: (1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
+R_1: False
 R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: True
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
 R_1: Branch 6 
-R_1: 33% Narrow path covered
-R_1: Branch 6.2.7 
-R_1: 50 steps Remain
-R_1: computed (33, 24) from algo switch
+R_1: 20% Narrow path covered
+R_1: Branch 6.3.1 
+R_1: 72 steps Remain
+R_1: computed (21, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 6 
-R_2: 29% Narrow path covered
-R_2: Branch 6.3.1 
-R_2: 55 steps Remain
-R_2: computed (43, 23) from algo switch
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
+R_2: Branch 2 
+R_2: computed (21, 41) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (22, 36) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 76% Narrow path covered
+R_3: Branch 6.3.3 
+R_3: 46 steps Remain
+R_3: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 6 
-R_4: 62% Narrow path covered
-R_4: Branch 6.2.2 
-R_4: 72 steps Remain
-R_4: computed (35, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 70% Narrow path covered
-R_5: Branch 6.3.3 
-R_5: 31 steps Remain
-R_5: computed (43, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 6 
-R_6: 66% Narrow path covered
-R_6: Branch 6.1.9 Triggered
-R_6: computed (33, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 4 
+R_4: computed (22, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-Holded inside narrow path
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
-Mid point conflict between R_1 and R_6
-Backtrack conflict between R_1 and R_6
 //////////////////////////////////////////////////
 
 Deadlock Prevention
@@ -4749,99 +3612,69 @@ Frame: 49
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (33, 24)
-R_2 : Moved to (43, 23)
-R_3 : Moved to (22, 36)
-R_4 : Moved to (35, 24)
-R_5 : Moved to (43, 24)
-R_6 : Moved to (33, 24)
+R_1 : Moved to (21, 18)
+R_2 : Moved to (21, 41)
+R_3 : Moved to (21, 19)
+R_4 : Moved to (22, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
 Direction: (0, -1)
-Direction: (1, 0)
-Direction: (1, 0)
-Direction: (1, 0)
-R_6: Holded inside Algo
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (0, -1)
+Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
+R_1: False
 R_2: False
 R_3: False
-R_4: True
-R_5: False
-R_6: True
+R_4: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 4 
-R_1: computed (34, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 17% Narrow path covered
+R_1: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 6 
-R_2: 33% Narrow path covered
-R_2: Branch 6.3.2 
-Try block
-R_2: 56 steps Remain
-R_2: computed (43, 23) from algo switch
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
+R_2: Branch 2 
+R_2: computed (21, 40) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 35) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 80% Narrow path covered
+R_3: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 4 
-R_4: computed (34, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 74% Narrow path covered
-R_5: Branch 6.3.3 
-R_5: 30 steps Remain
-R_5: computed (44, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 4 
-R_6: computed (32, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 6 
+R_4: 36% Narrow path covered
+R_4: computed (23, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
-Holded inside narrow path
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
-Mid point conflict between R_1 and R_4
-Backtrack conflict between R_1 and R_4
 //////////////////////////////////////////////////
 
 Deadlock Prevention
@@ -4854,94 +3687,70 @@ Frame: 50
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (34, 24)
-R_2 : Moved to (43, 23)
-R_3 : Moved to (23, 35)
-R_4 : Moved to (34, 24)
-R_5 : Moved to (44, 24)
-R_6 : Moved to (32, 24)
+R_1 : Moved to (21, 19)
+R_2 : Moved to (21, 40)
+R_3 : Moved to (21, 20)
+R_4 : Moved to (23, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-R_2: Holded inside Algo
+Direction: (0, 1)
 Direction: (0, -1)
-Direction: (1, -1)
-Direction: (-1, 0)
+Direction: (0, 1)
 Direction: (1, 0)
-Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
+R_1: False
 R_2: False
 R_3: False
-R_4: True
-R_5: False
-R_6: True
+R_4: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (35, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 20% Narrow path covered
+R_1: Branch 6.3.1 
+R_1: 72 steps Remain
+R_1: computed (21, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 6 
-R_2: 33% Narrow path covered
-R_2: Branch 6.3.2 
-Try block
-R_2: None steps Remain
-R_2: computed (43, 24) from algo switch
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
+R_2: Branch 2 
+R_2: computed (21, 39) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 34) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 76% Narrow path covered
+R_3: Branch 6.3.3 
+R_3: 46 steps Remain
+R_3: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (33, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 6 
-R_5: 77% Narrow path covered
-R_5: Branch 6.3.3 
-R_5: 29 steps Remain
-R_5: computed (45, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (31, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 4 
+R_4: computed (22, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -4956,86 +3765,67 @@ Frame: 51
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (35, 24)
-R_2 : Moved to (43, 24)
-R_3 : Moved to (23, 34)
-R_4 : Moved to (33, 24)
-R_5 : Moved to (45, 24)
-R_6 : Moved to (31, 24)
+R_1 : Moved to (21, 18)
+R_2 : Moved to (21, 39)
+R_3 : Moved to (21, 19)
+R_4 : Moved to (22, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (0, 1)
 Direction: (0, -1)
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
-R_2: True
+R_1: False
+R_2: False
 R_3: False
-R_4: True
-R_5: False
-R_6: True
+R_4: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (36, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 17% Narrow path covered
+R_1: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 4 
-R_2: computed (42, 24) from algo switch
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
+R_2: Branch 2 
+R_2: computed (21, 38) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 33) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 80% Narrow path covered
+R_3: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (32, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 4 
-R_5: computed (46, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (30, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 6 
+R_4: 36% Narrow path covered
+R_4: computed (23, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -5050,86 +3840,70 @@ Frame: 52
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (36, 24)
-R_2 : Moved to (42, 24)
-R_3 : Moved to (23, 33)
-R_4 : Moved to (32, 24)
-R_5 : Moved to (46, 24)
-R_6 : Moved to (30, 24)
+R_1 : Moved to (21, 19)
+R_2 : Moved to (21, 38)
+R_3 : Moved to (21, 20)
+R_4 : Moved to (23, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
+Direction: (0, 1)
 Direction: (0, -1)
-Direction: (-1, 0)
+Direction: (0, 1)
 Direction: (1, 0)
-Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
-R_2: True
+R_1: False
+R_2: False
 R_3: False
-R_4: True
-R_5: False
-R_6: True
+R_4: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (37, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 20% Narrow path covered
+R_1: Branch 6.3.1 
+R_1: 72 steps Remain
+R_1: computed (21, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
 R_2: Branch 2 
-R_2: computed (41, 24) from algo switch
+R_2: computed (21, 37) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 32) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 76% Narrow path covered
+R_3: Branch 6.3.3 
+R_3: 46 steps Remain
+R_3: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (31, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (47, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (29, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 4 
+R_4: computed (22, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -5144,86 +3918,67 @@ Frame: 53
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (37, 24)
-R_2 : Moved to (41, 24)
-R_3 : Moved to (23, 32)
-R_4 : Moved to (31, 24)
-R_5 : Moved to (47, 24)
-R_6 : Moved to (29, 24)
+R_1 : Moved to (21, 18)
+R_2 : Moved to (21, 37)
+R_3 : Moved to (21, 19)
+R_4 : Moved to (22, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
 Direction: (0, -1)
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
-R_2: True
+R_1: False
+R_2: False
 R_3: False
-R_4: True
-R_5: False
-R_6: True
+R_4: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (38, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 17% Narrow path covered
+R_1: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
 R_2: Branch 2 
-R_2: computed (40, 24) from algo switch
+R_2: computed (21, 36) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 31) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 80% Narrow path covered
+R_3: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (30, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (48, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (28, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 6 
+R_4: 36% Narrow path covered
+R_4: computed (23, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -5238,90 +3993,72 @@ Frame: 54
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (38, 24)
-R_2 : Moved to (40, 24)
-R_3 : Moved to (23, 31)
-R_4 : Moved to (30, 24)
-R_5 : Moved to (48, 24)
-R_6 : Moved to (28, 24)
+R_1 : Moved to (21, 19)
+R_2 : Moved to (21, 36)
+R_3 : Moved to (21, 20)
+R_4 : Moved to (23, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
+Direction: (0, 1)
 Direction: (0, -1)
-Direction: (-1, 0)
+Direction: (0, 1)
 Direction: (1, 0)
-Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
-R_2: True
+R_1: False
+R_2: False
 R_3: False
-R_4: True
-R_5: False
-R_6: True
+R_4: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (39, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 20% Narrow path covered
+R_1: Branch 6.3.1 
+R_1: 72 steps Remain
+R_1: computed (21, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
 R_2: Branch 2 
-R_2: computed (39, 24) from algo switch
+R_2: computed (21, 35) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 30) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 76% Narrow path covered
+R_3: Branch 6.3.3 
+R_3: 46 steps Remain
+R_3: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (29, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (49, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (27, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 4 
+R_4: computed (22, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
-Mid point conflict between R_1 and R_2
-Backtrack conflict between R_1 and R_2
 //////////////////////////////////////////////////
 
 Deadlock Prevention
@@ -5334,86 +4071,67 @@ Frame: 55
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (39, 24)
-R_2 : Moved to (39, 24)
-R_3 : Moved to (23, 30)
-R_4 : Moved to (29, 24)
-R_5 : Moved to (49, 24)
-R_6 : Moved to (27, 24)
+R_1 : Moved to (21, 18)
+R_2 : Moved to (21, 35)
+R_3 : Moved to (21, 19)
+R_4 : Moved to (22, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
 Direction: (0, -1)
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
-R_2: True
+R_1: False
+R_2: False
 R_3: False
-R_4: True
-R_5: False
-R_6: True
+R_4: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (40, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 17% Narrow path covered
+R_1: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
 R_2: Branch 2 
-R_2: computed (38, 24) from algo switch
+R_2: computed (21, 34) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 29) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 80% Narrow path covered
+R_3: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (28, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (50, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (26, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 6 
+R_4: 36% Narrow path covered
+R_4: computed (23, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : True
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -5428,86 +4146,70 @@ Frame: 56
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (40, 24)
-R_2 : Moved to (38, 24)
-R_3 : Moved to (23, 29)
-R_4 : Moved to (28, 24)
-R_5 : Moved to (50, 24)
-R_6 : Moved to (26, 24)
+R_1 : Moved to (21, 19)
+R_2 : Moved to (21, 34)
+R_3 : Moved to (21, 20)
+R_4 : Moved to (23, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
+Direction: (0, 1)
 Direction: (0, -1)
-Direction: (-1, 0)
+Direction: (0, 1)
 Direction: (1, 0)
-Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
-R_2: True
+R_1: False
+R_2: False
 R_3: False
-R_4: True
-R_5: False
-R_6: True
+R_4: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (41, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 20% Narrow path covered
+R_1: Branch 6.3.1 
+R_1: 72 steps Remain
+R_1: computed (21, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
 R_2: Branch 2 
-R_2: computed (37, 24) from algo switch
+R_2: computed (21, 33) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 28) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 76% Narrow path covered
+R_3: Branch 6.3.3 
+R_3: 46 steps Remain
+R_3: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (27, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 2 
-R_5: computed (51, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (25, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 4 
+R_4: computed (22, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -5522,86 +4224,67 @@ Frame: 57
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (41, 24)
-R_2 : Moved to (37, 24)
-R_3 : Moved to (23, 28)
-R_4 : Moved to (27, 24)
-R_5 : Moved to (51, 24)
-R_6 : Moved to (25, 24)
+R_1 : Moved to (21, 18)
+R_2 : Moved to (21, 33)
+R_3 : Moved to (21, 19)
+R_4 : Moved to (22, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
 Direction: (0, -1)
-Direction: (-1, 0)
-Direction: (1, 0)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
-R_2: True
+R_1: False
+R_2: False
 R_3: False
-R_4: True
-R_5: False
-R_6: True
+R_4: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (42, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 17% Narrow path covered
+R_1: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
 R_2: Branch 2 
-R_2: computed (36, 24) from algo switch
+R_2: computed (21, 32) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 27) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 80% Narrow path covered
+R_3: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (26, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 1 
-R_5: computed (52, 25) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (24, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 6 
+R_4: 36% Narrow path covered
+R_4: computed (23, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : True
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -5616,86 +4299,70 @@ Frame: 58
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (42, 24)
-R_2 : Moved to (36, 24)
-R_3 : Moved to (23, 27)
-R_4 : Moved to (26, 24)
-R_5 : Moved to (52, 25)
-R_6 : Moved to (24, 24)
+R_1 : Moved to (21, 19)
+R_2 : Moved to (21, 32)
+R_3 : Moved to (21, 20)
+R_4 : Moved to (23, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
+Direction: (0, 1)
 Direction: (0, -1)
-Direction: (-1, 0)
-Direction: (1, 1)
-Direction: (-1, 0)
+Direction: (0, 1)
+Direction: (1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
-R_2: True
+R_1: False
+R_2: False
 R_3: False
-R_4: True
-R_5: False
-R_6: True
+R_4: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (43, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 20% Narrow path covered
+R_1: Branch 6.3.1 
+R_1: 72 steps Remain
+R_1: computed (21, 18) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
 R_2: Branch 2 
-R_2: computed (35, 24) from algo switch
+R_2: computed (21, 31) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 26) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 76% Narrow path covered
+R_3: Branch 6.3.3 
+R_3: 46 steps Remain
+R_3: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (25, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 1 
-R_5: computed (53, 26) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 2 
-R_6: computed (23, 24) from algo switch
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
+R_4: Branch 4 
+R_4: computed (22, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
 
 R_1:- Narrow path status : True
 R_2:- Narrow path status : True
-R_3:- Narrow path status : False
+R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -5710,376 +4377,59 @@ Frame: 59
  
 Moving Info
 //////////////////////////////////////////////////
-R_1 : Moved to (43, 24)
-R_2 : Moved to (35, 24)
-R_3 : Moved to (23, 26)
-R_4 : Moved to (25, 24)
-R_5 : Moved to (53, 26)
-R_6 : Moved to (23, 24)
+R_1 : Moved to (21, 18)
+R_2 : Moved to (21, 31)
+R_3 : Moved to (21, 19)
+R_4 : Moved to (22, 18)
 //////////////////////////////////////////////////
 
 Direction Info
 //////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
 Direction: (0, -1)
-Direction: (-1, 0)
-Direction: (1, 1)
+Direction: (0, -1)
+Direction: (0, -1)
 Direction: (-1, 0)
 //////////////////////////////////////////////////
 
 Backtracing Status
 //////////////////////////////////////////////////
-R_1: True
-R_2: True
-R_3: False
-R_4: True
-R_5: False
-R_6: False
-//////////////////////////////////////////////////
-
-Computed Position and Direction
-//////////////////////////////////////////////////
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (44, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (34, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 1 
-R_3: computed (23, 25) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 2 
-R_4: computed (24, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 1 
-R_5: computed (53, 27) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 1 
-R_6: computed (22, 23) from algo switch
-________________________
-
-//////////////////////////////////////////////////
-
-R_1:- Narrow path status : True
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
-Conflict Resolution
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-
-Deadlock Prevention
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-
-****************************************************************************************************
-Frame: 60
-****************************************************************************************************
- 
-Moving Info
-//////////////////////////////////////////////////
-R_1 : Moved to (44, 24)
-R_2 : Moved to (34, 24)
-R_3 : Moved to (23, 25)
-R_4 : Moved to (24, 24)
-R_5 : Moved to (53, 27)
-R_6 : Moved to (22, 23)
-//////////////////////////////////////////////////
-
-Direction Info
-//////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (0, -1)
-Direction: (-1, 0)
-Direction: (0, 1)
-Direction: (-1, -1)
-//////////////////////////////////////////////////
-
-Backtracing Status
-//////////////////////////////////////////////////
-R_1: True
-R_2: True
-R_3: False
-R_4: True
-R_5: False
-R_6: False
-//////////////////////////////////////////////////
-
-Computed Position and Direction
-//////////////////////////////////////////////////
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (45, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (33, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 5 
-Robot R_4 in range is inside narrow path,
-R_3: Branch 5.1 
-Neighbours: [(np.float64(22.0), np.float64(24.0)), (np.float64(22.0), np.float64(25.0)), (np.float64(22.0), np.float64(26.0)), (np.float64(23.0), np.float64(24.0))]
-R_3: computed (23, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 6 
-R_4: 100% Narrow path covered
-R_4: 63 steps Remain
-R_4: computed (23, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 1 
-R_5: computed (53, 28) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 1 
-R_6: computed (22, 22) from algo switch
-________________________
-
-//////////////////////////////////////////////////
-
-R_1:- Narrow path status : True
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
-R_4:- Narrow path status : False
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
-Conflict Resolution
-//////////////////////////////////////////////////
-Mid point conflict between R_3 and R_4
-R_4: Moved to (24, 24)
-//////////////////////////////////////////////////
-
-Deadlock Prevention
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-
-****************************************************************************************************
-Frame: 61
-****************************************************************************************************
- 
-Moving Info
-//////////////////////////////////////////////////
-R_1 : Moved to (45, 24)
-R_2 : Moved to (33, 24)
-R_3 : Moved to (23, 24)
-R_4 : Moved to (24, 24)
-R_5 : Moved to (53, 28)
-R_6 : Moved to (22, 22)
-//////////////////////////////////////////////////
-
-Direction Info
-//////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (0, -1)
-R_4: Holded inside Algo
-Direction: (-1, 0)
-Direction: (0, 1)
-Direction: (0, -1)
-//////////////////////////////////////////////////
-
-Backtracing Status
-//////////////////////////////////////////////////
-R_1: True
-R_2: True
+R_1: False
+R_2: False
 R_3: False
 R_4: False
-R_5: False
-R_6: False
 //////////////////////////////////////////////////
 
 Computed Position and Direction
 //////////////////////////////////////////////////
 ________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (46, 24) from algo switch
+Narrow Path Starting Point: (24, 17)
+Narrow Path Ending Point: (23, 44)
+R_1: Branch 6 
+R_1: 17% Narrow path covered
+R_1: computed (21, 19) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (22, 44)
+Narrow Path Ending Point: (12, 18)
 R_2: Branch 2 
-R_2: computed (32, 24) from algo switch
+R_2: computed (21, 30) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 5 
-R_3: Branch 5.2 
-R_3: computed (24, 24) from algo switch
+Narrow Path Starting Point: (21, 39)
+Narrow Path Ending Point: (24, 17)
+R_3: Branch 6 
+R_3: 80% Narrow path covered
+R_3: computed (21, 20) from algo switch
 ________________________
 
 ________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_4: Branch 5 
-Robot R_3 in range has higher priority,
-R_4: Branch 5.1 
-Neighbours: [(np.float64(25.0), np.float64(24.0))]
-R_4: computed (25, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 1 
-R_5: computed (53, 29) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 1 
-R_6: computed (22, 21) from algo switch
-________________________
-
-//////////////////////////////////////////////////
-
-R_1:- Narrow path status : True
-R_2:- Narrow path status : True
-R_3:- Narrow path status : False
-R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
-Conflict Resolution
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-
-Deadlock Prevention
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-
-****************************************************************************************************
-Frame: 62
-****************************************************************************************************
- 
-Moving Info
-//////////////////////////////////////////////////
-R_1 : Moved to (46, 24)
-R_2 : Moved to (32, 24)
-R_3 : Moved to (24, 24)
-R_4 : Moved to (25, 24)
-R_5 : Moved to (53, 29)
-R_6 : Moved to (22, 21)
-//////////////////////////////////////////////////
-
-Direction Info
-//////////////////////////////////////////////////
-Direction: (1, 0)
-Direction: (-1, 0)
-Direction: (1, 0)
-Direction: (1, 0)
-Direction: (0, 1)
-Direction: (0, -1)
-//////////////////////////////////////////////////
-
-Backtracing Status
-//////////////////////////////////////////////////
-R_1: True
-R_2: True
-R_3: False
-R_4: True
-R_5: False
-R_6: False
-//////////////////////////////////////////////////
-
-Computed Position and Direction
-//////////////////////////////////////////////////
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_1: Branch 2 
-R_1: computed (47, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_2: Branch 2 
-R_2: computed (31, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: None
-Narrow Path Ending Point: None
-R_3: Branch 5 
-Robot R_4 in range is inside narrow path,
-R_3: Branch 5.1 
-Neighbours: []
-R_3: computed (23, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (24, 24)
+Narrow Path Starting Point: (34, 18)
+Narrow Path Ending Point: (21, 40)
 R_4: Branch 6 
-R_4: 200% Narrow path covered
-R_4: Branch 6.2.6 
-R_4: 62 steps Remain
-R_4: computed (26, 24) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (24, 24)
-Narrow Path Ending Point: (50, 24)
-R_5: Branch 1 
-R_5: computed (53, 30) from algo switch
-________________________
-
-________________________
-Narrow Path Starting Point: (50, 24)
-Narrow Path Ending Point: (24, 24)
-R_6: Branch 1 
-R_6: computed (22, 20) from algo switch
+R_4: 36% Narrow path covered
+R_4: computed (23, 18) from algo switch
 ________________________
 
 //////////////////////////////////////////////////
@@ -6088,8 +4438,6 @@ R_1:- Narrow path status : True
 R_2:- Narrow path status : True
 R_3:- Narrow path status : True
 R_4:- Narrow path status : True
-R_5:- Narrow path status : False
-R_6:- Narrow path status : False
 Conflict Resolution
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
